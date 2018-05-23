@@ -334,6 +334,10 @@ small {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px $hr-border-color;
+  
+  p {
+    color: $blockquote-text-color;
+  }
 
   @include large {
     font-size: 1.2rem;
