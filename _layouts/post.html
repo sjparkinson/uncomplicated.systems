@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<h2>{{ page.title | escape }}</h2>
+<article>
+  <h2>{{ page.title | escape }}</h2>
+  
+  <p><small>Posted on <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time>.</small></p>
 
-<p><small>Posted on {{ page.date | date: "%B %-d, %Y" }}.</small></p>
-
-<article itemscope itemtype="http://schema.org/BlogPosting">
-  <div itemprop="articleBody">
+  <div>
     {{ content }}
   </div>
 </article>
