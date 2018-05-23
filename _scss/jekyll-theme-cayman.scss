@@ -318,7 +318,7 @@ a {
 }
 
 h1 a {
-    color: #ffffff;
+    color: $header-heading-color;
 
     &:hover {
         text-decoration: none;
