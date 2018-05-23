@@ -2,4 +2,9 @@ theme: jekyll-theme-cayman
 
 lang: en-GB
 
+timezone: Etc/UTC
+
 title: Uncomplicated Systems
+
+author:
+  twitter: samparkinson_
