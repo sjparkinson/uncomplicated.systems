@@ -335,20 +335,9 @@ small {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px $hr-border-color;
+  font-size: 1.1rem;
   
   p {
     color: $blockquote-text-color;
-  }
-
-  @include large {
-    font-size: 1.1rem;
-  }
-
-  @include medium {
-    font-size: 1.1rem;
-  }
-
-  @include small {
-    font-size: 1.1rem;
   }
 }
