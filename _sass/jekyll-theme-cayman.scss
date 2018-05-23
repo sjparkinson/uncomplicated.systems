@@ -334,4 +334,18 @@ footer {
   p {
     color: $blockquote-text-color;
   }
+  
+  @include large {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+  }
 }
