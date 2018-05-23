@@ -342,6 +342,7 @@ footer {
   
   p {
     color: $blockquote-text-color;
+    margin: 0;
   }
   
   @include large {
