@@ -9,7 +9,7 @@ layout: default
   <h2>Latest Posts</h2>
 
   {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a> <small>&mdash; <time datetime="{{ post.date | date "%Y-%m-%d"  }}">{{ post.date | date: "%B %-d, %Y" }}</small></time>
+    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a> <small>&mdash; <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</small></time>
   {% endfor %}
 
 </div>
