@@ -9,4 +9,4 @@ To simplify, what I've actually done is create yet another platform for me to pu
 
 So hello world! Welcome to [uncomplicated systems](https://uncomplicated.systems).
 
-<iframe src="https://giphy.com/embed/yoJC2A59OCZHs1LXvW" width="480" height="269" frameBorder="0"></iframe>
+![Whale Hello There!](https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif)
