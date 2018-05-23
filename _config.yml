@@ -6,9 +6,6 @@ timezone: Etc/UTC
 
 title: Uncomplicated Systems
 
-social:
+author:
   name: Samuel Parkinson
-  links:
-    - https://github.com/sjparkinson
-    - https://twitter.com/samparkinson_
-    - https://medium.com/@samparkinson_
+  twitter: samparkinson_
