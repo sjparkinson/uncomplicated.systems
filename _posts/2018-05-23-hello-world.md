@@ -7,6 +7,6 @@ I've found myself publishing across several diffrent platforms lately, [Medium](
 
 To simplify, what I've actually done is create yet another platform for me to publish my notes on. Hopefully over time this will better suit my needs.
 
-So hello world! Welcome to [uncomplicated systems](https://uncomplicated.systems).
+So hello world, welcome to [uncomplicated systems](https://uncomplicated.systems)!
 
 ![Whale Hello There!](https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif)
