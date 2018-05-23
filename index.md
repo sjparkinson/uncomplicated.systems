@@ -10,6 +10,19 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
+{% for post in site.posts %}
+  <li>
+    {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+    </h2>
+
+    <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+  </li>
+{% endfor %}
+
 # Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
