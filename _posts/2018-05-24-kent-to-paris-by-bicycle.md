@@ -8,3 +8,5 @@ I've just signed up to a last minute charity ride in support of the [Motor Neuro
 There's a group of us spending the long weekend cycling from Kent to Paris.
 
 [Feel free to support me on my JustGiving page](https://www.justgiving.com/fundraising/samuel-parkinson-paris-cycle).
+
+![Eating and cycling at the same time, it's possiable!](https://media.giphy.com/media/OZvMMeKdYmPpS/giphy.gif)
