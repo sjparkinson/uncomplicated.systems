@@ -11,7 +11,7 @@
     
     {% if page.layout == "index" %}
     {% for post in site.posts limit: 1 %}
-    <link rel="prerender" href="{{ post.url | relative_url }}">
+    <link rel="prefetch" href="{{ post.url | relative_url }}">
     {% endfor %}
     {% endif %}
   </head>
