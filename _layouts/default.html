@@ -13,7 +13,7 @@
       {%- capture styles -%}
       {%- include styles.scss -%}
       {%- endcapture -%}
-      {{ styles | scssify }}
+      {{- styles | scssify -}}
     </style>
 
     <link rel="icon" type="image/png" href="/assets/images/national-park.png">
