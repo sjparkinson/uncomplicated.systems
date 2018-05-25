@@ -1,7 +1,3 @@
-## Uncomplicated Systems
+## Uncomplicated Systems :national_park:
 
 https://uncomplicated.systems
-
-```
-docker-compose up
-```
