@@ -16,3 +16,7 @@ social:
     - https://twitter.com/samparkinson_
     - https://medium.com/@samparkinson_
     - https://github.com/sjparkinson
+
+sass:
+  sass_dir: _includes
+  style: compressed
