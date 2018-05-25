@@ -6,7 +6,7 @@ services:
     command: jekyll serve --incremental
     image: jekyll/minimal
     volumes:
-      - $PWD:/srv/jekyll
-      - $PWD/vendor/bundle:/usr/local/bundle
+      - ./:/srv/jekyll:delegated
+      - ./vendor/bundle:/usr/local/bundle:delegated
     ports:
       - 4000:4000
