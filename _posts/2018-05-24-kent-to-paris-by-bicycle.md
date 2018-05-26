@@ -33,4 +33,4 @@ And out the other side. Hello France 🇫🇷! Time for a 67km ride to our desti
 
 It's ~5:30pm French time and we're doing a quick water run in a nice town called La Capelle-lès-Boulogne. 20km down, quite a chunk to go! Looking forward to a nice cold beer at the end of todays ride 🍺.
 
-Just been through a wonderful forest, called the Boulogne Forest. A couple of nice climbs and beautiful scenery 🌲.
+Just been through a wonderful forest, called the Boulogne Forest. A couple of nice climbs and beautiful scenery 🌲, 36km down for this second leg.
