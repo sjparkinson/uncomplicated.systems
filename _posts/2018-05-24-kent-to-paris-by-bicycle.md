@@ -13,10 +13,14 @@ It's a ~250 mile cycle over three days, and I've just checked the weather, it's 
 
 ![Eating and cycling at the same time, it's possiable!](https://media.giphy.com/media/OZvMMeKdYmPpS/giphy.gif)
 
-## Updates
+### Updates
+
+#### Leg 1 — Kent to Folkestone
 
 It's Saturday morning and I'm in Kent, mostly  ready to go.
 
-There's 13 riders in total, and 14 bikes just in case.
+There are 13 riders in total, and 14 bikes just in case.
 
-First up is a ride to the tunnel, should take a handful of hours. From there we pack everything in a van and cross the channel!
+First up is a ride to the tunnel, should take a handful of hours. From there we pack everything in a van and cross the channel.
+
+Made it to Tesco Folkestone, time for some pain au chocolate I think!
