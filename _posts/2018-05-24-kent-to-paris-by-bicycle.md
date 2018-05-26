@@ -35,6 +35,10 @@ It's ~5:30pm French time and we're doing a quick water run in a nice town called
 
 We've just been through the wonderful Boulogne Forest. A couple of nice climbs and beautiful scenery 🌲, 36km down for this second leg. 
 
-All done for today, a cracking flat 10km ride down to Le Touquet on the French coast.
+It was a cracking flat 10km ride down to Le Touquet on the French coast.
 
 That wraps up the day, with 116km sent 🚴. Great weather all day, and an awesome hotel to finish.
+
+#### Sunday Morning — Le Touquet to ???
+
+Coming soon™️
