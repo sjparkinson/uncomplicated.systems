@@ -23,6 +23,8 @@ There are 13 riders in total, and 14 bikes just in case.
 
 First up is a ride to the tunnel, should take a handful of hours. From there we pack everything in a van and cross the channel.
 
-We made it to Tesco Folkestone, time for some pain au chocolate!
+We made it to Tesco in Folkestone, time for some pain au chocolate!
 
 #### Saturday Afternoon — Calais to Somewhere in France
+
+Just queuing for the train. So far the weather has been absolutely amazing 🌤️.
