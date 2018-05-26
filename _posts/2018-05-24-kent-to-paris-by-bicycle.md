@@ -25,7 +25,7 @@ First up is a ride to the tunnel, should take a handful of hours. From there we 
 
 We made it to Tesco in Folkestone, time for some pain au chocolate!
 
-#### Saturday Afternoon — Calais to Somewhere in France
+#### Saturday Afternoon — Calais to Somewhere on the Coast of France
 
 Just queuing for the train. So far the weather has been absolutely amazing 🌤️.
 
