@@ -15,12 +15,14 @@ It's a ~250 mile cycle over three days, and I've just checked the weather, it's 
 
 ### Updates
 
-#### Leg 1 — Kent to Folkestone
+#### Saturday Morning — Kent to Folkestone
 
-It's Saturday morning and I'm in Kent, mostly  ready to go.
+It's Saturday morning and I'm in Kent, mostly ready to go.
 
 There are 13 riders in total, and 14 bikes just in case.
 
 First up is a ride to the tunnel, should take a handful of hours. From there we pack everything in a van and cross the channel.
 
-Made it to Tesco Folkestone, time for some pain au chocolate I think!
+We made it to Tesco Folkestone, time for some pain au chocolate!
+
+#### Saturday Afternoon — Calais to Somewhere in France
