@@ -28,3 +28,6 @@ We made it to Tesco in Folkestone, time for some pain au chocolate!
 #### Saturday Afternoon — Calais to Somewhere in France
 
 Just queuing for the train. So far the weather has been absolutely amazing 🌤️.
+
+And out the other side. Hello France 🇫🇷! Time for a 67km ride to our destination.
+
