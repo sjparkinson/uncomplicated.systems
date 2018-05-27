@@ -57,6 +57,8 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 ~1:00pm, time for lunch in the village square. 84km done for this first leg. Lot's of 2nd and 3rd helpings, some rolling, joint clicking, and stretching too. Water stop 34km from here.
 
+1:45pm, and we're just about to set off.
+
 #### Sunday Afternoon — Château de Rambures to Beauvais
 
 Also coming soon™️
