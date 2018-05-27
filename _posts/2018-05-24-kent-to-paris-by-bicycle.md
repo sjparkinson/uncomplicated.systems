@@ -45,6 +45,8 @@ Aiming for a 7:30am start today. Weather isn't looking quite as good as yesterda
 
 There's a 150km to get through today, a bit more than yesterday. Google's saying it should be about 8h on the saddle 🤣.
 
+8:05am, almost reay to set off 😁
+
 #### Sunday Afternoon — Château de Rambures to Beauvais
 
 Also coming soon™️
