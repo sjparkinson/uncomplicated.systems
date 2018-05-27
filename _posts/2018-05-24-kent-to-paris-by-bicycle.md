@@ -47,7 +47,7 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 8:05am, almost reay to set off 😁
 
-Quick stop for the first puncture of the trip. Gravel on a roundabout. We're making amazing progress, sticking together as a group with some amazing pace, eating up the kilometers.
+~9:30am, quick stop for the first puncture of the trip. Gravel on a roundabout. We're making amazing progress, sticking together as a group with some amazing pace, eating up the kilometers.
 
 10:10am, second pit stop before lunch. Breaking out the suncream and polo mints. 98km left for today, about 60km in.
 
