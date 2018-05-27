@@ -69,3 +69,7 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 3:55pm, almost at the water stop, solid riding for the whole hour. 25°C, and no sign of that thunderstorm... 🌄.
 
 5:05pm, another stop, top of a hill overlooking another amazing forest 🌲. About 20km till today finish.
+
+5:40pm, water stop in a little French town called Troissereux 🗺️. 10km-ish left.
+
+6:30pm and we've made it to Hotel Kyriad, that last 10km was an effort, lots of hills and lots of stops. Chris had a near miss with a car, looking forward to a few more of those in Paris 🤣. The Garmin navigation is questionable, some of the group ened up on a motorway, so we'll be switching to Google tomorrow!
