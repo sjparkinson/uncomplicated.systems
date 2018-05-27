@@ -74,6 +74,8 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 6:30pm and we've made it to Hotel Kyriad, that last 10km was an effort, lots of hills and lots of stops. Chris had a near miss with a car, looking forward to a few more of those in Paris 🤣. The Garmin navigation is questionable, some of the group ened up on a motorway, so we'll be switching to Google tomorrow!
 
+10:30pm about to pass out.
+
 #### Monday Morning — Beauvais to ???
 
 Coming soon™️
