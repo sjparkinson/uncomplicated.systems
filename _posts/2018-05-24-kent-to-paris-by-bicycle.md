@@ -41,7 +41,9 @@ That wraps up the day, with 116km sent 🚴. Great weather all day, and an aweso
 
 #### Sunday Morning — Le Touquet to Château de Rambures
 
-Aiming for a 7:30am start today. Weather isn't looking quite as good as yesterday. There's a 150km ride today, a but more than yesterday. Google say's it should be about 8h 🤣.
+Aiming for a 7:30am start today. Weather isn't looking quite as good as yesterday, sunny start converting to thunderstorms in the afternoon...
+
+There's a 150km to get through today, a bit more than yesterday. Google's saying it should be about 8h on the saddle 🤣.
 
 #### Sunday Afternoon — Château de Rambures to Beauvais
 
