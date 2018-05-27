@@ -51,6 +51,8 @@ Quick stop for the first puncture of the trip. Gravel on a roundabout. We're mak
 
 10:10am, second pit stop before lunch. Breaking out the suncream and polo mints. 98km left for today, about 60km in.
 
+10:11am, second puncture of the day, spontaneous release of air on Jackob's front, might be getting to hot for the tires? 💥
+
 #### Sunday Afternoon — Château de Rambures to Beauvais
 
 Also coming soon™️
