@@ -21,7 +21,7 @@ It's Saturday morning and I'm in Kent, mostly ready to go.
 
 There are 13 riders in total, and 14 bikes just in case.
 
-First up is a ride to the tunnel, should take a handful of hours. From there we pack everything in a van and cross the channel.
+First up is a ride to the tunnel, should take us a handful of hours. From there we pack everything in a van and cross the channel.
 
 We made it to Tesco in Folkestone, time for some pain au chocolate!
 
@@ -39,6 +39,10 @@ It was a cracking flat 10km ride down to Le Touquet on the French coast.
 
 That wraps up the day, with 116km sent 🚴. Great weather all day, and an awesome hotel to finish.
 
-#### Sunday Morning — Le Touquet to ???
+#### Sunday Morning — Le Touquet to Château de Rambures
 
-Coming soon™️
+Aiming for a 7:30am start today. Weather isn't looking quite as good as yesterday. There's a 150km ride today, a but more than yesterday. Google say's it should be about 8h 🤣.
+
+#### Sunday Afternoon — Château de Rambures to Beauvais
+
+Also coming soon™️
