@@ -57,14 +57,13 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 ~1:00pm, time for lunch in the village square. 84km done for this first leg. Lot's of 2nd and 3rd helpings, some rolling, joint clicking, and stretching too. Water stop 34km from here.
 
+#### Sunday Afternoon — Château de Rambures to Beauvais
+
+
 1:45pm, and we're just about to set off.
 
 2:15pm, one bike making a clicking noise, so it's a quick post luch stop for nature...
 
 2:50pm, pitstop at the top of a hulk of a hill. Everyones finding their new limits, making so much progress up hills today. We're just next to a dilapidated farm, geese roaming free.
 
-3:55pm, almost at the water stop, solid riding for the whole hour.
-
-#### Sunday Afternoon — Château de Rambures to Beauvais
-
-Also coming soon™️
+3:55pm, almost at the water stop, solid riding for the whole hour. 25°C, and no sign of that thunderstorm... 🌄.
