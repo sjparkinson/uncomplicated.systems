@@ -61,6 +61,8 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 2:15pm, one bike making a clicking noise, so it's a quick post luch stop for nature...
 
+2:50pm, pitstop at the top of a hulk of a hill. Everyones finding their new limits, making so much progress up hills today. We're just next to a dilapidated farm, geese roaming free.
+
 #### Sunday Afternoon — Château de Rambures to Beauvais
 
 Also coming soon™️
