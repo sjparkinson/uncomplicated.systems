@@ -59,6 +59,8 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 1:45pm, and we're just about to set off.
 
+2:15pm, quick post luch stop for nature.
+
 #### Sunday Afternoon — Château de Rambures to Beauvais
 
 Also coming soon™️
