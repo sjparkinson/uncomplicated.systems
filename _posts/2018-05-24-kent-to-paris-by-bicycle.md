@@ -76,10 +76,6 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 10:30pm about to pass out.
 
-#### Monday Morning — Beauvais to ???
+#### Monday Morning — Beauvais to the Eiffel Tower
 
 6:50am and we're up. Discussing the mertis of chamois and the Daily Mail's high quality reporting on a suncream pill.
-
-#### Monday Afternoon — ??? to Paris
-
-Hopefully coming soon too™️
