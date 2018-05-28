@@ -81,3 +81,5 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 6:50am and we're up. Discussing the mertis of chamois and the Daily Mail's high quality reporting on a suncream pill.
 
 7:20am, finishing up breakfast and it's looking like we'll manage to dodge all the bad weather. Few thunderstorms yesterday evening while we were eating.
+
+8:10am, final preparations before the final leg. Hayfever tablets all round. Lots of water filling, lots of tinkering. Can't wait to see what Paris is all about! 🗼
