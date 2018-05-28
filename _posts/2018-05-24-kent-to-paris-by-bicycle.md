@@ -95,3 +95,5 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 10:53am, pitstop in Auvers-sur-Oise. There's mention of Vincent van Gogh being here. 42km down, not far left now. However there's an increasing number of traffic lights 🚦...
 
 11:02am, just found a bakery! Vanhauwe Franck, we're all stopping for one 🥐
+
+11:19am, I think we might be calling it a day here. Everyone seems very settled.
