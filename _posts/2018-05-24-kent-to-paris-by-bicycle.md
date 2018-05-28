@@ -98,4 +98,4 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 11:19am, I think we might be calling it a day here. Everyone seems very settled.
 
-11:55am, just passed through Taverny, nature calls. All that water consumption seems to be working 😂. Chris has suggested expressos ☕
+11:55am, just passed through Taverny, nature calls. All that water consumption seems to be working 😂. Chris has suggested expressos ☕. There's also a virtual reality shop opposite, might be a while yet.
