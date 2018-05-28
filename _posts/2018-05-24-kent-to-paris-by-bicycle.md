@@ -85,3 +85,7 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 8:10am, final preparations before the final leg. Hayfever tablets all round. Lots of water filling, lots of tinkering. Can't wait to see what Paris is all about! 🗼
 
 8:25am, still tinkering, Chris and I questioning our relationship while we wait to start.
+
+9:15am, set off a while back. Just recovering at the top of today's big climb. 9% gradient according to Anneke 😬.
+
+10:00am, first nature stop. Sticking together more and more, 25km seen off with a good effort from everyone.
