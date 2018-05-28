@@ -83,3 +83,5 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 7:20am, finishing up breakfast and it's looking like we'll manage to dodge all the bad weather. Few thunderstorms yesterday evening while we were eating.
 
 8:10am, final preparations before the final leg. Hayfever tablets all round. Lots of water filling, lots of tinkering. Can't wait to see what Paris is all about! 🗼
+
+8:25am, still tinkering, Chris and I questioning our relationship while we wait to start.
