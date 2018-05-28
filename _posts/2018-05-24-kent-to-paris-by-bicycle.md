@@ -90,4 +90,6 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 10:00am, first nature stop in Amblainville. Sticking together more and more, 25km seen off with a good effort from everyone.
 
-10:30pm, about 1km from today's half way point. Lovely views of powerlines and rolling hills.
+10:30am, about 1km from today's half way point. Lovely views of powerlines and rolling hills.
+
+10:53am, pitstop in Auvers-sur-Oise. There's mention of Vincent van Gogh being here. 42km down, not far left now. However there's an increasing number of traffic lights 🚦...
