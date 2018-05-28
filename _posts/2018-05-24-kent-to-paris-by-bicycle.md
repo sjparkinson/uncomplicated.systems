@@ -86,7 +86,7 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 8:25am, still tinkering, Chris and I questioning our relationship while we wait to start.
 
-9:15am, set off a while back. Just recovering at the top of today's big climb. 9% gradient according to Anneke 😬.
+9:15am, set off a while back. Just recovering at the top of today's big climb. 9% gradient according to Annek not sure that's entirely true 😬.
 
 10:00am, first nature stop in Amblainville. Sticking together more and more, 25km seen off with a good effort from everyone.
 
