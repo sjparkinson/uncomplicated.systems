@@ -39,7 +39,7 @@ It's ~5:30pm French time and we're doing a quick water run in a nice town called
 
 That wraps up the day, with 116km sent 🚴. Great weather all day, and an awesome hotel to finish.
 
-#### Sunday Morning — Le Touquet to Château de Rambures
+#### Sunday Morning — Le Touquet to Château de Rambures 🏰
 
 Aiming for a 7:30am start today. Weather isn't looking quite as good as yesterday, sunny start converting to thunderstorms in the afternoon...
 
@@ -100,7 +100,9 @@ There's 150km to get through today, a bit more than yesterday. Google's saying i
 
 11:55am, just passed through Taverny, nature calls. All that water consumption seems to be working 😂. Chris has suggested expressos ☕. There's also a virtual reality shop opposite, might be a while yet.
 
-1:50pm, made it 🇫🇷 🗼 🏁.
+1:50pm, made it 🇫🇷 🏁.
+
+#### Monday Afternoon — Paris 🥐
 
 6:16pm, celebrations done. Picnic lunch at the Champ de Mars. We're just heading out for dinner and drinks 🍻.
 
