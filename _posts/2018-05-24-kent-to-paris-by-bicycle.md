@@ -102,4 +102,6 @@ There's a 150km to get through today, a bit more than yesterday. Google's saying
 
 1:50pm, made it 🇫🇷 🗼 🏁
 
-6:16pm, celebrations done. Picnic on the Eiffel Tower's lawn. We're just heading out for dinner amd drinks 🍻
+6:16pm, celebrations done. Picnic on the Eiffel Tower's lawn. We're just heading out for dinner and drinks 🍻
+
+00:02, in a jazz bar called Sunset-Sunside, in the middle of Paris 🤷
