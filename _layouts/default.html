@@ -10,21 +10,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <style>
-      {%- capture styles -%}
-      {%- include styles.scss -%}
-      {%- endcapture -%}
-      {{- styles | scssify -}}
+      {% capture styles %}
+      {% include styles.scss %}
+      {% endcapture %}
+      {{ styles | scssify }}
     </style>
 
     <link rel="icon" type="image/png" href="/assets/images/national-park.png">
     
-    {%- if page.layout == "index" -%}
+    {% if page.layout == "index" %}
     {% for post in site.posts limit: 5 %}
     <link rel="prefetch" href="{{ post.url | relative_url }}">
     {% endfor %}
-    {%- endif -%}
-    
-    <meta name="google-site-verification" content="ZwFPHhURgbjAqlT7uM3RayAeLUOWoUyLEPNHyzkHurM">
+    {% endif %}
   </head>
   <body>
     <header>
