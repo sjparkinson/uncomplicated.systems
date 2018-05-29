@@ -18,3 +18,6 @@ social:
 sass:
   sass_dir: _includes
   style: compressed
+
+plugins:
+  - jekyll-sitemap
