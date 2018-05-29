@@ -12,4 +12,10 @@ To simplify, what I've actually done is create yet another platform for me to pu
 
 So hello world, welcome to [uncomplicated systems](https://uncomplicated.systems)!
 
+```go
+func main() {
+  fmt.Println("Hello world!")
+}
+```
+
 ![Whale Hello There!](https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif)
