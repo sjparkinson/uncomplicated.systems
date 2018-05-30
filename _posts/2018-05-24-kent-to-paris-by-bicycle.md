@@ -23,7 +23,7 @@ Thanks also to Rob and Anneke for all the planning that went into the ride.
 
 It also wouldn't have been possible without the support from Anneke's parents and her old school PE teacher and his wife, who kept us fed and watered throughout the journey.
 
-![Le Tour Eiffel, thanks Google!](https://user-images.githubusercontent.com/51677/40734364-1e873dd0-6430-11e8-908d-99d2da83f2f7.jpg)
+![Le Tour Eiffel, thanks Google!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fuser-images.githubusercontent.com%2F51677%2F40734364-1e873dd0-6430-11e8-908d-99d2da83f2f7.jpg?source=uncomplicated.systems&width=1024)
 
 ### The Live Updates
 
