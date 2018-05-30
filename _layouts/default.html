@@ -15,8 +15,6 @@
       {% endcapture %}
       {{ styles | scssify }}
     </style>
-
-    <link rel="icon" type="image/png" href="/assets/images/national-park.png">
     
     {% if page.layout == "index" %}
     {% for post in site.posts limit: 5 %}
