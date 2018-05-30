@@ -13,7 +13,17 @@ It's a ~250 mile cycle over three days, and I've just checked the weather, it's 
 
 ![Eating and cycling at the same time, it's possiable!](https://media.giphy.com/media/OZvMMeKdYmPpS/giphy.gif)
 
-### Updates
+### The End Result
+
+Overall the team raised over **£12,000**.
+
+Thanks to the FT for matching my fundraising, who will bump up that total to £700.
+
+Thanks also to Rob and Anneke for all the planning that went into the ride.
+
+It also wouldn't have been possiable without the support from Anneke's parents and her old school PE teacher and his wife who kept us fed and watered throughout the journey.
+
+### The Live Updates
 
 #### Saturday Morning — Kent to Folkestone
 
