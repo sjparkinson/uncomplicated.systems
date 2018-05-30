@@ -21,7 +21,7 @@ Thanks to the FT for matching my fundraising, who will bump up that total to £7
 
 Thanks also to Rob and Anneke for all the planning that went into the ride.
 
-It also wouldn't have been possiable without the support from Anneke's parents and her old school PE teacher and his wife who kept us fed and watered throughout the journey.
+It also wouldn't have been possible without the support from Anneke's parents and her old school PE teacher and his wife who kept us fed and watered throughout the journey.
 
 ### The Live Updates
 
