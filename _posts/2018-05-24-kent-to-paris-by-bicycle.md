@@ -15,7 +15,7 @@ It's a ~250 mile cycle over three days, and I've just checked the weather, it's 
 
 ### The End Result
 
-Overall the team raised over **£12,000**.
+Overall the team raised over **£13,000**.
 
 Thanks to the FT for matching my fundraising, who will bump up that total to £700.
 
