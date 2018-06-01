@@ -11,7 +11,7 @@ It's a ~250 mile cycle over three days, and I've just checked the weather, it's 
 
 [Feel free to support me on my JustGiving page](https://www.justgiving.com/fundraising/samuel-parkinson-paris-cycle).
 
-![Eating and cycling at the same time, it's possiable!](https://media.giphy.com/media/OZvMMeKdYmPpS/giphy.gif)
+![Eating and cycling at the same time, it's possiable!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FOZvMMeKdYmPpS%2Fgiphy.gif?source=uncomplicated.systems)
 
 ### The End Result
 
