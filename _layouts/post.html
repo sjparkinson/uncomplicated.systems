@@ -6,7 +6,7 @@ published: true
 <article>
   <h2>{{ page.title | escape }}</h2>
 
-  <p><small>Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time></small>.</p>
+  <p><small>Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time></small>.</p>
 
   {{ content }}
 </article>
