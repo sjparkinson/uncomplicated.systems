@@ -6,17 +6,21 @@ title: "Docker 110 – Dockerfiles & Volumes \U0001F433"
 
 > Why 110? Well, 101 is 5 from binary to decimal, and 110 is just 6 🤷.
 
-We've already covered the basics in a 101, looking at the docker command line tool and the basics of making images and Docker files.
+We've already covered the basics in a 101, looking at the Docker command line tool and the basics of making images and Docker files.
  
 This workshop leads on from that, covering volumes and looking at Dockerfiles in more detail.
 
 ## Quick Recap
 
-We make a Docker image by writing a `Dockerfile` and building it with `docker build -t my-image .`.
+We make a Docker image by writing a `Dockerfile` and building it with `docker build --tag hello-world .`.
 
-We can then run that image using `docker run --rm -it my-image`, which starts what we call a container.
+We can then run that image using `docker run hello-world`, which starts what we call a container.
 
-If the image is a web thing, it'll probabily have ports. To make requests to the container we need to _expose_ the container's ports using the `-p 8080:80` command line option.
+If the image is a web thing, it'll probabily have _exposed_ ports. To make requests to the container we need to publish the container's ports using the `-p 8080:80` command line option.
+
+For example, `docker run -p 8080:80 httpd`.
+
+Finally there's the Docker registries, where we can upload and download images. When you do `docker pull hello-world` it uses [Docker Hub](https://hub.docker.com) as the default registry, sort of like the GitHub of Docker images.
 
 ## What are Volumes?
 
