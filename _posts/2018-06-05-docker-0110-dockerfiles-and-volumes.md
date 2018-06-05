@@ -8,7 +8,7 @@ title: "Docker 110 – Dockerfiles & Volumes \U0001F433"
 
 > Why 110? Well, 101 is 5 from binary to decimal, and 110 is just 6 🤷.
 
-We've already covered the basics in a 101, looking at the Docker command line tool and the basics of making images and Dockerfiles.
+[We've already covered the basics in a 101](/2018/05/23/docker-101.html), looking at the Docker command line tool and the basics of making images and Dockerfiles.
  
 This workshop follows on from that, covering volumes and looking at Dockerfiles in more detail.
 
