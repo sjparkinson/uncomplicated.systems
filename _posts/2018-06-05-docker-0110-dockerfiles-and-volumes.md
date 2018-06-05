@@ -32,11 +32,46 @@ So what are they?
 
 Let's answer a question with a question..., how can I run a database in Docker, or anything else that needs persistance for that matter?
 
+If we have a look at [the Docker Hub page for mysql](https://hub.docker.com/_/mysql/) we can work out how to run it locally...
+
+```
+docker run -it -p 3306:3306 -e MYSQL_ROOT_PASSWORD=hunter2 --name docker-110-mysql mysql
+```
+
+This eventually starts a mysql server locally, not bad!
+
+We can also use another container to connect to the mysql server, using a _dockerized_ version of the mysql client.
+
+```
+docker run -it --link docker-110-mysql:mysql --rm mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
+```
+
+We get the standard SQL prompt!
+
+How about we create a schema and add some data?
+
+```sql
+CREATE DATABASE hello_docker;
+
+USE hello_docker;
+
+CREATE TABLE doggos (
+  name varchar(255),
+  is_rare_pupper bool
+);
+
+INSERT INTO doggos VALUES ('Floof Missile', true);
+```
+
+We can now quit both containers. So what about that data we just added? Where does that go?!
+
+This is where Docker volumes come in.
+
 ## More Dockerfiles
 
 In the 101 we used the `FROM` and `COPY` directives in a Dockerfile. We'll look at those again, and a number of the other commonly used directives in Dockerfiles.
 
-You can find the full list of directives with a bunch of documentation at <https://docs.docker.com/engine/reference/builder/>. I usually end up having this in an open tab when writing Dockerfiles.
+You can find the full list of directives at <https://docs.docker.com/engine/reference/builder/>.
 
 ### `FROM`
 
