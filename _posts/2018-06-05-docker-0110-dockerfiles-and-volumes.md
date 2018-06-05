@@ -28,13 +28,17 @@ Finally there's the Docker registries, where we can upload and download images. 
 
 ## What are Volumes?
 
-They are mentioned a bunch, you may have heard of heard of them already. So what are they?
+They are mentioned a bunch in most thing docker related, you may have heard of heard of them already.
 
-## Advanced Dockerfiles
+So what are they?
 
-https://docs.docker.com/engine/reference/builder/
+Let's answer a question with a question..., how can I run a database in Docker, or anything else that needs persistance for that matter?
 
-Docker image layers, what are they?
+## More Dockerfiles
+
+In the 101 we used the `FROM` and `COPY` directives in a Dockerfile. We'll look at those again, and a number of the other commonly used directives in Dockerfiles.
+
+You can find the full list of directives with a bunch of documentation at <https://docs.docker.com/engine/reference/builder/>. I usually end up having this in an open tab when writing Dockerfiles.
 
 ### `FROM`
 
@@ -52,4 +56,3 @@ Docker image layers, what are they?
 
 * **Don't** run as root, use the `USER` directive to change the default user for the image
 * **Do** keep images small, cleanup in `RUN` commands to reduce the size of the layers
-
