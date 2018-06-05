@@ -26,3 +26,26 @@ Finally there's the Docker registries, where we can upload and download images. 
 
 They are mentioned a bunch, you may have heard of heard of them already. So what are they?
 
+## Advanced Dockerfiles
+
+https://docs.docker.com/engine/reference/builder/
+
+Docker image layers, what are they?
+
+### `FROM`
+
+### `RUN`
+
+### `COPY`
+
+### `VOLUME`
+
+### `EXPOSE`
+
+### `ENTRYPOINT`
+
+## Best Pratices
+
+* **Don't** run as root, use the `USER` directive to change the default user for the image
+* **Do** keep images small, cleanup in `RUN` commands to reduce the size of the layers
+
