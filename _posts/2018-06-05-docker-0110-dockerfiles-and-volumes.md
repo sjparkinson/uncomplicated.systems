@@ -95,7 +95,7 @@ So, it's a new container (from the same image), but we're giving it a named volu
 
 OK, that's quite a lot to cover, time for a breather. Here's a doggo story to recover.
 
-![Follow the ball with your eyes doggos!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fi.redditmedia.com%2FuY9NtsBDO7dsP4gH7qSJxQc2vcl89SYn_kAE22vE2hM.jpg%3Fw%3D750%26s%3D18f72300ef253317c5289567bb37d1c3?source=uncomplicated.systems&width=1024&height=700)
+![Follow the ball with your eyes doggos!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fi.redditmedia.com%2FuY9NtsBDO7dsP4gH7qSJxQc2vcl89SYn_kAE22vE2hM.jpg%3Fw%3D750%26s%3D18f72300ef253317c5289567bb37d1c3?source=uncomplicated.systems&width=512&height=384)
 
 ## More Dockerfiles
 
