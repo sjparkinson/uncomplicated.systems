@@ -105,17 +105,48 @@ You can find the full list of directives at <https://docs.docker.com/engine/refe
 
 ### `FROM`
 
+Here we specify the docker image we want to start from, often this will be an operating system, e.g. `FROM ubuntu` or even `FROM amazonlinux`.
+
+There's also a special image called `scratch` which you might see, this is actually no image at all. It's often used with Go based programs to make a _very_ small image.
+
+There's no need to reinvent the wheel, do take a look for existing offical images so you only need to add your configuration. The `nginx` and `golang` images are two great examples that you can build on top of.
+
 ### `RUN`
+
+When we want to run a command to do _something_ when building the image we use the `RUN` directive.
+
+You can pass it a shell command to run.
+
+For example, `RUN apt-get install httpd`, which should then install Apache httpd in the image.
 
 ### `COPY`
 
+If we need a file in the image, we can copy files from our local file system when we're building the image using the `COPY` directive.
+
+ℹ️ There is also an `ADD` directive, but unless you need to just stick with `COPY`.
+
+For example, `COPY some-file-in-my-local-directory.json /var/lib/my-app/config.json`.
+
+It takes two arguments, the local path to copy from, and the path inside the image to copy to.
+
 ### `VOLUME`
+
+This directive takes one command, a path.
 
 ### `EXPOSE`
 
+Using the `EXPOSE` directive, we can pass it a port number to open up a container for network based applications.
+
+For example, `EXPOSE 80`. Which we can then publish on our local machine using the `-p` option, `docker run -p 8080:80 httpd`.
+
 ### `ENTRYPOINT`
+
+The `ENTRYPOINT` directive is the command docker will call when we use `docker run`.
+
+For example the mysql client will use something like `ENTRYPOINT ["mysql"]`.
 
 ## Best Pratices
 
-* **Don't** run as root, use the `USER` directive to change the default user for the image
-* **Do** keep images small, cleanup in `RUN` commands to reduce the size of the layers
+- **Don't** run as root, use the `USER` directive to change the default user for the image
+- **Do** keep images small, cleanup in `RUN` commands to reduce the size of the layers
+- **Do** specify image tags when you can, e.g. `FROM httpd:2.4`
