@@ -111,17 +111,17 @@ You can find the full list of directives at <https://docs.docker.com/engine/refe
 
 Here we specify the docker image we want to start from, often this will be an operating system, e.g. `FROM ubuntu` or even `FROM amazonlinux`.
 
-There's also a special image called `scratch` which you might see, this is actually no image at all. It's often used with Go based programs to make a _very_ small image.
+There's also a special image called `scratch`, this is actually no image at all. It's often used with Go based programs to make a _very_ small image.
 
-There's no need to reinvent the wheel, do take a look for existing offical images so you only need to add your configuration. The `nginx` and `golang` images are two great examples that you can build on top of.
+Try not to reinvent the wheel, do take a look for [existing offical images](https://hub.docker.com/explore/) so you only need to add your configuration. The `nginx` and `golang` images are two great examples that you can get started with.
 
 ### `RUN`
 
-When we want to run a command to do _something_ when building the image we use the `RUN` directive.
+When we want to do _something_ when building the image we use the `RUN` directive.
 
 You can pass it a shell command to run.
 
-For example, `RUN apt-get install httpd`, which should then install Apache httpd in the image.
+For example, `RUN apt-get install httpd`, which would then install Apache httpd in the image.
 
 ### `COPY`
 
@@ -148,6 +148,61 @@ For example, `EXPOSE 80`. Which we can then publish on our local machine using t
 The `ENTRYPOINT` directive is the command docker will call when we use `docker run`.
 
 For example the mysql client will use something like `ENTRYPOINT ["mysql"]`.
+
+## Docker Image Layers
+
+Now we've got a better idea of what we can put in a Dockerfile, it's worth having a discussion on what makes up an image.
+
+Say we have the following Dockerfile.
+
+```docker
+FROM alpine:3.7
+
+RUN apk add --no-cache python
+
+RUN echo 'print "Hello!"' > /hello.py && \
+    chmod 755 /hello.py
+    
+ENTRYPOINT [ "python", "/hello.py" ]
+```
+
+We can then build the image with `docker build -t hello .`. Notice how the output lists each command, along with a hash like `---> d99238ddfb1d` after it has run.
+
+```
+Step 1/4 : FROM alpine:3.7
+3.7: Pulling from library/alpine
+ff3a5c916c92: Pull complete 
+Digest: sha256:e1871801d30885a610511c867de0d6baca7ed4e6a2573d506bbec7fd3b03873f
+Status: Downloaded newer image for alpine:3.7
+ ---> 3fd9065eaf02
+Step 2/4 : RUN apk add --no-cache python
+ ---> Running in 308032ec5b57
+[...]
+(10/10) Installing python2 (2.7.14-r2)
+Executing busybox-1.27.2-r7.trigger
+OK: 51 MiB in 21 packages
+Removing intermediate container 308032ec5b57
+ ---> d99238ddfb1d
+Step 3/4 : RUN echo 'print "Hello!"' > /hello.py &&     chmod 755 /hello.py
+ ---> Running in da796c337c29
+Removing intermediate container da796c337c29
+ ---> 6948bef351c2
+Step 4/4 : ENTRYPOINT [ "python", "/hello.py" ]
+ ---> Running in e3ff553f8d24
+Removing intermediate container e3ff553f8d24
+ ---> a89a4201375f
+Successfully built a89a4201375f
+```
+
+Each of these is what we call a layer. The final image then is just a combination of layers.
+
+What's a layer though? Consider it a snapshot of the containers filesystem after running the directive, it is also read-only.
+
+A docker image is made up of several of these read-only layers, with one final read-write layer made available on top of it all.
+
+The reason behind much of this is to avoid duplication, two diffrent image can share layers, for example if we have two images that both use `FROM ubuntu` then actually we only need to download and store one copy of that layer locally.
+
+You can find a super deep dive into this topic at <https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612>.
 
 ## Best Pratices
 
