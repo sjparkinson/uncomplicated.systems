@@ -198,9 +198,11 @@ Each of these is what we call a layer. The final image then is just a combinatio
 
 What's a layer though? Consider it a snapshot of the containers filesystem after running the directive, it is also read-only.
 
-A docker image is made up of several of these read-only layers, with one final read-write layer made available on top of it all.
+An image is made up of several of these read-only layers, with one final read-write layer made available on top of it all.
 
-The reason behind much of this is to avoid duplication, two diffrent image can share layers, for example if we have two images that both use `FROM ubuntu` then actually we only need to download and store one copy of that layer locally.
+This helps to avoid duplication. Two diffrent image can share layers.
+
+For example, if we have two images that both use `FROM ubuntu` then actually we only need to download and store one copy of that layer locally.
 
 You can find a super deep dive into this topic at <https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612>.
 
