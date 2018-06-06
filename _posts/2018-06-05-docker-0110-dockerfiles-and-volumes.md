@@ -103,6 +103,8 @@ OK, that's quite a lot to cover, time for a breather. Here's a doggo story to re
 
 ![Follow the ball with your eyes doggos!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fi.redditmedia.com%2FuY9NtsBDO7dsP4gH7qSJxQc2vcl89SYn_kAE22vE2hM.jpg%3Fw%3D750%26s%3D18f72300ef253317c5289567bb37d1c3?source=uncomplicated.systems&width=512&height=384)
 
+I'd also highly recomend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). All credit to Rhys.
+
 ## More Dockerfiles
 
 In the 101 we used the `FROM` and `COPY` directives in a Dockerfile. We'll look at those again, and a number of the other commonly used directives in Dockerfiles.
