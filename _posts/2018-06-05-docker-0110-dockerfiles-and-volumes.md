@@ -20,7 +20,7 @@ We make a Docker image by writing a `Dockerfile` and building it with `docker bu
 
 We can then run that image using `docker run hello-world`, which starts what we call a container.
 
-If the image is a web thing, it'll probabily have _exposed_ ports. To make requests to the container we need to publish the container's ports using the `-p 8080:80` command line option.
+If the image is a web thing, it'll probabily have _exposed_ ports. To make requests to the container we need to publish the container's ports using the `-p` command line option.
 
 For example, `docker run -p 8080:80 httpd`.
 
@@ -28,19 +28,19 @@ Finally there's the Docker registries, where we can upload and download images. 
 
 ## What are Volumes?
 
-They are mentioned a bunch in most thing docker related, you may have heard of heard of them already.
+You may have heard of heard of them already. So what are they?
 
-So what are they?
+Let's answer a question with a question. How can I run a database in Docker, or anything else that needs persistance for that matter?
 
-Let's answer a question with a question..., how can I run a database in Docker, or anything else that needs persistance for that matter?
-
-If we have a look at [the Docker Hub page for mysql](https://hub.docker.com/_/mysql/) we can work out how to run it locally...
+If we have a look at [the Docker Hub page for the MySQL database](https://hub.docker.com/_/mysql/) we can work out how to run it locally.
 
 ```
 docker run -d -v docker-110-mysql-volume:/var/lib/mysql -p 3306:3306 -e MYSQL_DATABASE=docker -e MYSQL_ROOT_PASSWORD=hunter2 --name docker-110-mysql mysql
 ```
 
-This eventually starts a mysql server locally, not bad! We use the `-d` option to run the container as a daemon. We also used the `-v` option to give the volume defined in the Docker image a name.
+This eventually starts a mysql server, not bad!
+
+We use the `-d` option to run the container as a daemon. We also used the `-v` option to give the volume defined in the Docker image a name.
 
 We can also use another container to connect to the mysql server, using a _dockerized_ version of the mysql client.
 
@@ -48,7 +48,7 @@ We can also use another container to connect to the mysql server, using a _docke
 docker run -it --rm --link docker-110-mysql:mysql mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD" --database "$MYSQL_ENV_MYSQL_DATABASE"'
 ```
 
-We get the standard SQL prompt! There's some fancy magic options used here, but we won't worry about those today.
+We get the standard SQL prompt! There's some fancy magic Docker options used here, but we won't worry about those today.
 
 How about we create a schema and insert some data? We can copy and paste the following into the mysql prompt.
 
@@ -61,27 +61,29 @@ CREATE TABLE doggos (
 INSERT INTO doggos VALUES ('Floof Missile', true);
 ```
 
-Now let's delete both containers, type in `exit` to stop the client (the container is deleted because we used `--rm`), and then `docker rm -f docker-110-mysql` for the container running as a daemon.
+Now let's delete both containers, type in `exit` to stop the client (the container is deleted because we used `--rm`), and then `docker rm -f docker-110-mysql` for the MySQL container running as a daemon.
 
-But what about that data we just added, where will that go?!
+But what about that data we just added, where will that go!?
 
-This is where the Docker volumes come in.
+This is where Docker volumes come in.
 
-If we have a [look at the Dockerfile for mysql](https://github.com/docker-library/mysql/blob/fc3e856313423dc2d6a8d74cfd6b678582090fc7/8.0/Dockerfile), we see the `EXPOSE` directive again, this time set to the standard mysql port.
+If we have a [look at the Dockerfile for mysql](https://github.com/docker-library/mysql/blob/fc3e856313423dc2d6a8d74cfd6b678582090fc7/8.0/Dockerfile), we see the `EXPOSE` directive again, this time set to the standard MySQL port.
 
-There's a number of other directives in this Dockerfile, but specifically there's `VOLUME` on line 65. It comes with a path as an argument.
+There's a number of other directives in this Dockerfile, but specifically there's `VOLUME` on line 65. It comes with a path in the container as an argument.
 
-MySQL as a database persists it's data to disk, can you guess where? Yeah! `/var/lib/mysql`. Which we gave a name when we started mysql earlier.
+MySQL as a database persists it's data to disk, can you guess where? Yeah! `/var/lib/mysql`. Which we gave a name when we started MySQL earlier.
 
 By using `VOLUME` we're saying to Docker that our container may read and write data to this directory and it'd be handy to keep it around.
 
 Try running `docker volume ls`. We get a list of volumes, and there should be one called `docker-110-mysql-volume`.
 
-How about we run mysql again, giving it the same name for the volume, and then connect with the client?
+How about we run MySQL again, giving it the same name for the volume.
 
 ```
 docker run -d -v docker-110-mysql-volume:/var/lib/mysql -p 3306:3306 -e MYSQL_DATABASE=docker -e MYSQL_ROOT_PASSWORD=hunter2 --name docker-110-mysql mysql
 ```
+
+Then let's connected to it using the client again.
 
 ```
 docker run -it --rm --link docker-110-mysql:mysql mysql sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD" --database "$MYSQL_ENV_MYSQL_DATABASE"'
@@ -95,37 +97,37 @@ SELECT * FROM doggos;
 
 It's a new container (from the same image), but we're giving it a named volume and we get all the same data we had in the previous container that we deleted. Awesome!
 
-In summary, use volumes for persisting part of a container's filesystem, name that volume for even more persistance.
+In summary, we can use volumes for persisting part of a container's filesystem, and we can name that volume for even more persistance.
 
-[Understanding Union Filesystems, Storage and Volumes](https://blog.docker.com/2015/10/docker-basics-webinar-qa/) looks like a good webinar, which should go into all of this in more detail.
+[Understanding Union Filesystems, Storage and Volumes](https://blog.docker.com/2015/10/docker-basics-webinar-qa/) looks like a good webinar, which should cover all this in more detail.
 
-OK, that's quite a lot to cover, time for a breather. Here's a doggo story to recover.
+OK, that's quite a lot of information, time for a breather. Here's a doggo story to recover.
 
 ![Follow the ball with your eyes doggos!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fi.redditmedia.com%2FuY9NtsBDO7dsP4gH7qSJxQc2vcl89SYn_kAE22vE2hM.jpg%3Fw%3D750%26s%3D18f72300ef253317c5289567bb37d1c3?source=uncomplicated.systems&width=512&height=384)
 
-I'd also highly recomend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). All credit to Rhys.
+I'd also highly recomend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). Credit to Rhys for this search.
 
 ## More Dockerfiles
 
-In the 101 we used the `FROM` and `COPY` directives in a Dockerfile. We'll look at those again, and a number of the other commonly used directives in Dockerfiles.
+In the 101 we used the `FROM` and `COPY` directives in a Dockerfile. We'll look at those again, and a number of the other commonly used directives.
 
 You can find the full list of directives at <https://docs.docker.com/engine/reference/builder/>.
 
 ### `FROM`
 
-Here we specify the docker image we want to start from, often this will be an operating system, e.g. `FROM ubuntu` or even `FROM amazonlinux`.
+Here we specify the image we want to start from, often this will be an operating system, e.g. `FROM ubuntu` or even `FROM amazonlinux`.
 
 There's also a special image called `scratch`, this is actually no image at all. It's often used with Go based programs to make a _very_ small image.
 
-Try not to reinvent the wheel, do take a look for [existing offical images](https://hub.docker.com/explore/) so you only need to add your configuration. The `nginx` and `golang` images are two great examples that you can get started with.
+Try not to reinvent the wheel, do take a look for [existing offical images](https://hub.docker.com/explore/) so you only need to add your configuration.
 
 ### `RUN`
 
 When we want to do _something_ when building the image we use the `RUN` directive.
 
-You can pass it a shell command to run.
+You can pass it a shell command as an argument.
 
-For example, `RUN apt-get install httpd`, which would then install Apache httpd in the image.
+For example, `RUN apt-get install httpd`, which would then install Apache httpd in the image, or `RUN path/to/some-build-script.sh` to run a shell script.
 
 ### `COPY`
 
@@ -133,7 +135,7 @@ If we need a file in the image, we can copy files from our local file system whe
 
 ℹ️ There is also an `ADD` directive, but unless you need to just stick with `COPY`.
 
-For example, `COPY some-file-in-my-local-directory.json /var/lib/my-app/config.json`.
+For example, `COPY path/to/some-config.json /var/lib/my-app/config.json`.
 
 It takes two arguments, the local path to copy from, and the path inside the image to copy to.
 
@@ -151,7 +153,7 @@ For example, `EXPOSE 80`. Which we can then publish on our local machine using t
 
 The `ENTRYPOINT` directive is the command docker will call when we use `docker run`.
 
-For example the mysql client will use something like `ENTRYPOINT ["mysql"]`.
+For example the MySQL client image will use something like `ENTRYPOINT [ "mysql" ]`.
 
 ## Docker Image Layers
 
@@ -200,7 +202,7 @@ Successfully built a89a4201375f
 
 Each of these is what we call a layer. The final image then is just a combination of layers.
 
-What is a layer though? Consider it a snapshot of the containers filesystem after running the directive, it is also read-only.
+What is a layer though? Consider it a snapshot of the container's filesystem after running the directive, it is also read-only.
 
 An image is made up of several of these read-only layers, with one final read-write layer made available on top of it all.
 
