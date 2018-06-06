@@ -210,6 +210,67 @@ For example, if we have two images that both use `FROM ubuntu` then actually we 
 
 You can find a super deep dive into this topic at <https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612>.
 
+## Time to Make Something!
+
+Brining all of this new Docker stuff™ togther, let's make a slightly more complex Docker image.
+
+We're going to write a Rust command line tool, it'll print `Hello!` like the Python script above. Rust is a programming language that is starting to power the Firefox browser. The main thing is you probabily don't have it installed already!
+
+Let's start by building upon an operating system.
+
+```docker
+FROM alpine:3.7
+```
+
+Alpine is a linux based operating system that works really well for Docker images. 
+
+- It is _tiny_ so we don't spend ages downloading it
+- It is also _very_ well maintained
+
+Much like updating servers, Docker images need to be kept up-to-date so that they have all the latest security patches! But if the image you depend on isn't maintained this can be difficult.
+
+Now to install the Rust compiler. We install the package using a `RUN` directive.
+
+```docker
+RUN apk add --no-cache rust
+```
+
+We can check this works by running `docker build -t rust-hello .`.
+
+If we visit the Rust homepage at <https://www.rust-lang.org/en-US/index.html>, there's a nice greetings program we can use.
+
+Let's copy and paste that into a file called `greetings.rs`, and then include it in our image.
+
+```docker
+COPY greetings.rs /greetings.rs
+```
+
+Finally we need to compile the Rust program, and set our image's entrypoint so that we call the program when we use `docker run` with our image.
+
+```docker
+RUN rustc -o /greetings /greetings.rs
+
+ENTRYPOINT [ "/greetings" ]
+```
+
+Bringing it all togther...
+
+```docker
+FROM alpine:3.7
+
+RUN apk add --no-cache rust
+
+COPY greetings.rs /greetings.rs
+
+RUN rustc -o /greetings /greetings.rs
+
+ENTRYPOINT [ "/greetings" ]
+```
+
+We've used a few Docker best pratices here, as detailed below. There are more, and you'll come across them over time, but these are some good starting points.
+
+Try using the `USER` directive to run our greetings program as a non-root user!
+
 ## Best Pratices
 
 - **Don't** run as root, use the `USER` directive to change the default user for the image
