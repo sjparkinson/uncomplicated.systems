@@ -269,7 +269,23 @@ RUN rustc -o /greetings /greetings.rs
 ENTRYPOINT [ "/greetings" ]
 ```
 
+Building it with `docker build -t rust-hello .`, and running it with `docker run rust-hello`.
+
 We've used a few Docker best pratices here, as detailed below. There are more, and you'll come across them over time, but these are some good starting points.
+
+Much like programming, there's always room to refactor images. Always look for places where you can reduce the number of layers.
+
+One change we could make is to combine the two `RUN` directives into one, moving the `COPY` command above it. This would remove a layer, wahoo!
+
+However, depending on how often we change `greetings.rs` it may also _really_ slow down how long it takes to build the image.
+
+There's a balance between the number of layers in an image, and making use of the layer caching that Docker does.
+
+The common pattern is to install packages first, as these don't change much, then copy files and build programs as they will frequently change.
+
+This then means when we build the image, we can use the cached layers for our first `RUN` directive to skip straight to the `COPY` command.
+
+You can see this in action if you run `docker build -t rust-hello .` again, there should be several `---> Using cache` logs, and it'll be a very quick build!
 
 Try using the `USER` directive to run our greetings program as a non-root user!
 
