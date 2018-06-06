@@ -204,7 +204,7 @@ What's a layer though? Consider it a snapshot of the containers filesystem after
 
 An image is made up of several of these read-only layers, with one final read-write layer made available on top of it all.
 
-This helps to avoid duplication. Two diffrent image can share layers.
+This helps to avoid duplication. Two diffrent images can share layers.
 
 For example, if we have two images that both use `FROM ubuntu` then actually we only need to download and store one copy of that layer locally.
 
