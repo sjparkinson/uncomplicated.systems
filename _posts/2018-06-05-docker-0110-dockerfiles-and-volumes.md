@@ -212,9 +212,11 @@ You can find a super deep dive into this topic at <https://medium.com/@jessgreb0
 
 ## Time to Make Something!
 
-Brining all of this new Docker stuff™ togther, let's make a slightly more complex Docker image.
+Brining all of this new Docker Stuff™ togther, let's make a slightly more complex image.
 
-We're going to write a Rust command line tool, it'll print `Hello!` like the Python script above. Rust is a programming language that is starting to power the Firefox browser. The main thing is you probabily don't have it installed already!
+We're going to write a Rust command line tool, it'll print a greeting message.
+
+Rust is a programming language that is starting to power the Firefox browser. The main thing is you probabily don't have it installed already!
 
 Let's start by building upon an operating system.
 
