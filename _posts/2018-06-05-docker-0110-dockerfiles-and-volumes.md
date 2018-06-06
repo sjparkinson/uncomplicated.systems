@@ -93,6 +93,10 @@ SELECT * FROM doggos;
 
 So, it's a new container (from the same image), but we're giving it a named volume and we get all the same data we had in the previous container. Awesome!
 
+In summary, use volumes for persisting part of a containers filesystem, name that volume for even more persistance.
+
+[Understanding Union Filesystems, Storage and Volumes](https://blog.docker.com/2015/10/docker-basics-webinar-qa/) looks like a good webinar, which should go into all of this in more detail.
+
 OK, that's quite a lot to cover, time for a breather. Here's a doggo story to recover.
 
 ![Follow the ball with your eyes doggos!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fi.redditmedia.com%2FuY9NtsBDO7dsP4gH7qSJxQc2vcl89SYn_kAE22vE2hM.jpg%3Fw%3D750%26s%3D18f72300ef253317c5289567bb37d1c3?source=uncomplicated.systems&width=512&height=384)
