@@ -287,10 +287,13 @@ This then means when we build the image, we can use the cached layers for our fi
 
 You can see this in action if you run `docker build -t rust-hello .` again, there should be several `---> Using cache` logs, and it'll be a very quick build!
 
-Try using the `USER` directive to run our greetings program as a non-root user!
+It's worth pointing out once again, you shouldn't have Rust installed on your machine, only Docker. Pretty cool!
 
 ## Best Pratices
 
 - **Don't** run as root, use the `USER` directive to change the default user for the image
 - **Do** keep images small, cleanup in `RUN` commands to reduce the size of the layers
 - **Do** specify image tags when you can, e.g. `FROM httpd:2.4`
+
+
+Try using the `USER` directive to run this greetings program as a non-root user!
