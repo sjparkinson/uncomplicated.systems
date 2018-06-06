@@ -73,11 +73,11 @@ There's a number of other directives in this Dockerfile, but specifically there'
 
 MySQL as a database persists it's data to disk, can you guess where? Yeah! `/var/lib/mysql`. Which we gave a name when we started mysql earlier.
 
-By using `VOLUME` what we're saying to Docker is that our container may read and write data to this directory, and if we give the volume a name later, please keep it seperate from the container.
+By using `VOLUME` we're saying to Docker that our container may read and write data to this directory and it'd be handy to keep it around.
 
 Try running `docker volume ls`. We get a list of volumes, and there should be one called `docker-110-mysql-volume`.
 
-How about we run mysql again, giving it the same name for the volume, and then connect with the client.
+How about we run mysql again, giving it the same name for the volume, and then connect with the client?
 
 ```
 docker run -d -v docker-110-mysql-volume:/var/lib/mysql -p 3306:3306 -e MYSQL_DATABASE=docker -e MYSQL_ROOT_PASSWORD=hunter2 --name docker-110-mysql mysql
@@ -93,9 +93,9 @@ If we run the following we should still see all the schema we saved earlier.
 SELECT * FROM doggos;
 ```
 
-So, it's a new container (from the same image), but we're giving it a named volume and we get all the same data we had in the previous container. Awesome!
+It's a new container (from the same image), but we're giving it a named volume and we get all the same data we had in the previous container that we deleted. Awesome!
 
-In summary, use volumes for persisting part of a containers filesystem, name that volume for even more persistance.
+In summary, use volumes for persisting part of a container's filesystem, name that volume for even more persistance.
 
 [Understanding Union Filesystems, Storage and Volumes](https://blog.docker.com/2015/10/docker-basics-webinar-qa/) looks like a good webinar, which should go into all of this in more detail.
 
@@ -157,7 +157,7 @@ For example the mysql client will use something like `ENTRYPOINT ["mysql"]`.
 
 Now we've got a better idea of what we can put in a Dockerfile, it's worth having a discussion on what makes up an image.
 
-Say we have the following Dockerfile.
+Copy the following into a Dockerfile.
 
 ```docker
 FROM alpine:3.7
@@ -170,7 +170,7 @@ RUN echo 'print "Hello!"' > /hello.py && \
 ENTRYPOINT [ "python", "/hello.py" ]
 ```
 
-We can then build the image with `docker build -t hello .`. Notice how the output lists each command, along with a hash like `---> d99238ddfb1d` after it has run.
+We can then build the image with `docker build -t hello .`. Notice how the output lists each command, along with a hash like `---> d99238ddfb1d` after it has run?
 
 ```
 Step 1/4 : FROM alpine:3.7
@@ -200,15 +200,15 @@ Successfully built a89a4201375f
 
 Each of these is what we call a layer. The final image then is just a combination of layers.
 
-What's a layer though? Consider it a snapshot of the containers filesystem after running the directive, it is also read-only.
+What is a layer though? Consider it a snapshot of the containers filesystem after running the directive, it is also read-only.
 
 An image is made up of several of these read-only layers, with one final read-write layer made available on top of it all.
 
 This helps to avoid duplication. Two diffrent images can share layers.
 
-For example, if we have two images that both use `FROM ubuntu` then actually we only need to download and store one copy of that layer locally.
+For example, if we have two images that both use `FROM ubuntu` we only need to download and store one copy of that layer.
 
-You can find a super deep dive into this topic at <https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612>.
+You can find a deeper dive into this topic at <https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612>.
 
 ## Time to Make Something!
 
