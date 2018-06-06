@@ -225,6 +225,10 @@ main {
   ul,
   ol {
     margin-top: 0;
+    
+    li {
+      line-height: 2;
+    }
   }
 
   blockquote {
