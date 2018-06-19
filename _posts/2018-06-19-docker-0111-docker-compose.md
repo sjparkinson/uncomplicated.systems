@@ -71,6 +71,8 @@ No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:808
 
 Digging in, we see entries for `volumes`, `ports`, and `environment` variables. Looking closer, to get our application talking with our database, we're telling the application to point to a server at the `database` hostname. Time for an aside on Docker networks.
 
+We also define `depends_on`, which tells Docker Compose that we must have a database container running before our application container starts.
+
 ### Docker Networks
 
 When using Docker Compose, there are several useful features it also enables for us, without having to specify any configuration.
@@ -93,7 +95,13 @@ docker-compose up
 
 We can add the `-d` option to start everything as a daemon (just like `docker run -d`).
 
-To stop everything we do just the opposite, `docker-compose down`. This brings up all the services we've defined in our `docker-compose.yml`.
+To stop everything we do just the opposite, `docker-compose down`.
+
+This brings up, and then stops all the services we've defined in our `docker-compose.yml`.
+
+You'll notice that it also builds the image for our application too.
+
+If we wanted to reset our database (say we deleted our initial table my mistake), we can recreate the volumes using `docker up --renew-anon-volumes`.
 
 We can be more specific about the services we're starting/stopping by using `docker-compose start` and `docker-compose stop`, passing in the names of the services we're intersted in.
 
@@ -104,3 +112,7 @@ docker-compose run application dep ensure
 ```
 
 Because we've defined a volume for our `application/` directory, any changes made inside this container actually get made to the files in our cloned directory too. Perfect for developing locally! The same is true if we make changes locally, they will be reflected in the filesystem of the container.
+
+One final thing we get when using Docker Compose is a process supervision tool for our containers, by using the `restart` configuration we can specify if `docker-compose` should start a container again if it crashes.
+
+That wraps up a wizz through the `docker-compose` command line tool, and covers the basics of a `docker-compose.yml` file. Time to go away and build those Docker developer environments!
