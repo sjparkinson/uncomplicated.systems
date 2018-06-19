@@ -41,7 +41,7 @@ a {
     text-decoration: underline;
   }
   
-  &:active {
+  &:active, &:focus {
     background: $body-link-highlight;
     outline: 3px solid $body-link-highlight;
     outline-offset: 0;
