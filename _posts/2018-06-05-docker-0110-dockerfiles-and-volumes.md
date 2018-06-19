@@ -7,9 +7,9 @@ twitter: true
 
 > ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
 > 
-> * [Docker 0101 – How do I use Docker?](https://uncomplicated.systems/2018/05/23/docker-101.html)
-> * [Docker 0110 – Dockerfiles & Volumes](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
-> * [Docker 0111 – Docker Compose](https://uncomplicated.systems/2018/06/19/docker-0111-docker-compose.html)
+> * [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101.html)
+> * [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
+> * [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose.html)
 
 [We've already covered the basics in a 101](/2018/05/23/docker-101.html), looking at the Docker command line tool and the basics of making images and Dockerfiles.
  
@@ -303,4 +303,4 @@ It's worth pointing out once again, you shouldn't have Rust installed on your ma
 
 Try using the `USER` directive to run this greetings program as a non-root user!
 
-> ➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](https://uncomplicated.systems/2018/06/19/docker-0111-docker-compose.html).
+> ➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](/2018/06/19/docker-0111-docker-compose.html).
