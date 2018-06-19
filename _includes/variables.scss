@@ -11,7 +11,7 @@ $section-headings-color: #007d51;
 $body-text-color: #262a33;
 $body-link-color: #0f5499;
 $body-link-hover: lighten($body-link-color, 20%);
-$body-link-highlight: #ec8e06;
+$body-link-highlight: complement($body-link-color);
 $body-link-visited: #231ba4;
 $blockquote-text-color: #57575c;
 
