@@ -38,7 +38,6 @@ a {
   text-decoration: none;
   
   &:hover {
-    color: $body-link-hover;
     text-decoration: underline;
   }
   
@@ -55,8 +54,6 @@ header {
   background-color: $header-bg-color;
   
   a {
-    color: $header-heading-color;
-    
     &:hover {
       color: $header-heading-color;
       text-decoration: none;
@@ -141,6 +138,10 @@ main {
   
   a {
     text-decoration: underline;
+
+    &:hover {
+      color: $body-link-hover;
+    }
 
     &:visited {
       color: $body-link-visited;
