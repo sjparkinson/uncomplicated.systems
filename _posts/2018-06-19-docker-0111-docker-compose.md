@@ -77,10 +77,8 @@ When using Docker Compose, there are several useful features it also enables for
 
 One of those features is networking between containers.
 
-In order for our `application` container to have a connection to our `database` container we need some sort of link between the two.
+In order for our `application` container to have a connection to our `database` container we need to make a link between the two with a [Docker Network](https://docs.docker.com/network/).
 
-Docker Compose configures this by creating a [Docker Network](https://docs.docker.com/network/).
-
-If we were using the `docker` command line tool we would define this with the `--network` option, but we'd also need to run `docker network create` first.
+If we were using the `docker` command line tool we would define this with the `--network` option, but we'd also need to run `docker network create` first. Docker Compose configures this all for us!
 
 We can then connect to our database from our application by using `database` as a hostname, which is the name of the service as defined in our `docker-compose.yml` configuration.
