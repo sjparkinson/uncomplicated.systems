@@ -37,8 +37,18 @@ a {
   color: $body-link-color;
   text-decoration: none;
   
+  &:visited {
+    color: #4c2c92;
+  }
+  
   &:hover {
     text-decoration: underline;
+  }
+  
+  &:active {
+    background: #ecb606;
+    outline: 3px solid #ecb606;
+    outline-offset: 0;
   }
 }
 
