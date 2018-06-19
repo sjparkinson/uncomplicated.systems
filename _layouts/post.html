@@ -5,7 +5,7 @@ layout: default
 <article>
   <h2>{{ page.title | escape }}</h2>
 
-  <blockquote><p>📆 Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>.</p></blockquote>
+  <blockquote><p>Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>.</p></blockquote>
 
   {{ content }}
 </article>
