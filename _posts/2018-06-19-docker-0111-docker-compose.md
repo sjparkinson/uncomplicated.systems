@@ -4,14 +4,24 @@ layout: post
 title: "Docker 111 – Docker Compose \U0001F433"
 ---
 
+> 🚧 Under construction.
+
 > ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
 > 
 > * [Docker 101 – How do I use Docker? 🐳](https://uncomplicated.systems/2018/05/23/docker-101.html)
 > * [Docker 110 – Dockerfiles & Volumes 🐳](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
 > * [Docker 111 – Docker Compose 🐳](https://uncomplicated.systems/2018/06/19/docker-0111-docker-compose.html)
 
-> 🚧 Under construction.
-
 We've previously used the `docker` command line tool to build and run Docker images.
 
 This works great when everything you need to run fits into a single `Dockerfile`, but what if your application needs a database, should that also be installed in the image?
+
+Let's think about how we'd develop a web application locally using Docker. It'll have a web process running the application, and a database of some sort.
+
+If we take a look at the [best pratices for writing a Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#decouple-applications), we find there's a whole section on decoupling applications.
+
+> Each container should have only one concern. Decoupling applications into multiple containers makes it easier to scale horizontally and reuse containers. For instance, a web application stack might consist of three separate containers, each with its own unique image, to manage the web application, database, and an in-memory cache in a decoupled manner.
+
+In essence, we should try and run only one _process_ in each container.
+
+That's fine! We just need two images then to define our application, one for the web process, and one for the database.
