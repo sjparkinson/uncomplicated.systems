@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "Docker 111 – Docker Compose \U0001F433"
 ---
@@ -10,4 +10,3 @@ title: "Docker 111 – Docker Compose \U0001F433"
 > * [Docker 110 – Dockerfiles & Volumes 🐳](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
 
 Coming soon™
-
