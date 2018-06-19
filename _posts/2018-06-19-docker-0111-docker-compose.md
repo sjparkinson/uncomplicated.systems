@@ -67,7 +67,7 @@ You might notice, there's a similarity between a service's `docker-compose.yml` 
 
 This is much of what `docker-compose` allows us to simplify! By saving the verbose `docker` command line calls into `docker-compose.yml` we have a tool that can manage calling `docker` for us.
 
-No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:8080 our-image`...
+No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:8080 our-image`.
 
 Digging in, we see entries for `volumes`, `ports`, and `environment` variables. Looking closer, to get our application talking with our database, we're telling the application to point to a server at the `database` hostname. Time for an aside on Docker networks.
 
