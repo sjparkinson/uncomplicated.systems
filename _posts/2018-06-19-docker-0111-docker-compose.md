@@ -113,4 +113,6 @@ Because we've defined a volume for our `application/` directory, any changes mad
 
 One final thing we get when using Docker Compose is a process supervision tool for our containers, by using the `restart` configuration we can specify if `docker-compose` should start a container again if it crashes.
 
-That wraps up a wizz through the `docker-compose` command line tool, and covers the basics of a `docker-compose.yml` file. Time to go away and build those Docker developer environments!
+That wraps up a wizz through tour of the `docker-compose` command line tool, and covers the basics of a `docker-compose.yml` file.
+
+Time to go away and build those Docker developer environments!
