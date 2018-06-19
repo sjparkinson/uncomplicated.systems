@@ -54,5 +54,3 @@ In this repository we have a few files and directories.
 Time to talk about `docker-compose`, a command line tool that'll help us when we work on systems with many processes locally. By defining the system in a `docker-compose.yml` configuration file, we can start and stop a system made of several Docker images with just a single command, `docker-compose up` and `docker-compose down`.
 
 Compare that to using the `docker` command line tool to start a system using more than one image. It'd be a `docker` command in the terminal for each image that we'd have to start or stop.
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
