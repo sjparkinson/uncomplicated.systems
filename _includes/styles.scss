@@ -54,6 +54,8 @@ header {
   background-color: $header-bg-color;
   
   a {
+    color: $header-heading-color;
+
     &:hover {
       color: $header-heading-color;
       text-decoration: none;
