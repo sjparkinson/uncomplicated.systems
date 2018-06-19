@@ -33,9 +33,9 @@ In essence, we should try and run only one [_process_](https://en.wikipedia.org/
 
 Following that advice, we'll need two images to define our system, one for the web process, and one for the database.
 
-[In the previous workshop](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html) we made a MySQL database of doggos.
+[In the previous workshop](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html) we made a MySQL database of dogs.
 
-Taking that database, let's write an application that lists all the rare puppers as HTML.
+Taking that database, let's write an application that lists them all in HTML.
 
 <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-align="center" data-link-color="#0f5499"><p lang="en" dir="ltr">the human is hosting a get together this evening. and i am told there will be snacks. so my goal. will be to convince every single guest. that i have not eaten. in several weeks</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/1008090737240571904?ref_src=twsrc%5Etfw">June 16, 2018</a></blockquote>
 
@@ -54,3 +54,15 @@ In this repository we have a few files and directories.
 Time to talk about `docker-compose`, a command line tool that'll help us when we work on systems with many processes locally. By defining the system in a `docker-compose.yml` configuration file, we can start and stop a system made of several Docker images with just a single command, `docker-compose up` and `docker-compose down`.
 
 Compare that to using the `docker` command line tool to start a system using more than one image. It'd be a `docker` command in the terminal for each image that we'd have to start or stop.
+
+```yaml
+# the docker-compose file
+```
+
+Here we see a set of services defined in the configuration, two in fact. We have one that defines configuration for our `application`, and another for our `database`.
+
+You might notice, there's a similarity between a service's `docker-compose.yml` configuration, and the command line arguments we'd use if we wanted to run the same image using the `docker` command line tool.
+
+This is much of what `docker-compose` allows us to simplify! By saving the verbose `docker` command line calls into `docker-compose.yml` we have a tool that can manage calling `docker` for us.
+
+No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:8080 our-image` any more...
