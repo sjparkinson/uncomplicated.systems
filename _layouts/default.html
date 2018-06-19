@@ -24,7 +24,9 @@
       {{ styles | scssify }}
     </style>
     
+    {%- if page.layout == "post" -%}
     <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
+    {%- endif -%}
 
     {%- if page.layout == "index" -%}
     {%- for post in site.posts limit: 5 -%}
