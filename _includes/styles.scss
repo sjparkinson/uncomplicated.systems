@@ -158,8 +158,7 @@ main {
     margin-bottom: 1em;
   }
 
-  code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  :not(pre) > code {
     font-style: italic;
   }
 
@@ -167,7 +166,6 @@ main {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
     word-wrap: normal;
     border: solid 1px $border-color;
     border-radius: 0.3rem;
