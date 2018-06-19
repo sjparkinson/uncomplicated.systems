@@ -4,9 +4,9 @@ layout: post
 title: "Docker 110 – Dockerfiles & Volumes \U0001F433"
 ---
 
-> ℹ️ This post is written for an internal workshop on Docker at the FT.
-
-> Why 110? Well, 101 is 5 from binary to decimal, and 110 is just 6 🤷.
+> ℹ️ This is post two in a series of Docker focused workshops run at the Financial Times. You can find previous ones below.
+> 
+> * [Docker 101 – How do I use Docker? 🐳](https://uncomplicated.systems/2018/05/23/docker-101.html)
 
 [We've already covered the basics in a 101](/2018/05/23/docker-101.html), looking at the Docker command line tool and the basics of making images and Dockerfiles.
  
@@ -299,3 +299,5 @@ It's worth pointing out once again, you shouldn't have Rust installed on your ma
 
 
 Try using the `USER` directive to run this greetings program as a non-root user!
+
+> ➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](https://uncomplicated.systems/2018/06/19/docker-0111-docker-compose.html).
