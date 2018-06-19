@@ -28,7 +28,7 @@ In essence, we should try and run only one [_process_](https://en.wikipedia.org/
 
 That's fine! We'll need two images to define our system, one for the web process, and one for the database.
 
-[Following on from the previous workshop](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html), the dog theme was a bit of fun. Taking that database we built, let's write an application that lists all the rare puppers as a JSON response over HTTP. What a mouthful of acrynoms!
+[In the previous workshop](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html) we made a MySQL database of doggos. Taking that database, let's write an application that lists all the rare puppers as HTML.
 
 ![A small Chiwawa](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fuser-images.githubusercontent.com%2F51677%2F41594791-84faf78c-73bc-11e8-8da0-e0e9c811779e.png?source=uncomplicated.systems&width=512)
 
