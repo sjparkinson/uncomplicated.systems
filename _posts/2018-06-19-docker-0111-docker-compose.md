@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: "Docker 0111 – Docker Compose \U0001F433"
+twitter: true
 ---
 
 > 🚧 Under construction.
@@ -41,7 +42,7 @@ Taking that database, let's write an application that lists all the rare puppers
 Like in Blue Peter, [there's a Go based application ready to build](https://github.com/sjparkinson/docker-0111).
 
 ```
-git clone https://github.com/sjparkinson/docker-0111
+git clone https://github.com/sjparkinson/docker-0111.git
 ```
 
 In this repository we have a few files and directories.
