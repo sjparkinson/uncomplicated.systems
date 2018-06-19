@@ -32,5 +32,9 @@ That's fine! We'll need two images to define our system, one for the web process
 
 [In the previous workshop](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html) we made a MySQL database of doggos. Taking that database, let's write an application that lists all the rare puppers as HTML.
 
-[![I promise you, I haven't eaten in days! – Thoughts of a dog.](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fuser-images.githubusercontent.com%2F51677%2F41595542-14828a44-73bf-11e8-896e-ddfadf33bfef.png?source=uncomplicated.systems)](https://twitter.com/dog_feelings/status/1008090737240571904)
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">the human is hosting a get together this evening. and i am told there will be snacks. so my goal. will be to convince every single guest. that i have not eaten. in several weeks</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/1008090737240571904?ref_src=twsrc%5Etfw">June 16, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+1. Rebuild the database, with seed data for local development
+2. Build the application
+3. Introduce `docker-compose` to wire up the two images
