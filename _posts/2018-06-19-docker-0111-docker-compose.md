@@ -32,5 +32,5 @@ That's fine! We'll need two images to define our system, one for the web process
 
 [In the previous workshop](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html) we made a MySQL database of doggos. Taking that database, let's write an application that lists all the rare puppers as HTML.
 
-![I promise you, I haven't eaten in days! – Thoughts of a dog.](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fuser-images.githubusercontent.com%2F51677%2F41595542-14828a44-73bf-11e8-896e-ddfadf33bfef.png?source=uncomplicated.systems)
+[![I promise you, I haven't eaten in days! – Thoughts of a dog.](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fuser-images.githubusercontent.com%2F51677%2F41595542-14828a44-73bf-11e8-896e-ddfadf33bfef.png?source=uncomplicated.systems)](https://twitter.com/dog_feelings/status/1008090737240571904)
 
