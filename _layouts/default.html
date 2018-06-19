@@ -24,7 +24,7 @@
       {{ styles | scssify }}
     </style>
     
-    <link rel="stylesheet" href="{{ '/assets/css/highlight.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
 
     {%- if page.layout == "index" -%}
     {%- for post in site.posts limit: 5 -%}
