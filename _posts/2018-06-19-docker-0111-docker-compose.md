@@ -51,6 +51,8 @@ In this repository we have a few files and directories.
 * `database/` contains a SQL file, that we'll use to seed our database with some example data
 * `docker-compose.yml` contains a bunch of configuration that we'll now run through
 
+### Docker Compose
+
 Time to talk about `docker-compose`, a command line tool that'll help us when we work on systems with many processes locally. By defining the system in a `docker-compose.yml` configuration file, we can start and stop a system made of several Docker images with just a single command, `docker-compose up` and `docker-compose down`.
 
 Compare that to using the `docker` command line tool to start a system using more than one image. It'd be a `docker` command in the terminal for each image that we'd have to start or stop.
@@ -65,4 +67,20 @@ You might notice, there's a similarity between a service's `docker-compose.yml` 
 
 This is much of what `docker-compose` allows us to simplify! By saving the verbose `docker` command line calls into `docker-compose.yml` we have a tool that can manage calling `docker` for us.
 
-No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:8080 our-image` any more...
+No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:8080 our-image`...
+
+Digging in, we see entries for `volumes`, `ports`, and `environment` variables. Looking closer, to get our application talking with our database, we're telling the application to point to a server at the `database` hostname. Time for an aside on Docker networks.
+
+### Docker Networks
+
+When using Docker Compose, there are several useful features it also enables for us, without having to specify any configuration.
+
+One of those features is networking between containers.
+
+In order for our `application` container to have a connection to our `database` container we need some sort of link between the two.
+
+Docker Compose configures this by creating a [Docker Network](https://docs.docker.com/network/).
+
+If we were using the `docker` command line tool we would define this with the `--network` option , but we'd also need to run `docker network create` first.
+
+We can then connect to our database from our application by using `database` as a hostname, which is the name of the service as defined in our `docker-compose.yml` configuration.
