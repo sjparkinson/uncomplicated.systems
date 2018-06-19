@@ -2,13 +2,14 @@
 published: true
 layout: post
 title: "Docker 0110 – Dockerfiles & Volumes \U0001F433"
+twitter: true
 ---
 
 > ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
 > 
-> * [Docker 101 – How do I use Docker? 🐳](https://uncomplicated.systems/2018/05/23/docker-101.html)
-> * [Docker 110 – Dockerfiles & Volumes 🐳](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
-> * [Docker 111 – Docker Compose 🐳](https://uncomplicated.systems/2018/06/19/docker-0111-docker-compose.html)
+> * [Docker 0101 – How do I use Docker?](https://uncomplicated.systems/2018/05/23/docker-101.html)
+> * [Docker 0110 – Dockerfiles & Volumes](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
+> * [Docker 0111 – Docker Compose](https://uncomplicated.systems/2018/06/19/docker-0111-docker-compose.html)
 
 [We've already covered the basics in a 101](/2018/05/23/docker-101.html), looking at the Docker command line tool and the basics of making images and Dockerfiles.
  
@@ -105,7 +106,7 @@ In summary, we can use volumes for persisting part of a container's filesystem, 
 
 OK, that's quite a lot of information, time for a breather. Here's a doggo story to recover.
 
-<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-align="center" data-link-color="#0f5499"><p lang="en" dir="ltr">i had a long talk. with my fren. about how to spot. a fake ball throw. the optimal strategy. is to follow the ball. with your eyes. instead of your heart</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/957385573571944455?ref_src=twsrc%5Etfw">January 27, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">i had a long talk. with my fren. about how to spot. a fake ball throw. the optimal strategy. is to follow the ball. with your eyes. instead of your heart</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/957385573571944455?ref_src=twsrc%5Etfw">January 27, 2018</a></blockquote>
 
 I'd also highly recomend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). Credit to Rhys for this search.
 
@@ -303,5 +304,3 @@ It's worth pointing out once again, you shouldn't have Rust installed on your ma
 Try using the `USER` directive to run this greetings program as a non-root user!
 
 > ➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](https://uncomplicated.systems/2018/06/19/docker-0111-docker-compose.html).
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
