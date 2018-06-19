@@ -81,6 +81,6 @@ In order for our `application` container to have a connection to our `database` 
 
 Docker Compose configures this by creating a [Docker Network](https://docs.docker.com/network/).
 
-If we were using the `docker` command line tool we would define this with the `--network` option , but we'd also need to run `docker network create` first.
+If we were using the `docker` command line tool we would define this with the `--network` option, but we'd also need to run `docker network create` first.
 
 We can then connect to our database from our application by using `database` as a hostname, which is the name of the service as defined in our `docker-compose.yml` configuration.
