@@ -82,3 +82,25 @@ In order for our `application` container to have a connection to our `database` 
 If we were using the `docker` command line tool we would define this with the `--network` option, but we'd also need to run `docker network create` first. Docker Compose configures this all for us!
 
 We can then connect to our database from our application by using `database` as a hostname, which is the name of the service as defined in our `docker-compose.yml` configuration.
+
+### Using Docker Compose
+
+Now we've cloned our repository let's start up our system.
+
+```
+docker-compose up
+```
+
+We can add the `-d` option to start everything as a daemon (just like `docker run -d`).
+
+To stop everything we do just the opposite, `docker-compose down`. This brings up all the services we've defined in our `docker-compose.yml`.
+
+We can be more specific about the services we're starting/stopping by using `docker-compose start` and `docker-compose stop`, passing in the names of the services we're intersted in.
+
+If we want to run a command inside a container we can use `docker-compose run`. Let's try running `dep ensure` on our code!
+
+```
+docker-compose run application dep ensure
+```
+
+Because we've defined a volume for our `application/` directory, any changes made inside this container actually get made to the files in our cloned directory too. Perfect for developing locally! The same is true if we make changes locally, they will be reflected in the filesystem of the container.
