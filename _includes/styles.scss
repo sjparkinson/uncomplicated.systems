@@ -139,12 +139,12 @@ main {
   a {
     text-decoration: underline;
 
-    &:hover {
-      color: $body-link-hover;
-    }
-
     &:visited {
       color: $body-link-visited;
+    }
+
+    &:hover {
+      color: $body-link-hover;
     }
   }
 
