@@ -37,17 +37,13 @@ a {
   color: $body-link-color;
   text-decoration: none;
   
-  &:visited {
-    color: #4c2c92;
-  }
-  
   &:hover {
     text-decoration: underline;
   }
   
   &:active {
-    background: #ecb606;
-    outline: 3px solid #ecb606;
+    background: $body-link-highlight;
+    outline: 3px solid $body-link-highlight;
     outline-offset: 0;
   }
 }
@@ -139,6 +135,14 @@ main {
   @include small {
     padding: 2rem 1rem;
     font-size: 1.1rem;
+  }
+  
+  a {
+    text-decoration: underline;
+
+    &:visited {
+      color: $body-link-visited;
+    }
   }
 
   img {
