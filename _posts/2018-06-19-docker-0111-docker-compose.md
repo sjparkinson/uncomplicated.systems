@@ -140,6 +140,12 @@ docker-compose run application dep ensure
 
 Because we've defined a volume for our `application/` directory, any changes made inside this container actually get made to the files in our cloned directory too. Perfect for developing locally! The same is true if we make changes locally, they will be reflected in the filesystem of the container.
 
+How about connecting to the database with a SQL client? We can use `docker-compose run` again, and a similar command as we used in our last workshop.
+
+```
+docker-compose run database sh -c 'exec mysql -hdatabase -P3306 -uroot -p"$MYSQL_ROOT_PASSWORD" "$MYSQL_DATABASE"'
+```
+
 One final thing we get when using Docker Compose is a process supervision tool for our containers, by using the `restart` configuration we can specify if `docker-compose` should start a container again if it crashes.
 
 That wraps up a wizz through tour of the `docker-compose` command line tool, and covers the basics of a `docker-compose.yml` file.
