@@ -67,9 +67,13 @@ This is much of what `docker-compose` allows us to simplify! By saving the verbo
 
 No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:8080 our-image`.
 
-Digging in, we see entries for `volumes`, `ports`, and `environment` variables. Looking closer, to get our application talking with our database, we're telling the application to point to a server at the `database` hostname. Time for an aside on Docker networks.
-
 We also define `depends_on`, which tells Docker Compose that we must have a database container running before our application container starts.
+
+Digging in, we see entries for `volumes`, `ports`, and `environment` variables.
+
+If we have a look at our application, [to get it talking with our database](https://github.com/sjparkinson/docker-0111/blob/master/docker-compose.yml#L12), we're telling the application to point to a server at the `database` hostname.
+
+Time for an aside on Docker networks.
 
 ### Docker Networks
 
