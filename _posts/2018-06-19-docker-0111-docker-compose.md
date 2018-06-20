@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: "Docker 0111 – Docker Compose \U0001F433"
+title: "Docker 0111 – Docker Compose"
 twitter: true
 ---
 
