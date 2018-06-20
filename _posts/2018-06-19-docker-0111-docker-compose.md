@@ -131,7 +131,7 @@ You'll notice that it also builds the image for our application too.
 
 If we wanted to reset our database (say we deleted our initial table my mistake), we can recreate the volumes using `docker up --renew-anon-volumes`.
 
-We can be more specific about the services we're starting/stopping by using `docker-compose start` and `docker-compose stop`, passing in the names of the services we're intersted in.
+We can be more specific about the services we're starting/stopping by using `docker-compose start` and `docker-compose stop`, passing in the names of the services we're interested in.
 
 If we want to run a command inside a container we can use `docker-compose run`. Let's try running `dep ensure` on our code (it's a way of installing depenencies in Go).
 
@@ -149,7 +149,7 @@ How about connecting to the database with a SQL client? We can use `docker-compo
 docker-compose run database sh -c 'exec mysql -hdatabase -P3306 -uroot -p"$MYSQL_ROOT_PASSWORD" "$MYSQL_DATABASE"'
 ```
 
-If we inspect what containers we have running, with `docker ps`, you'll find that the MySQL container does not have it's port pubished.
+If we inspect what containers we have running, with `docker ps`, you'll find that the MySQL container does not have it's port published.
 
 So we actually have a private MySQL database locally, but we can connect to it if we're working in a container within the Docker network that Docker Compose made for us.
 
