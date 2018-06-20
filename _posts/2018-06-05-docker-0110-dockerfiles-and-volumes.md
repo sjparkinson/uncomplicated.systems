@@ -23,7 +23,7 @@ We make a Docker image by writing a `Dockerfile` and building it with `docker bu
 
 We can then run that image using `docker run hello-world`, which starts what we call a container.
 
-If the image is a web thing, it'll probabily have _exposed_ ports. To make requests to the container we need to publish the container's ports using the `-p` command line option.
+If the image is a web thing, it'll probably have _exposed_ ports. To make requests to the container we need to publish the container's ports using the `-p` command line option.
 
 For example, `docker run -p 8080:80 httpd`.
 
@@ -33,7 +33,7 @@ Finally there's the Docker registries, where we can upload and download images. 
 
 You may have heard of heard of them already. So what are they?
 
-Let's answer a question with a question. How can I run a database in Docker, or anything else that needs persistance for that matter?
+Let's answer a question with a question. How can I run a database in Docker, or anything else that needs persistence for that matter?
 
 If we have a look at [the Docker Hub page for the MySQL database](https://hub.docker.com/_/mysql/) we can work out how to run it locally.
 
@@ -100,7 +100,7 @@ SELECT * FROM doggos;
 
 It's a new container (from the same image), but we're giving it a named volume and we get all the same data we had in the previous container that we deleted. Awesome!
 
-In summary, we can use volumes for persisting part of a container's filesystem, and we can name that volume for even more persistance.
+In summary, we can use volumes for persisting part of a container's filesystem, and we can name that volume for even more persistence.
 
 [Understanding Union Filesystems, Storage and Volumes](https://blog.docker.com/2015/10/docker-basics-webinar-qa/) looks like a good webinar, which should cover all this in more detail.
 
@@ -108,7 +108,7 @@ OK, that's quite a lot of information, time for a breather. Here's a doggo story
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">i had a long talk. with my fren. about how to spot. a fake ball throw. the optimal strategy. is to follow the ball. with your eyes. instead of your heart</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/957385573571944455?ref_src=twsrc%5Etfw">January 27, 2018</a></blockquote>
 
-I'd also highly recomend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). Credit to Rhys for this search.
+I'd also highly recommend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). Credit to Rhys for this search.
 
 ## More Dockerfiles
 
@@ -122,7 +122,7 @@ Here we specify the image we want to start from, often this will be an operating
 
 There's also a special image called `scratch`, this is actually no image at all. It's often used with Go based programs to make a _very_ small image.
 
-Try not to reinvent the wheel, do take a look for [existing offical images](https://hub.docker.com/explore/) so you only need to add your configuration.
+Try not to reinvent the wheel, do take a look for [existing official images](https://hub.docker.com/explore/) so you only need to add your configuration.
 
 ### `RUN`
 
@@ -209,7 +209,7 @@ What is a layer though? Consider it a snapshot of the container's filesystem aft
 
 An image is made up of several of these read-only layers, with one final read-write layer made available on top of it all.
 
-This helps to avoid duplication. Two diffrent images can share layers.
+This helps to avoid duplication. Two different images can share layers.
 
 For example, if we have two images that both use `FROM ubuntu` we only need to download and store one copy of that layer.
 
@@ -217,11 +217,11 @@ You can find a deeper dive into this topic at <https://medium.com/@jessgreb01/di
 
 ## Time to Make Something!
 
-Brining all of this new Docker Stuff™ togther, let's make a slightly more complex image.
+Brining all of this new Docker Stuff™ together, let's make a slightly more complex image.
 
 We're going to write a Rust command line tool, it'll print a greeting message.
 
-Rust is a programming language that is starting to power the Firefox browser. The main thing is you probabily don't have it installed already!
+Rust is a programming language that is starting to power the Firefox browser. The main thing is you probably don't have it installed already!
 
 Let's start by building upon an operating system.
 
@@ -260,7 +260,7 @@ RUN rustc -o /greetings /greetings.rs
 ENTRYPOINT [ "/greetings" ]
 ```
 
-Bringing it all togther...
+Bringing it all together...
 
 ```docker
 FROM alpine:3.7
@@ -276,7 +276,7 @@ ENTRYPOINT [ "/greetings" ]
 
 Building it with `docker build -t rust-hello .`, and running it with `docker run rust-hello`.
 
-We've used a few Docker best pratices here, as detailed below. There are more, and you'll come across them over time, but these are some good starting points.
+We've used a few Docker best practices here, as detailed below. There are more, and you'll come across them over time, but these are some good starting points.
 
 Much like programming, there's always room to refactor images. Always look for places where you can reduce the number of layers.
 
