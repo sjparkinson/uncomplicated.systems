@@ -25,7 +25,8 @@
     </style>
     
     {%- if page.layout == "post" -%}
-    <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
+    <link rel="preload" href="{{ "/assets/css/highlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}"></noscript>
     {%- endif -%}
 
     {%- if page.layout == "index" -%}
