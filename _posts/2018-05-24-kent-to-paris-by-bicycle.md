@@ -57,7 +57,7 @@ Aiming for a 7:30am start today. Weather isn't looking quite as good as yesterda
 
 There's 150km to get through today, a bit more than yesterday. Google's saying it should be about 8h on the saddle 🤣.
 
-8:05am, almost reay to set off 😁.
+8:05am, almost ready to set off 😁.
 
 ~9:30am, quick stop for the first puncture of the trip. Gravel on a roundabout. We're making amazing progress, sticking together as a group with some amazing pace, eating up the kilometers 🛣️.
 
@@ -67,14 +67,14 @@ There's 150km to get through today, a bit more than yesterday. Google's saying i
 
 11:44pm, we're down a couple of riders, waiting to group up. Lunch just an arm's reach away!
 
-~1:00pm, time for lunch in the village square. 84km done for this first leg. Lot's of 2nd and 3rd helpings, some mussle rolling, joint clicking, and stretching too. Water stop 34km from here.
+~1:00pm, time for lunch in the village square. 84km done for this first leg. Lot's of 2nd and 3rd helpings, some muscle rolling, joint clicking, and stretching too. Water stop 34km from here.
 
 #### Sunday Afternoon — Château de Rambures to Beauvais
 
 
 1:45pm, and we're just about to set off.
 
-2:15pm, one bike making a clicking noise, so it's a quick post luch stop ✋.
+2:15pm, one bike making a clicking noise, so it's a quick post lunch stop ✋.
 
 2:50pm, pitstop at the top of a hulk of a hill. Everyones finding their new limits, making so much progress up hills today. We're just next to a dilapidated farm, geese roaming free.
 
@@ -90,7 +90,7 @@ There's 150km to get through today, a bit more than yesterday. Google's saying i
 
 #### Monday Morning — Beauvais to the Eiffel Tower 🏁
 
-6:50am and we're up. Discussing the mertis of chamois and the Daily Mail's high quality reporting on a suncream pill.
+6:50am and we're up. Discussing the merits of chamois and the Daily Mail's high quality reporting on a suncream pill.
 
 7:20am, finishing up breakfast and it's looking like we'll manage to dodge all the bad weather. Few thunderstorms yesterday evening while we were eating.
 
@@ -110,7 +110,7 @@ There's 150km to get through today, a bit more than yesterday. Google's saying i
 
 11:19am, I think we might be calling it a day here. Everyone seems very settled.
 
-11:55am, just passed through Taverny, nature calls. All that water consumption seems to be working 😂. Chris has suggested expressos ☕. There's also a virtual reality shop opposite, might be a while yet.
+11:55am, just passed through Taverny, nature calls. All that water consumption seems to be working 😂. Chris has suggested expresso's ☕. There's also a virtual reality shop opposite, might be a while yet.
 
 1:50pm, made it 🇫🇷 🏁.
 
