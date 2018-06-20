@@ -18,16 +18,16 @@
     {% endif %}
     
     <style>
-      {%- capture styles -%}
+      {% capture styles -%}
       {%- include styles.scss -%}
       {%- endcapture -%}
-      {{ styles | scssify }}
+      {{- styles | scssify }}
     </style>
     
-    {%- if page.layout == "post" -%}
+    {% if page.layout == "post" -%}
     <link rel="preload" href="{{ "/assets/css/highlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}"></noscript>
-    {%- endif -%}
+    {%- endif %}
 
     {%- if page.layout == "index" -%}
     {%- for post in site.posts limit: 5 -%}
