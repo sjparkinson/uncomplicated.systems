@@ -51,8 +51,8 @@
 .highlight .sc { color: #0044DD } /* Literal.String.Char */
 .highlight .dl { background-color: #fff0f0 } /* Literal.String.Delimiter */
 .highlight .sd { color: #DD4422 } /* Literal.String.Doc */
-.highlight .s1 + .highlight .s { background-color: #fff0f0 } /* Literal.String.Quoted */
-.highlight .s2 + .highlight .s { background-color: #fff0f0 } /* Literal.String.Quoted */
+.highlight .s1 + .s { background-color: #fff0f0 } /* Literal.String.Quoted */
+.highlight .s2 + .s { background-color: #fff0f0 } /* Literal.String.Quoted */
 .highlight .s1 { background-color: #fff0f0 } /* Literal.String.Single */
 .highlight .s2 { background-color: #fff0f0 } /* Literal.String.Double */
 .highlight .se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
