@@ -80,6 +80,7 @@ services:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: hunter2
+      MYSQL_DATABASE: docker_0111
     volumes:
       - ./database:/docker-entrypoint-initdb.d
 ```
@@ -157,3 +158,28 @@ One final thing we get when using Docker Compose is a process supervision tool f
 That wraps up a wizz through tour of the `docker-compose` command line tool, and covers the basics of a `docker-compose.yml` file.
 
 Time to go away and build those Docker developer environments!
+
+### Multi-stage Dockerfile Builds
+
+In this project, for our application, we have two Dockerfiles. `development.Dockerfile` and `production.Dockerfile`.
+
+I *wouldn't* consider this naming best practice, but it will give us a great comparison between standard Dockerfiles and multi-stage Dockerfiles. 
+
+In `development.Dockerfile` we have a typical Go based image, that copies in our source code, installs dependencies, and builds the application.
+
+In `production.Dockerfile`, we see the same directives, *but* we also have a second `FROM` directive. That's the sign we're dealing with a multi-stage Dockerfile.
+
+Docker handles this by building two images from the one Dockerfile, but it throws away that first image when it's done.
+
+We give the first `FROM` directive a name with the `AS` keyword, which we can use to reference this first image when we're building the second.
+
+In the second image (everything after `FROM alpine:latest`), we can pass the `COPY` directive a `--from` option with the name of the first image. `COPY` then copies files from the filesystem of the first image, *not* our local filesystem.
+
+If we run the following commands to make the two images, we can then compare the size of the resulting two images.
+
+```
+docker build -t docker-0110-development -f application/development.Dockerfile application/
+docker build -t docker-0110-productioon -f application/productioon.Dockerfile application/
+```
+
+The result is our `docker-0110-development` image comes out at ~440MB, while our `docker-0110-production` images comes out at only ~14MB!
