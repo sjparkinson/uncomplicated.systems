@@ -32,6 +32,14 @@ body {
   color: $body-text-color;
 }
 
+#skip-to-content {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
+
 a {
   color: $body-link-color;
   text-decoration: none;
