@@ -133,7 +133,7 @@ If we wanted to reset our database (say we deleted our initial table my mistake)
 
 We can be more specific about the services we're starting/stopping by using `docker-compose start` and `docker-compose stop`, passing in the names of the services we're interested in.
 
-If we want to run a command inside a container we can use `docker-compose run`. Let's try running `dep ensure` on our code (it's a way of installing depenencies in Go).
+If we want to run a command inside a container we can use `docker-compose run`. Let's try running `dep ensure` on our code (it's a way of installing dependencies in Go).
 
 ```
 docker-compose run application dep ensure
