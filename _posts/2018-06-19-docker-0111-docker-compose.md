@@ -179,7 +179,7 @@ If we run the following commands to make the two images, we can then compare the
 
 ```
 docker build -t docker-0110-development -f application/development.Dockerfile application/
-docker build -t docker-0110-productioon -f application/productioon.Dockerfile application/
+docker build -t docker-0110-production -f application/production.Dockerfile application/
 ```
 
 The result is our `docker-0110-development` image comes out at ~440MB, while our `docker-0110-production` images comes out at only ~14MB!
