@@ -138,7 +138,9 @@ If we want to run a command inside a container we can use `docker-compose run`. 
 docker-compose run application dep ensure
 ```
 
-Because we've defined a volume for our `application/` directory, any changes made inside this container actually get made to the files in our cloned directory too. Perfect for developing locally! The same is true if we make changes locally, they will be reflected in the filesystem of the container.
+Because we've defined a volume for our `application/` directory, any changes made inside this container actually get made to the files in our cloned directory too.
+
+Perfect for developing locally! The same is true if we make changes locally, they will be reflected in the filesystem of the container.
 
 How about connecting to the database with a SQL client? We can use `docker-compose run` again, and pass it arguments similar to our last workshop.
 
@@ -146,7 +148,9 @@ How about connecting to the database with a SQL client? We can use `docker-compo
 docker-compose run database sh -c 'exec mysql -hdatabase -P3306 -uroot -p"$MYSQL_ROOT_PASSWORD" "$MYSQL_DATABASE"'
 ```
 
-If we inspect what containers we have running, with `docker ps`, you'll find that the MySQL container does not have it's port pubished. So we actually have a _"private"_ MySQL database locally, but we can connect to it if we're running something within the Docker network that Docker Compose made for us.
+If we inspect what containers we have running, with `docker ps`, you'll find that the MySQL container does not have it's port pubished.
+
+So we actually have a private MySQL database locally, but we can connect to it if we're working in a container within the Docker network that Docker Compose made for us.
 
 One final thing we get when using Docker Compose is a process supervision tool for our containers, by using the `restart` configuration we can specify if `docker-compose` should start a container again if it crashes.
 
