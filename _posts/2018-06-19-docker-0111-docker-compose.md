@@ -37,7 +37,7 @@ Taking that database, let's write an application that lists them all in HTML.
 
 <blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-align="center" data-link-color="#0f5499"><p lang="en" dir="ltr">the human is hosting a get together this evening. and i am told there will be snacks. so my goal. will be to convince every single guest. that i have not eaten. in several weeks</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/1008090737240571904?ref_src=twsrc%5Etfw">June 16, 2018</a></blockquote>
 
-Like in Blue Peter, [there's a Go based application ready to build](https://github.com/sjparkinson/docker-0111).
+Pretending we're on Blue Peter for a moment, [there's a Go based application ready to build](https://github.com/sjparkinson/docker-0111).
 
 ```
 git clone https://github.com/sjparkinson/docker-0111.git
