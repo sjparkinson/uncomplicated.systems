@@ -161,7 +161,7 @@ Time to go away and build those Docker developer environments!
 
 ### Multi-stage Dockerfile Builds
 
-In this project, for our application, we have two Dockerfiles. `development.Dockerfile` and `production.Dockerfile`.
+In this project we have two Dockerfiles for the application, `development.Dockerfile` and `production.Dockerfile`.
 
 I **wouldn't** consider this naming best practice, but it will give us a great comparison between standard Dockerfiles and multi-stage Dockerfiles. 
 
