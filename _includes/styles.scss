@@ -42,8 +42,7 @@ a {
   
   &:active, &:focus {
     background: $body-link-highlight;
-    outline: 6px solid $body-link-highlight;
-    outline-offset: -1px;
+    outline: thick solid $body-link-highlight;
   }
 }
 
