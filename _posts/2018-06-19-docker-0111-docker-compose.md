@@ -23,7 +23,7 @@ Let's think about how to develop a web application locally using Docker.
 
 It'll have a web process running the application, and a database of some sort. We'll call the collection of these two processes the _system_.
 
-If we take a look at the [best pratices for writing a Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#decouple-applications), we find there's a whole section on decoupling applications.
+If we take a look at the [best practices for writing a Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#decouple-applications), we find there's a whole section on decoupling applications.
 
 > Each container should have only one concern. Decoupling applications into multiple containers makes it easier to scale horizontally and reuse containers.
 
