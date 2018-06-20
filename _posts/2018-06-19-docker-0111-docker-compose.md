@@ -47,7 +47,7 @@ In this repository we have a few files and directories.
 
 * `application/` contains the Go HTTP server which will make a connection to a MySQL database
 * `database/` contains a SQL file, that we'll use to seed our database with some example data
-* `docker-compose.yml` contains a bunch of configuration that we'll now run through
+* and `docker-compose.yml` contains a bunch of configuration that we'll now run through
 
 ### Docker Compose
 
@@ -56,7 +56,32 @@ Time to talk about `docker-compose`, a command line tool that'll help us when we
 Compare that to using the `docker` command line tool to start a system using more than one image. It'd be a `docker` command in the terminal for each image that we'd have to start or stop.
 
 ```yaml
-# the docker-compose file
+version: '3'
+
+services:
+
+  application:
+    build:
+      context: ./application
+      dockerfile: development.Dockerfile
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: hunter2
+      MYSQL_ADDRESS: database:3306
+      MYSQL_DATABASE: docker_0111
+    volumes:
+      - ./application:/go/src/github.com/Financial-Times/docker-0111-application/
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+
+  database:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: hunter2
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
 ```
 
 Here we see a set of services defined in the configuration, two in fact. We have one that defines configuration for our `application`, and another for our `database`.
@@ -69,7 +94,7 @@ No need for us to remember `docker run -it --rm -v vol:/var/lib/data -p 8080:808
 
 We also define `depends_on`, which tells Docker Compose that we must have a database container running before our application container starts.
 
-Digging in, we see entries for `volumes`, `ports`, and `environment` variables.
+There are also entries for `volumes`, `ports`, and `environment` variables. These fields map to the options we'd pass to the `docker` command line tool.
 
 If we have a look at our application, [to get it talking with our database](https://github.com/sjparkinson/docker-0111/blob/master/docker-compose.yml#L12), we're telling the application to point to a server at the `database` hostname.
 
@@ -81,7 +106,7 @@ When using Docker Compose, there are several useful features it also enables for
 
 One of those features is networking between containers.
 
-In order for our `application` container to have a connection to our `database` container we need to make a link between the two with a [Docker Network](https://docs.docker.com/network/).
+In order for our `application` container to have a connection to our `database` container we need to make a link between the two with a [Docker network](https://docs.docker.com/network/).
 
 If we were using the `docker` command line tool we would define this with the `--network` option, but we'd also need to run `docker network create` first. Docker Compose configures this all for us!
 
