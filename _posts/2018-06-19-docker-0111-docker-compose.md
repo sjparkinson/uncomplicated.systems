@@ -163,17 +163,17 @@ Time to go away and build those Docker developer environments!
 
 In this project, for our application, we have two Dockerfiles. `development.Dockerfile` and `production.Dockerfile`.
 
-I *wouldn't* consider this naming best practice, but it will give us a great comparison between standard Dockerfiles and multi-stage Dockerfiles. 
+I **wouldn't** consider this naming best practice, but it will give us a great comparison between standard Dockerfiles and multi-stage Dockerfiles. 
 
 In `development.Dockerfile` we have a typical Go based image, that copies in our source code, installs dependencies, and builds the application.
 
-In `production.Dockerfile`, we see the same directives, *but* we also have a second `FROM` directive. That's the sign we're dealing with a multi-stage Dockerfile.
+In `production.Dockerfile`, we see the same directives, **but** we also have a second `FROM` directive. That's the sign we're dealing with a multi-stage Dockerfile.
 
 Docker handles this by building two images from the one Dockerfile, but it throws away that first image when it's done.
 
 We give the first `FROM` directive a name with the `AS` keyword, which we can use to reference this first image when we're building the second.
 
-In the second image (everything after `FROM alpine:latest`), we can pass the `COPY` directive a `--from` option with the name of the first image. `COPY` then copies files from the filesystem of the first image, *not* our local filesystem.
+In the second image (everything after `FROM alpine:latest`), we can pass the `COPY` directive a `--from` option with the name of the first image. `COPY` then copies files from the filesystem of the first image, **not** our local filesystem.
 
 If we run the following commands to make the two images, we can then compare the size of the resulting two images.
 
