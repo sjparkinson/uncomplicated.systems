@@ -11,3 +11,5 @@ layout: post
 7:15am, made it to Stansted.
 
 8:41am, all boarded, first stop Dubrovnik!
+
+1:30pm local time, heading into Dubrovnik Old Town for lunch and to hunt down some Euro's before the transfer to Montenegro. Weather update, cloudy and starting to think the raincoat is going to be put to good use.
