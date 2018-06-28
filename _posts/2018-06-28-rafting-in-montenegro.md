@@ -13,3 +13,5 @@ layout: post
 8:41am, all boarded, first stop Dubrovnik!
 
 1:30pm local time, heading into Dubrovnik Old Town for lunch and to hunt down some Euro's before the transfer to Montenegro. Weather update, cloudy and starting to think the raincoat is going to be put to good use.
+
+1:45pm, and if I can find a barber I _really_ could do with a haircut.
