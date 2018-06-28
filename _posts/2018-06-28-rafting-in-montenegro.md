@@ -1,5 +1,5 @@
 ---
-published: null
+published: true
 title: Rafting in Montenegro
 layout: post
 ---
