@@ -1,7 +1,7 @@
 ---
 published: false
 title: Rafting in Montenegro
-layout: null
+layout: post
 ---
 ## Thursday
 
