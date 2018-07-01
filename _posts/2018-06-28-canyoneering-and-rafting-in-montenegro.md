@@ -4,6 +4,8 @@ title: Canyoneering & Rafting in Montenegro
 layout: post
 ---
 
+Through [Much Better Adventures](https://www.muchbetteradventures.com) I've signed up for a long weekend of watersports. Traveling through Montenegro, with some pitstops in Croatia and Bosnia.
+
 ### Thursday
 
 4:30am, it's my first time at Victoria Coach Station, crazy given I've been in London for twenty something years. Heading out to Stansted Airport on the National Express. Good place to grab an early morning coffee.
