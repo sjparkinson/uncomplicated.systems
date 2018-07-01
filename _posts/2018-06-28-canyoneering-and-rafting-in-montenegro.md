@@ -4,7 +4,7 @@ title: Canyoneering & Rafting in Montenegro
 layout: post
 ---
 
-Through [Much Better Adventures](https://www.muchbetteradventures.com) I've signed up for a long weekend of watersports. Traveling through Montenegro, with some pitstops in Croatia and Bosnia.
+I've signed up for a long weekend of watersports through [Much Better Adventures](https://www.muchbetteradventures.com). Traveling to Montenegro, with some pitstops in Croatia and Bosnia.
 
 ### Thursday
 
@@ -17,6 +17,16 @@ Through [Much Better Adventures](https://www.muchbetteradventures.com) I've sign
 1:30pm local time, heading into Dubrovnik Old Town for lunch and to hunt down some Euro's before the transfer to Montenegro. Weather update, cloudy and starting to think the raincoat is going to be put to good use.
 
 1:45pm, and if I can find a barber I _really_ could do with a haircut.
+
+### Friday
+
+We spend the day rafting down the Tara river, crossing into Bosnia for the launch point. There had been a lot of rain recently so there was a huge amount of water moving downstream.
+
+There was a small hike in the afternoon, up to the [Zagradje monastery](https://goo.gl/maps/uvEHoZ3uD8M2).
+
+### Saturday
+
+Early start, driving down to the [Nevidio canyon](https://www.openstreetmap.org/way/555204285). We spent a good 3 and a bit hours down the canyon and a short walk all the way back upstream. It totally felt like we where in a game of Uncharted.
 
 ### Sunday
 
