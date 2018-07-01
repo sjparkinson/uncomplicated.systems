@@ -32,4 +32,4 @@ layout: post
 
 ![Canyon of the Piva River](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Flh3.googleusercontent.com%2F84_JD26CZQmOqCPW5ryRNA5FKMHmkD0nDmujuVoucPjMNPlVi4IXHuPTXAPUHYphPzRGViUt8bzlrNtFDsu-hWjAMKAuuj-Tl-ZVVoCiyKdtR4GLybKCQ9A4qBMQFFaOhaWyoB0oYvyKJ1XA8A5onRtGmh0BZjQrM-EK-Rhtlypofvf5O8aQPAQ-cz97KqucTVyVU3AdvATLulM1zU3D2doRbUMKG_TULrcL5tsJJEwbppMjqD3AZ-TSiNdspsTZcWSNlGPdE94oZIfPC8VATiT8TEfBfDK9uD_2-Y5Xpd7pCPXHNMrTd1fqd-Uy8XQxgNh5CKXN2Kdy8RYgTnCe-6NG4dPdIGmB22IAEbw5zFf4-69oZUfenbjpPOBynmOWSW3kFcKaCYDERN_RXfo8wuYWZbgsJ_IHgwyO768mMtgTjy4JIKZHtrTacgw9YVwAcXtDDYgdCNpoQ6hUQAfkoqCsPEgmWUXeh918OOmldXhs-z_cIL7u2nD8-r3mazLOtBoORVmuvrcXVALPyc4uEDfY46Rav6Y_4CGrEBK9WWBq-L2zMUg4SRCEQ_t3KAKenSnHdZ4oyKCE7dhq-wGjTu-rWI5U4QWHMOIUlS9m%3Dw2048?source=uncomplicated.systems&width=1024)
 
-Canyon of the Piva River, shot from the crossing on the E762. [You can even see it on Google street view](https://goo.gl/maps/cYbjiaD6i4H2)!
+Canyon of the Piva River, shot from a crossing on the E762. [It's even on Google street view](https://goo.gl/maps/cYbjiaD6i4H2)!
