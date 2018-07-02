@@ -32,7 +32,7 @@ Early start, driving down to the [Nevidio canyon](https://www.openstreetmap.org/
 
 ### Sunday
 
-2:31pm London time, it turns out there isn't so much internet in Montenegro. I'll be turning this into a photography post instead. The views were unbelievable.
+2:31pm BST, it turns out there isn't so much internet in Montenegro. I'll be turning this into a photography post instead. The views were unbelievable.
 
 ### Photos
 
