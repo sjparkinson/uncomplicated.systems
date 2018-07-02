@@ -18,6 +18,8 @@ I've signed up for a long weekend of watersports through [Much Better Adventures
 
 1:45pm, and if I can find a barber I _really_ could do with a haircut.
 
+~2:00pm, I didn't find that barber. But I did meet up with another person on the trip, then headed back to the airport for our drive into Montenegro.
+
 ### Friday
 
 We spend the day rafting down the Tara river, crossing into Bosnia for the launch point. There had been a lot of rain recently so there was a huge amount of water moving downstream.
