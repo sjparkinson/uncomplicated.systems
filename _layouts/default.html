@@ -28,12 +28,6 @@
     <link rel="preload" href="{{ "/assets/css/highlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}"></noscript>
     {%- endif %}
-
-    {%- if page.layout == "index" -%}
-    {%- for post in site.posts limit: 5 -%}
-    <link rel="prefetch" href="{{ post.url | relative_url }}">
-    {%- endfor -%}
-    {%- endif -%}
     
     <link rel="icon" href="data:,">
 
