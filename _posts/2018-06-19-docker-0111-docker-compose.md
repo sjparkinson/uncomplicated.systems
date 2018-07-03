@@ -1,5 +1,4 @@
 ---
-published: true
 layout: post
 title: "Docker 0111 – Docker Compose"
 features:

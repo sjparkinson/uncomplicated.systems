@@ -1,5 +1,4 @@
 ---
-published: true
 layout: post
 title: Canyoneering & Rafting in Montenegro
 ---

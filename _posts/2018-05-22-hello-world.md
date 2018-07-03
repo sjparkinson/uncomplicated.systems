@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Hello World!
-published: true
 ---
 
 I've found myself publishing across several different platforms lately, [Medium](https://medium.com/@samparkinson_), [GitHub Gists](https://gist.github.com/sjparkinson), [GitBook](https://bhx8e2n0dha1.gitbook.io/docker-101/), and probably a few other places too.
