@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#049e68">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    {% if page.twitter %}
+    {% if page.layout == "post" and page.features.twitter %}
     <meta name="twitter:widgets:dnt" content="true">
     <meta name="twitter:widgets:align" content="center">
     <meta name="twitter:widgets:link-color" content="#0f5499">
@@ -24,7 +24,7 @@
       {{- styles | scssify }}
     </style>
     
-    {% if page.layout == "post" -%}
+    {% if page.layout == "post" and page.features.highlight -%}
     <link rel="preload" href="{{ "/assets/css/highlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}"></noscript>
     {%- endif %}

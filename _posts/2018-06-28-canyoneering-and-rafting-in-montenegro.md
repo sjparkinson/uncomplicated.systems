@@ -1,7 +1,7 @@
 ---
 published: true
-title: Canyoneering & Rafting in Montenegro
 layout: post
+title: Canyoneering & Rafting in Montenegro
 ---
 
 I've signed up for a long weekend of watersports through [Much Better Adventures](https://www.muchbetteradventures.com). Traveling to Montenegro, with some pitstops in Croatia and Bosnia.
