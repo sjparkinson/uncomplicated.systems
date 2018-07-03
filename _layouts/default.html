@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#049e68">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
+
     {% if page.layout == "post" and page.features.twitter %}
     <meta name="twitter:widgets:dnt" content="true">
     <meta name="twitter:widgets:align" content="center">
@@ -16,19 +16,19 @@
     <meta name="twitter:widgets:border-color" content="#dedfe0">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     {% endif %}
-    
+
     <style>
       {% capture styles -%}
       {%- include styles.scss -%}
       {%- endcapture -%}
       {{- styles | scssify }}
     </style>
-    
+
     {% if page.layout == "post" and page.features.highlight -%}
     <link rel="preload" href="{{ "/assets/css/highlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}"></noscript>
     {%- endif %}
-    
+
     <link rel="icon" href="data:,">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41035960-3"></script>
@@ -46,7 +46,7 @@
       <h1><a href="/">{{ site.title }}</a></h1>
       <p>{{ site.github.project_tagline }}</p>
     </header>
-    
+
     <main role="main" id="content">
       {{ content }}
     </main>
