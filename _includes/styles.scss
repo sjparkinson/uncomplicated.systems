@@ -50,11 +50,6 @@ body {
 
 a {
   color: $body-link-color;
-  text-decoration: none;
-  
-  &:hover {
-    text-decoration: underline;
-  }
   
   &:active, &:focus {
     background: $body-link-highlight;
@@ -69,10 +64,10 @@ header {
   
   a {
     color: $header-heading-color;
+    text-decoration: none;
 
     &:hover {
       color: $header-heading-color;
-      text-decoration: none;
     }
   }
 
@@ -153,8 +148,6 @@ main {
   }
   
   a {
-    text-decoration: underline;
-
     &:visited {
       color: $body-link-visited;
     }
