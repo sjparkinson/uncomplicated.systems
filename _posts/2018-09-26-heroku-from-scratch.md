@@ -26,6 +26,7 @@ First we'll make a folder and generate our `package.json` to kick start the proj
 ```
 mkdir hello-world
 cd hello-world
+git init
 yarn init --yes --private
 ```
 
@@ -77,7 +78,37 @@ $ node app.js
 Example app listening on port 3000!
 ```
 
-Open up http://localhost:3000 to see if it worked.
+Open up <http://localhost:3000> to see if it worked.
+
+Let's also add support for compression of our responses.
+
+[Express has a handy guide](https://expressjs.com/en/advanced/best-practice-performance.html#use-gzip-compression) to run through.
+
+First we need another dependency, `compression`.
+
+```
+yarn add compression
+```
+
+Then all we need to do is register the middleware in `app.js` and we're done.
+
+Make the following changes to `app.js`.
+
+```diff
+ const express = require("express");
++const compression = require("compression");
+ 
+ const app = express();
+ const port = 3000;
+ 
++app.use(compression());
++
+ app.get("/", (req, res) => res.send("Hello World!"));
+ 
+ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+```
+
+Then test it again with `yarn start` and opening <http://localhost:3000>.
 
 ### Preparing it for Heroku
 
