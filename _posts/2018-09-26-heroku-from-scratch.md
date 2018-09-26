@@ -17,6 +17,7 @@ We'll use the Heroku CLI, Node.js, Yarn (😱), and the express web framework.
 
 If we begin by building a basic hello world application using Express locally, we can then prepare the code for deployment to Heroku, then finally create the app and ship it ⛴.
 
+### Making the application
 
 First we'll make a folder and generate our `package.json` to kick start the project.
 
@@ -77,3 +78,13 @@ Example app listening on port 3000!
 ```
 
 Open up http://localhost:3000 to see if it worked.
+
+### Preparing it for Heroku
+
+While we've got something working locally, there's a few things we'll need to change to make sure Heroku can run it too.
+
+> If you haven't got it already, [please install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (again probabily `brew install heroku/brew/heroku`).
+
+### Creating the Heroku app
+
+### Deploying 🚀
