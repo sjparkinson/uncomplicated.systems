@@ -167,4 +167,6 @@ Finally, let's actually check our app is on the internet.
 heroku open
 ```
 
-🎉, and that's all there is to it. Go ahead and make some changes to `app.js` and push them to Heroku!
+And that's all there is to it 🎉.
+
+Go ahead, make some changes to `app.js` and push them to Heroku!
