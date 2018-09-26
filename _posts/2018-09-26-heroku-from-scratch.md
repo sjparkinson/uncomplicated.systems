@@ -20,7 +20,7 @@ If we begin by building a basic hello world application using Express locally, w
 
 First we'll make a folder and generate our `package.json` to kick start the project.
 
-> 🆘 If you don't have Yarn already, [check out their install page](https://yarnpkg.com/en/docs/install) (basically `brew install yarn`).
+> If you don't have Yarn already, [check out their install page](https://yarnpkg.com/en/docs/install) (basically `brew install yarn`).
 
 ```
 mkdir hello-world
@@ -28,7 +28,9 @@ cd hello-world
 yarn init --yes --private
 ```
 
-You should now have a `package.json`. Next we'll add Express as a dependency.
+You should now have a `package.json`, with not much in it.
+
+We can then add Express as a dependency.
 
 ```
 yarn add express
@@ -36,6 +38,8 @@ yarn add express
 
 Which updates our `package.json`, and creates `node_modules/` and `yarn.lock`.
 
-We should add `node_modules/` to the list of ignored files for git. GitHub maintain a brillant repository of `.gitignore` files sorted by programming language, so let's borrow the one for Node.js.
+We should add `node_modules/` to the list of ignored files for git.
+
+GitHub maintain a brillant repository of `.gitignore` files sorted by programming language, so let's borrow the one for Node.js.
 
 Copy and paste the contents of https://github.com/github/gitignore/blob/master/Node.gitignore into a local file called `.gitignore`.
