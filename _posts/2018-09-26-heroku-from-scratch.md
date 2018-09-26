@@ -116,6 +116,13 @@ For this section we'll follow the well documented guide published by Heroku, [Pr
 
 After this workshop, it's also well worth checking out the Heroku guide on [the Node.js best pratices for running on the platform](https://devcenter.heroku.com/articles/node-best-practices).
 
+Once we're all done, we should then save our work in a commit.
+
+```
+git add .
+git commit -m 'Initial commit 🚀.'
+```
+
 ### Creating the Heroku app
 
 We're going to use the CLI to do all this 😱.
@@ -132,6 +139,32 @@ Then we want to make a new app in Heroku.
 heroku create
 ```
 
+This will add a new remote to your git configuration for the project, called `heroku`.
+
+You'll also get a URL (like I got https://infinite-eyrie-31643.herokuapp.com/), this is where our application will run.
+
+And that's all it takes...
+
+There are other things we could do, like renaming the application, and putting it in a better team, but we won't bother about that for now.
+
 ### Deploying 🚀
 
+[There's a few ways of deploying to Heroku](https://devcenter.heroku.com/categories/deployment), we're going to [deploy to Heroku directly, using git](https://devcenter.heroku.com/articles/git#deploying-code).
 
+Given we've already committed our code, and created the Heroku app, the only thing we need to do is use git to push our code to Heroku.
+
+```
+git push heroku master
+```
+
+We'll then see the build logs as Heroku prepares our application for deployment.
+
+To double check everything is running, run `heroku ps` to ensure that we have a `web` process running.
+
+Finally, let's actually check our app is on the internet.
+
+```
+heroku open
+```
+
+🎉, and that's all there is to it. Go ahead and make some changes to `app.js` and push them to Heroku!
