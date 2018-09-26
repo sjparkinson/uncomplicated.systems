@@ -44,7 +44,9 @@ We should add `node_modules/` to the list of ignored files for git.
 
 Copy and paste the contents of [Node.gitignore](https://github.com/github/gitignore/blob/master/Node.gitignore "github/gitignore Node.gitignore") into a local file called `.gitignore`.
 
-Now to write out application! Add the following to a new file called `app.js`. This is just copy and pasted from https://expressjs.com/en/starter/hello-world.html.
+Now to write out application!
+
+Add the following to a new file called `app.js`. This is just copy and pasted from https://expressjs.com/en/starter/hello-world.html.
 
 ```js
 const express = require("express");
@@ -65,3 +67,13 @@ Add the following to `package.json`.
   "start": "node app.js"
 }
 ```
+
+Time to take it for a spin, run `yarn start` and you should see something like the following.
+
+```
+yarn run v1.9.4
+$ node app.js
+Example app listening on port 3000!
+```
+
+Open up http://localhost:3000 to see wif it worked.
