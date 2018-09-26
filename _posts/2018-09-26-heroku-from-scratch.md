@@ -76,4 +76,4 @@ $ node app.js
 Example app listening on port 3000!
 ```
 
-Open up http://localhost:3000 to see wif it worked.
+Open up http://localhost:3000 to see if it worked.
