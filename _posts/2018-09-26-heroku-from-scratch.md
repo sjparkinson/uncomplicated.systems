@@ -112,6 +112,8 @@ While we've got something working locally, there's a few things we'll need to ch
 
 For this section we'll follow the well documented guide published by Heroku, [Preparing a Codebase for Heroku Deployment](https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment).
 
+After this workshop, it's also well worth checking out the Heroku guide on [the Node.js best pratices for running on the platform](https://devcenter.heroku.com/articles/node-best-practices).
+
 ### Creating the Heroku app
 
 
