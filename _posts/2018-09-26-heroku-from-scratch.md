@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Heroku from Scratch
+features:
+  highlight: true
 ---
 
 > ℹ️ This post is for an internal workshop at the Financial Times.
