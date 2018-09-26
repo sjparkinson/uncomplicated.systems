@@ -42,4 +42,4 @@ We should add `node_modules/` to the list of ignored files for git.
 
 GitHub maintain a brillant repository of `.gitignore` files sorted by programming language, so let's borrow the one for Node.js.
 
-Copy and paste the contents of <https://github.com/github/gitignore/blob/master/Node.gitignore> into a local file called `.gitignore`.
+Copy and paste the contents of [Node.gitignore](https://github.com/github/gitignore/blob/master/Node.gitignore "github/gitignore Node.gitignore") into a local file called `.gitignore`.
