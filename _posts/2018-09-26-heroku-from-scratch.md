@@ -9,13 +9,7 @@ We're going to put togther a Heroku application, from scratch.
 
 We'll use the Heroku CLI, Node.js, Yarn (😱), and the express web framework.
 
-1. [Heroku – Getting Started with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-
-2. [Heroku – Preparing a Codebase for Heroku Deployment](https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment)
-
-3. [Express – Hello World](https://expressjs.com/en/starter/hello-world.html)
-
-If we begin by building a basic hello world application using Express locally, we can then prepare the code for deployment to Heroku, then finally create the app and ship it ⛴.
+And we'll begin by building a basic hello world application using Express, we can then prepare the code for deployment to Heroku, and finally create the app in Heroku and ship it ⛴.
 
 ### Making the application
 
@@ -112,10 +106,16 @@ Then test it again with `yarn start` and opening <http://localhost:3000>.
 
 ### Preparing it for Heroku
 
+> If you haven't got it already, [please install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (again probabily `brew install heroku/brew/heroku`).
+
 While we've got something working locally, there's a few things we'll need to change to make sure Heroku can run it too.
 
-> If you haven't got it already, [please install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (again probabily `brew install heroku/brew/heroku`).
+For this section we'll follow the well documented guide published by Heroku, [Preparing a Codebase for Heroku Deployment](https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment).
 
 ### Creating the Heroku app
 
+
+
 ### Deploying 🚀
+
+
