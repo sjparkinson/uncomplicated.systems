@@ -40,6 +40,28 @@ Which updates our `package.json`, and creates `node_modules/` and `yarn.lock`.
 
 We should add `node_modules/` to the list of ignored files for git.
 
-GitHub maintain a brillant repository of `.gitignore` files sorted by programming language, so let's borrow the one for Node.js.
+[GitHub maintain a brillant repository of `.gitignore` files](https://github.com/github/gitignore) sorted by programming language, so let's borrow the one for Node.js.
 
 Copy and paste the contents of [Node.gitignore](https://github.com/github/gitignore/blob/master/Node.gitignore "github/gitignore Node.gitignore") into a local file called `.gitignore`.
+
+Now to write out application! Add the following to a new file called `app.js`. This is just copy and pasted from https://expressjs.com/en/starter/hello-world.html.
+
+```js
+const express = require("express");
+const app = express();
+const port = 3000;
+
+app.get("/", (req, res) => res.send("Hello World!"));
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+```
+
+We'll also add a new `scripts` section to our `package.json` file, so that we can use `yarn start` to make developing locally easier.
+
+Add the following to `package.json`.
+
+```json
+"scripts": {
+  "start": "node app.js"
+}
+```
