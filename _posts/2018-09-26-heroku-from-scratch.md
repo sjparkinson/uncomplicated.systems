@@ -118,7 +118,19 @@ After this workshop, it's also well worth checking out the Heroku guide on [the 
 
 ### Creating the Heroku app
 
+We're going to use the CLI to do all this 😱.
 
+First things first, we need to login!
+
+```
+heroku login --sso
+```
+
+Then we want to make a new app in Heroku.
+
+```
+heroku create
+```
 
 ### Deploying 🚀
 
