@@ -7,7 +7,7 @@ title: Heroku from Scratch
 
 We're going to put togther a Heroku application, from scratch.
 
-We'll use the Heroku CLI, Node.js, and the express web framework.
+We'll use the Heroku CLI, Node.js, [Yarn (😱)](https://yarnpkg.com/en/), and the express web framework.
 
 1. [Heroku – Getting Started with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
@@ -16,3 +16,12 @@ We'll use the Heroku CLI, Node.js, and the express web framework.
 3. [Express – Hello World](https://expressjs.com/en/starter/hello-world.html)
 
 If we begin by building a basic hello world application using Express locally, we can then prepare the code for deployment to Heroku, then finally create the app and ship it ⛴.
+
+
+First we'll make a folder and generate our `package.json` to kick start the project.
+
+```
+mkdir hello-world
+cd hello-world
+yarn init --yes --private
+```
