@@ -19,9 +19,9 @@ If we begin by building a basic hello world application using Express locally, w
 
 ### Making the application
 
-First we'll make a folder and generate our `package.json` to kick start the project.
-
 > If you don't have Yarn already, [check out their install page](https://yarnpkg.com/en/docs/install) (basically `brew install yarn`).
+
+First we'll make a folder and generate our `package.json` to kick start the project.
 
 ```
 mkdir hello-world
@@ -45,7 +45,7 @@ We should add `node_modules/` to the list of ignored files for git.
 
 Copy and paste the contents of [Node.gitignore](https://github.com/github/gitignore/blob/master/Node.gitignore "github/gitignore Node.gitignore") into a local file called `.gitignore`.
 
-Now to write out application!
+Now to write our application!
 
 Add the following to a new file called `app.js`. This is just copy and pasted from https://expressjs.com/en/starter/hello-world.html.
 
