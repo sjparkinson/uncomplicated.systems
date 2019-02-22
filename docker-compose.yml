@@ -4,7 +4,7 @@ version: "3"
 services:
   site:
     command: jekyll serve --incremental
-    image: jekyll/minimal
+    image: jekyll/jekyll
     volumes:
       - ./:/srv/jekyll:delegated
       - ./vendor/bundle:/usr/local/bundle:delegated
