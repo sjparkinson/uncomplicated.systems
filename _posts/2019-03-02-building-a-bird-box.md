@@ -5,7 +5,7 @@ title: Building a Bird Box
 ---
 
 <p>Today I built a bird box over in <a href="www.blackhorseworkshop.co.uk">Blackhorse Workshop</a> with a friend from work.</p>
-<p>What else are you going to do at nine-ish on a Saturday morning right… 🤦‍♀️</p>
+<p>What else are you going to do at nine-ish on a Saturday morning… 🤦‍♂️</p>
 <p>We followed <a href="https://www.rspb.org.uk/fun-and-learning/for-families/family-wild-challenge/activities/build-a-birdbox/">a guide published by the Royal Society for the Protection of Birds</a>. Lee was particularly keen on building them to suit a <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/blue-tit">Blue Tit</a>.</p>
 <p>Here’s a few photos from the morning.</p>
 <p><img src="https://lh3.googleusercontent.com/mqhdTgimNIfo0bPGbO5WIK2de_JXVNVFZxt_wHegWIiph3ynhBYU7F6NpuY4G9JSvRU2KhG-M3rXucWQ5SPd7SM7BIPbNT5qR-nyRRVpkL-mEhTF2k8h-LIrOSGYu8V6P0faOGX6TFuknsS8geNtxKcFFWl56yHOoFblva4lkm_UZR71PhV7fQRZ1X1PpdHlV9qCVXkwIBExCCzxpZTeSO47LvH3nOESvlcIiRtl9oiRTFVS4yUftwMDiX6ntjfGTG01wBgvCN7PDkR5neLrHat4pqkR_cjaKPYFM0N9dT-4t0U99WtBCeNsUbhhr2rva7QkajMYc8nqKNU9IrSiUpHvma-qSKFedsN-TRH_RtKT-FAfDAP2W4NL1L85Lt3QXBJlCfAJxed6NRlguOmHynOllF78MZjCSOT9Jp1qfYOxLVOGFZRVZHBHY3w3lZVo5g_fKTeH7SpYQPAxrnm4QUNRmoEmSdXqP7S7aaxWf35VoIRIPGujsUMfC5nc8432WiqI45uf5JYEFbC6WR8fUaO6G0AGK2mUxpR75uGBOTPiS2u2E3TWpr8U6_0lMlMXJpp-mBRCkRqKk4MBXE21uGNXebMX2FGpHaa69iZKsOisxWY0Hic2THPePndTd12mxF-85b-2mmjGlO6OGXDvWRlybIzEbVbm5m2mESw-qKjdZaJDmlxzN_PFmadsGdONeIF0FrjA41fo3HJdzpEJc0WKOw=w1198-h1596-no" alt=""></p>
