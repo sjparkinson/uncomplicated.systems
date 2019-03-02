@@ -1,7 +1,15 @@
 ---
 layout: post
-title: Building a Bird Box 🐦
+title: Building a Bird Box
 
 ---
 
+<p>Today I built a bird box over in <a href="www.blackhorseworkshop.co.uk">Blackhorse Workshop</a> with a friend from work.</p>
+<p>What else are you going to do at nine-ish on a Saturday morning right… 🤦‍♀️</p>
+<p>We followed <a href="https://www.rspb.org.uk/fun-and-learning/for-families/family-wild-challenge/activities/build-a-birdbox/">a guide published by the Royal Society for the Protection of Birds</a>. Lee was particularly keen on building them to suit a <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/blue-tit">Blue Tit</a>.</p>
+<p>Here’s a few photos from the morning.</p>
+<p><img src="https://lh3.googleusercontent.com/mqhdTgimNIfo0bPGbO5WIK2de_JXVNVFZxt_wHegWIiph3ynhBYU7F6NpuY4G9JSvRU2KhG-M3rXucWQ5SPd7SM7BIPbNT5qR-nyRRVpkL-mEhTF2k8h-LIrOSGYu8V6P0faOGX6TFuknsS8geNtxKcFFWl56yHOoFblva4lkm_UZR71PhV7fQRZ1X1PpdHlV9qCVXkwIBExCCzxpZTeSO47LvH3nOESvlcIiRtl9oiRTFVS4yUftwMDiX6ntjfGTG01wBgvCN7PDkR5neLrHat4pqkR_cjaKPYFM0N9dT-4t0U99WtBCeNsUbhhr2rva7QkajMYc8nqKNU9IrSiUpHvma-qSKFedsN-TRH_RtKT-FAfDAP2W4NL1L85Lt3QXBJlCfAJxed6NRlguOmHynOllF78MZjCSOT9Jp1qfYOxLVOGFZRVZHBHY3w3lZVo5g_fKTeH7SpYQPAxrnm4QUNRmoEmSdXqP7S7aaxWf35VoIRIPGujsUMfC5nc8432WiqI45uf5JYEFbC6WR8fUaO6G0AGK2mUxpR75uGBOTPiS2u2E3TWpr8U6_0lMlMXJpp-mBRCkRqKk4MBXE21uGNXebMX2FGpHaa69iZKsOisxWY0Hic2THPePndTd12mxF-85b-2mmjGlO6OGXDvWRlybIzEbVbm5m2mESw-qKjdZaJDmlxzN_PFmadsGdONeIF0FrjA41fo3HJdzpEJc0WKOw=w1198-h1596-no" alt=""></p>
+<p><img src="https://lh3.googleusercontent.com/q9yNPVX8NtWZ4S13iqqUZgpYE3RshHklxWv7Nor6njYkdyx5Me-8D7iMoZMsSKK5Qk7bQ6Z5VMELDo4VsyhFDIyprSf7MDWJiF7YcfqicVWnd3A5ScGyXipin3SO6sugNRrF55pcDdXozsG7kw38PpiCC4WfqhwJB4DLV05X9ZQ4YhnbgVlRrifyd7SvE7ci9AaPXRd2qcydxMMhWMac0Mr3xalKj1d9uZwZ9mzP7ouY4GosK00XHR48lkF-X-rO2AK1f_TZEKGYk9hpXiQRCOGuu2JU9r8DlegVALYaMmTbGCwMx0KtU9cfW7tjnejXvrB84Z_wdmGrtjljDKX_yFLeU8A05mAGDJhju9HAoQaAXHkxlyuNbdwg9k3WZRJrZOJF184lXhPVrtq0pR0tV8Kc1g97RzxQDq-zoGatgx1GClIv37PAWNR5tvxIlAIHsntTcL1Tvzwtp0VdfmcoDab2gZFhwBx0VHZ-5-Z6t-DarrFpvXoIErkewc8e6gpV-_3A9BCHHYeGML3gc3O9eoxwCyfx4syezBNKtSv1uIYhH4diBO0PSM_gx-7eSpUhZAtyDuMrkxQxVxj_Nl36Bi0FBntSPIhx50v49k-nfhburp0MVQJ4MmKZS5KcWTuM8ywkCihD1zshBdiprMktsWE-Wu3nPQLByNNlQcTtbA7kwMRtm7I6olRZp91PReJPyTeGb3wwq-TP4fHKxmE95atP=w2128-h1596-no" alt=""></p>
+<p>They came out far from perfect, but I don’t think any bird is going to complain. We figured we’d try our hand at making one again in six months to see if our woodworking’s actually improving.</p>
+<p><img src="https://lh3.googleusercontent.com/HbLsEozICPrdNDfn8_xcKUEJ5FVmi3Jxjg89pmZnsjThGDMLBQSNRf_fsLZT97SVcaUNLhCpIgRKkXLz4zzu5666NTzZ3p8cd9LH-M14oFI2UHggpPwmFkCKqY6VcZ_I9TqBDw0bYrldwICaWL4l4NsCEy1ulmIgEKrmcdN8hKgkLhrVxivMzNUWsy3_OCiNT15WPDooahOgkzb7V5lXbcqTUIygXwPfp3_R_Guk5DQE9IBr4rf0Ku_8MThwxjWXi4czb4HDBToIhTxItg8tz7eXeMA3d2Pcbij6You0fqYzxOeryqNKYvNLdUeDakOYPbx49uWN4HEFJAMU6xTZa7boI-RKZbDQyNfZPO7kV4BMwc2VyJ0Tz71TXRK57EULRARosaTKZxitJJ7gqTc6bDWJnJeLs9AquDZW5FH7K7ggq2qZ1CPAsCwhHjHGCVoOAvceZi5AZ3p-0-EzklBGYntmbvAqLKChH2jKs4y77F1NBMCUYfOsgj3MeMbe41BRWtMrQmLHej5PwQSptdeSfNo9TVE0WzOWg68ttn1TiCxkDirk0o4xJ9-CCMLLGD8onav4DB4sotBj2lAChHAQkrRpY1-YiyCgiPonR15QcnkNSdEbDoMKGBMp_szWxhd74z9EAFSdza2N51JriaDO__eKdkdxuFSDV25_6H3BlApUACBoPtseKV6c_iLd7yMJSBTDjzr944ijLdvqPKTji4IG=w2128-h1596-no" alt=""></p>
 
