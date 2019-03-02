@@ -107,7 +107,7 @@ In summary, we can use volumes for persisting part of a container's filesystem, 
 
 OK, that's quite a lot of information, time for a breather. Here's a doggo story to recover.
 
-<blockquote class="twitter-tweet"  data-lang="en" data-dnt="true" data-align="center" data-link-color="#0f5499"><p lang="en" dir="ltr">i had a long talk. with my fren. about how to spot. a fake ball throw. the optimal strategy. is to follow the ball. with your eyes. instead of your heart</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/957385573571944455?ref_src=twsrc%5Etfw">January 27, 2018</a></blockquote>
+<blockquote class="twitter-tweet"  data-lang="en" data-align="center"><p lang="en" dir="ltr">i had a long talk. with my fren. about how to spot. a fake ball throw. the optimal strategy. is to follow the ball. with your eyes. instead of your heart</p>&mdash; Thoughts of Dog (@dog_feelings) <a href="https://twitter.com/dog_feelings/status/957385573571944455?ref_src=twsrc%5Etfw">January 27, 2018</a></blockquote>
 
 I'd also highly recommend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). Credit to Rhys for this search.
 
