@@ -3,7 +3,6 @@ layout: post
 title: "Docker 0111 – Docker Compose"
 features:
   twitter: true
-  highlight: true
 ---
 
 > ℹ️ This is part of a series of internal Docker workshops for the Financial Times.

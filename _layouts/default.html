@@ -23,7 +23,7 @@
       {{- styles | scssify }}
     </style>
 
-    {% if page.layout == "post" and page.features.highlight -%}
+    {% if page.layout == "post" -%}
     <link rel="preload" href="{{ "/assets/css/highlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}"></noscript>
     {%- endif %}
