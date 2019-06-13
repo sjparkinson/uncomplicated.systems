@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8">
 
-    {% seo %}
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Uncomplicated Systems</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#049e68">
@@ -17,15 +19,15 @@
     {% endif %}
 
     <style>
-      {% capture styles -%}
-      {%- include styles.scss -%}
-      {%- endcapture -%}
-      {{- styles | scssify }}
+    {%- capture styles -%}
+    {%- include styles.scss -%}
+    {%- endcapture -%}
+    {{- styles | scssify | rstrip -}}
     </style>
 
-    {% if page.layout == "post" -%}
+    {% if page.layout == "post" %}
     <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
-    {%- endif %}
+    {% endif %}
 
     <link rel="icon" href="data:,">
   </head>
