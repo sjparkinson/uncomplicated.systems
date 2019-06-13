@@ -6,7 +6,6 @@ title: Uncomplicated Systems
 
 author:
   name: Samuel Parkinson
-  twitter: samparkinson_
 
 social:
   name: Samuel Parkinson
@@ -16,7 +15,3 @@ social:
 sass:
   sass_dir: _includes
   style: compressed
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
