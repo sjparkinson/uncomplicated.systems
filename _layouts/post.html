@@ -3,9 +3,7 @@ layout: default
 ---
 
 <article>
-  <h2>{{ page.title | escape }}</h2>
-
-  <p>Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string: "ordinal" }}</time>.</p>
+  <p>Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string: "ordinal" }}</time></p>
 
   {{ content }}
 </article>

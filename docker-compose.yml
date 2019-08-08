@@ -3,7 +3,7 @@ version: "3"
 
 services:
   site:
-    command: jekyll serve --incremental
+    command: jekyll serve --incremental --drafts
     image: jekyll/jekyll
     volumes:
       - ./:/srv/jekyll:delegated

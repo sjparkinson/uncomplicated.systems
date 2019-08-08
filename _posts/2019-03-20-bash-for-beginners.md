@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Let's have a bash at Bash"
 ---
+
+## Let's have a bash at Bash
 
 This is going to be really fun. It'll be like going back in time forty years. We'll be  using websites with _litterally no CSS_.
 

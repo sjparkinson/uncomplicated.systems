@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Kent to Paris by Bicycle"
 ---
+
+## Kent to Paris by Bicycle
+
 I've just signed up to a last minute charity ride in support of the [Motor Neurone Disease Association](https://www.mndassociation.org).
 
 There's a group of us spending the long weekend cycling from Kent to Paris 🥐.

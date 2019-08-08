@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Docker 0110 – Dockerfiles & Volumes"
 features:
   twitter: true
 ---
+
+## Docker 0110 – Dockerfiles & Volumes
 
 > ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
 > 

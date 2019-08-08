@@ -306,6 +306,16 @@ main {
     background-color: $hr-border-color;
     border: 0;
   }
+
+  article {
+    p:first-of-type {
+      font-style: italic;
+    }
+
+    h2:first-of-type {
+      margin-top: 1rem;
+    }
+  }
 }
 
 footer {

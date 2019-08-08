@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Building a Bird Box
-
 ---
+
+## Building a Bird Box
 
 Today I built a bird box over in [Blackhorse Workshop](http://www.blackhorseworkshop.co.uk) with a friend from work.
 

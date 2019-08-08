@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Hello World!
 ---
+
+## Hello World!
 
 I've found myself publishing across several different platforms lately, [Medium](https://medium.com/@samparkinson_), [GitHub Gists](https://gist.github.com/sjparkinson), and probably a few other places too.
 
