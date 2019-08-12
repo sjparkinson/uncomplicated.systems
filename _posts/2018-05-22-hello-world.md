@@ -4,8 +4,8 @@ I've found myself publishing across several different platforms lately, [Medium]
 
 To simplify, what I've actually done is create another platform for me to publish my notes on.
 
-![Standards by XKCD](https://imgs.xkcd.com/comics/standards.png)
+![Standards by XKCD](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://imgs.xkcd.com/comics/standards.png" | url_encode }}?source=uncomplicated.systems)
 
 So hello world, welcome to [uncomplicated systems](https://uncomplicated.systems)!
 
-![Whale Hello There!](https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif)
+![Whale Hello There!](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif" | url_encode }}?source=uncomplicated.systems)

@@ -15,7 +15,7 @@ We've previously used the `docker` command line tool to build and run Docker ima
 
 Today we'll cover using the  `docker-compose` command line tool, and discuss using a _multi-stage_ build to keep the size of our Docker images down.
 
-![](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fuser-images.githubusercontent.com%2F51677%2F41594791-84faf78c-73bc-11e8-8da0-e0e9c811779e.png?source=uncomplicated.systems&width=512)
+![](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://user-images.githubusercontent.com/51677/41594791-84faf78c-73bc-11e8-8da0-e0e9c811779e.png" | url_encode }}?source=uncomplicated.systems&width=512)
 
 Using `docker` works fine when everything you need to run fits into a single `Dockerfile`, but what if your application needs a database, should that also be installed in the image?
 

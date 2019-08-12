@@ -8,7 +8,7 @@ It's a ~250 mile cycle over three days, and I've just checked the weather, it's 
 
 [Feel free to support me on my JustGiving page](https://www.justgiving.com/fundraising/samuel-parkinson-paris-cycle).
 
-![Eating and cycling at the same time, it's possiable!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FOZvMMeKdYmPpS%2Fgiphy.gif?source=uncomplicated.systems)
+![Eating and cycling at the same time, it's possiable!](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://media.giphy.com/media/OZvMMeKdYmPpS/giphy.gif" | url_encode }}?source=uncomplicated.systems)
 
 ### The End Result
 
@@ -20,7 +20,7 @@ Thanks also to Rob and Anneke for all the planning that went into the ride.
 
 It also wouldn't have been possible without the support from Anneke's parents and her old school PE teacher and his wife, who kept us fed and watered throughout the journey.
 
-![Le Tour Eiffel, thanks Google!](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fuser-images.githubusercontent.com%2F51677%2F40734364-1e873dd0-6430-11e8-908d-99d2da83f2f7.jpg?source=uncomplicated.systems&width=1024)
+![Le Tour Eiffel, thanks Google!](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://user-images.githubusercontent.com/51677/40734364-1e873dd0-6430-11e8-908d-99d2da83f2f7.jpg" | url_encode }}?source=uncomplicated.systems&width=1024)
 
 ### The Live Updates
 
