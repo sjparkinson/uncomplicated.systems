@@ -1,7 +1,3 @@
----
-layout: post
----
-
 ## Setting up Firefox for privacy
 
 * Custom Tracking Protection

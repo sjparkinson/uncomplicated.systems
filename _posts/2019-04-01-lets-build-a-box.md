@@ -1,7 +1,3 @@
----
-layout: post
----
-
 ## Let's build a box!
 
 I've joined a course run by Blackhorse Workshop to learn the basics of joinery and powertools.

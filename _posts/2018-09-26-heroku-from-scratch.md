@@ -1,7 +1,3 @@
----
-layout: post
----
-
 ## Heroku from Scratch
 
 > ℹ️ This post is for an internal workshop at the Financial Times.
