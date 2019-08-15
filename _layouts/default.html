@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
 
-    <title>{% if page.title %}{{ page.title }} | {% endif %}Uncomplicated Systems</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="author" content="{{ site.author.name }}" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#049e68">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    {% if page.layout == "post" and page.features.twitter %}
+    {% if page.collection == "posts" and page.features.twitter %}
     <meta name="twitter:dnt" content="on">
     <meta name="twitter:widgets:link-color" content="#0f5499">
     <meta name="twitter:widgets:border-color" content="#dedfe0">
@@ -33,8 +33,8 @@
     {{- styles | scssify | rstrip -}}
     </style>
 
-    {% if page.layout == "post" %}
-    <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
+    {% if page.collection == "posts" %}
+    <link rel="stylesheet" href="{{ "/assets/css/highlight.css?v=" | append: site.github.build_revision | relative_url }}">
     {% endif %}
 
     <link rel="icon" href="data:,">
