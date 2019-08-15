@@ -19,13 +19,6 @@
     <meta name="theme-color" content="#049e68">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    {% if page.collection == "posts" and page.features.twitter %}
-    <meta name="twitter:dnt" content="on">
-    <meta name="twitter:widgets:link-color" content="#0f5499">
-    <meta name="twitter:widgets:border-color" content="#dedfe0">
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    {% endif %}
-
     <style>
     {%- capture styles -%}
     {%- include styles.scss -%}
@@ -44,7 +37,7 @@
 
     <header role="banner">
       <h1><a href="/">{{ site.title }}</a></h1>
-      <p>{{ site.github.project_tagline }}</p>
+      <p>{{ site.description }}</p>
     </header>
 
     <main role="main" id="content">
@@ -52,7 +45,7 @@
     </main>
 
     <footer>
-      <p>Something wrong? <a href="https://github.com/sjparkinson/uncomplicated.systems{% if page.layout == "post" %}/blob/master/{{ page.path }}{% endif %}">Suggest an edit on GitHub</a>.</p>
+      <p>Something wrong? <a href="https://github.com/sjparkinson/uncomplicated.systems{% if page.collection == "posts" %}/blob/master/{{ page.path }}{% endif %}">Suggest an edit on GitHub</a>.</p>
     </footer>
   </body>
 </html>
