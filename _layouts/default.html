@@ -5,7 +5,7 @@
 
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="author" content="{{ site.author.name }}" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="canonical" href="{{ site.url | append: page.url }}" />
 
     {% if page.url == "/" %}
     <meta name="description" content="{{ site.description | escape }}">
@@ -31,6 +31,8 @@
     {% endif %}
 
     <link rel="shortcut icon" href="{{ "/assets/icons/favicon.ico" | relative_url }}">
+
+    <link rel="alternate" type="application/rss+xml"  href="{{ site.url | append: "/feed.xml" }}" title="{{ site.title }}">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -45,7 +47,7 @@
     </main>
 
     <footer>
-      <p>Something wrong? <a href="https://github.com/sjparkinson/uncomplicated.systems{% if page.collection == "posts" %}/blob/master/{{ page.path }}{% endif %}">Suggest an edit on GitHub</a>.</p>
+      <p>Want to get in touch? <a href="mailto:sam.james.parkinson@gmail.com?subject=Uncomplicated Systems">Send me an email</a> or <a href="https://github.com/sjparkinson/uncomplicated.systems/issues/new">open an issue on GitHub</a>.</p>
     </footer>
   </body>
 </html>

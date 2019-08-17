@@ -10,6 +10,8 @@ $header-bg-color: $primary-color;
 
 // Text
 $section-headings-color: #007d51;
+$body-text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $body-text-color: #262a33;
 $body-link-color: $primary-color;
 $body-link-hover: lighten($body-link-color, 20%);

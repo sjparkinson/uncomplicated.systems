@@ -6,10 +6,12 @@ Here's how to setup Firefox on your desktop on or Android to better ensure your 
 
 ### Firefox on the desktop
 
+
+
 * Custom Tracking Protection
 * `about:config` privacy settings, https://wiki.mozilla.org/Privacy/Privacy_Task_Force/firefox_about_config_privacy_tweeks
 * uBlock Origin
-* DNS over HTTPS
+* DNS over HTTPS, `network.trr.mode` set to _3_
 
 ### Firefox on Android
 

@@ -31,7 +31,8 @@ Following that advice, we'll need two images to define our system, one for the w
 Taking that database, let's write an application that lists them all in HTML.
 
 > the human is hosting a get together this evening. and i am told there will be snacks. so my goal. will be to convince every single guest. that i have not eaten. in several weeks
-> &mdash; [Thoughts of Dog (@dog_feelings) June 16, 2018](https://twitter.com/dog_feelings/status/1008090737240571904)
+>
+> [Thoughts of Dog (@dog_feelings) June 16, 2018](https://twitter.com/dog_feelings/status/1008090737240571904)
 
 Pretending we're on Blue Peter for a moment, [there's a Go based application ready to build](https://github.com/sjparkinson/docker-0111).
 
