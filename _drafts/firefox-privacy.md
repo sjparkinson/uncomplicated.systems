@@ -6,8 +6,28 @@ Here's how to setup Firefox on your desktop on or Android to better guard your p
 
 * Custom Tracking Protection
 * `about:config` privacy settings, https://wiki.mozilla.org/Privacy/Privacy_Task_Force/firefox_about_config_privacy_tweeks
-* uBlock Origin
-* DNS over HTTPS, `network.trr.mode` set to _3_
+
+#### Changes to `about:config`
+
+Open up the advanced settings page in Firefox by visiting `about:config`.
+
+#### Configuring DNS over HTTPS
+
+Firefox can be configured to use DNS over HTTPS (DoH). This will protect you from [ISPs that log the DNS queries you make](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+-+The+Problem).
+
+TTR stands for [Trusted Recursive Resolver](https://wiki.mozilla.org/Trusted_Recursive_Resolver).
+
+In `about:config` again, set `network.trr.mode` to _2_. This will make Firefox use DNS over HTTPS by default, but will fallback to regular DNS if it doesn't work, helpful for open networks that require you to sign in to connect when otherwise the internal portal would not resolve.
+
+It's worth noting that this doesn't stop software running on the rest of your computer from making unencrypted DNS lookups, it only protects lookups in the browser.
+
+#### Install uBlock Origin
+
+> An efficient blocker: easy on memory and CPU footprint, and yet can load and enforce thousands more filters than other popular blockers out there.
+
+This is an effective extension to block online advertising that supplements the built in Firefox content blocking.
+
+<https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/>
 
 ### Firefox on Android
 
