@@ -27,10 +27,11 @@
     </style>
 
     {% if page.collection == "posts" %}
-    <link rel="stylesheet" href="{{ "/assets/css/highlight.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
     {% endif %}
 
-    <link rel="shortcut icon" href="{{ "/assets/icons/favicon.ico" | relative_url }}">
+    <link rel="icon" type="image/svg+xml" href="{{ "/assets/icons/" | append: "favicon.svg" | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ "/assets/icons/" | append: "favicon.png" | relative_url }}">
 
     <link rel="alternate" type="application/rss+xml"  href="{{ site.url | append: "/feed.xml" }}" title="{{ site.title }}">
   </head>
