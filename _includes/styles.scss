@@ -159,6 +159,16 @@ main {
     margin-bottom: 1rem;
     font-weight: normal;
     color: $section-headings-color;
+
+    a:last-of-type {
+      display: none;
+    }
+
+    &:hover {
+      a:last-of-type {
+        display: inline
+      }
+    }
   }
 
   p {
