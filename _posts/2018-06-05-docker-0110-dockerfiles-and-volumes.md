@@ -12,7 +12,7 @@ This workshop follows on from that, covering volumes and looking at Dockerfiles 
 
 ![Majestic doggo's will feature](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://media.wired.com/photos/5a55457ef41e4c2cd9ee6cb5/master/w_512,c_limit/Doggo-TopArt-104685145.jpg" | url_encode }}?source=uncomplicated.systems&width=1024)
 
-## Quick Recap
+### Quick Recap
 
 We make a Docker image by writing a `Dockerfile` and building it with `docker build --tag hello-world .`.
 
@@ -24,7 +24,7 @@ For example, `docker run -p 8080:80 httpd`.
 
 Finally there's the Docker registries, where we can upload and download images. When you do `docker pull hello-world` it uses [Docker Hub](https://hub.docker.com) as the default registry, sort of like the GitHub of Docker images.
 
-## What are Volumes?
+### What are Volumes?
 
 You may have heard of heard of them already. So what are they?
 
@@ -107,7 +107,7 @@ OK, that's quite a lot of information, time for a breather. Here's a doggo story
 
 I'd also highly recommend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). Credit to Rhys for this search.
 
-## More Dockerfiles
+### More Dockerfiles
 
 In the 101 we used the `FROM` and `COPY` directives in a Dockerfile. We'll look at those again, and a number of the other commonly used directives.
 
@@ -155,7 +155,7 @@ The `ENTRYPOINT` directive is the command docker will call when we use `docker r
 
 For example the MySQL client image will use something like `ENTRYPOINT [ "mysql" ]`.
 
-## Docker Image Layers
+### Docker Image Layers
 
 Now we've got a better idea of what we can put in a Dockerfile, it's worth having a discussion on what makes up an image.
 
@@ -212,7 +212,7 @@ For example, if we have two images that both use `FROM ubuntu` we only need to d
 
 You can find a deeper dive into this topic at <https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612>.
 
-## Time to Make Something!
+### Time to Make Something!
 
 Brining all of this new Docker Stuff™ together, let's make a slightly more complex image.
 
@@ -291,7 +291,7 @@ You can see this in action if you run `docker build -t rust-hello .` again, ther
 
 It's worth pointing out once again, you shouldn't have Rust installed on your machine, only Docker. Pretty cool!
 
-## Best Pratices
+### Best Pratices
 
 - **Don't** run as root, use the `USER` directive to change the default user for the image
 - **Do** keep images small, cleanup in `RUN` commands to reduce the size of the layers

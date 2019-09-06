@@ -14,14 +14,14 @@ If you are writing a shell script for others to use, you will want to use either
 
 From <https://swcarpentry.github.io/shell-novice/>.
 
-## Manual files
+### Manual files
 
 At the heart of working with the shell is a command called `man`, for manual. This is a lifesaver.
 
 Almost every popular command will be published with their own manual. Running `man <command>` will display the manual, and give you an idea of how you can use the command.
 
 
-## Command synopsis (or sometimes usage)
+### Command synopsis (or sometimes usage)
 
 Every command will come with a synopsis. It is worth learning how to decipher them. Let's break down the one for `mkdir`, a command used to make directories.
 
@@ -53,7 +53,7 @@ We then have `directory_name ...`. Because `directory_name` it is not prefixed w
 
 * [Utility Argument Syntax](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html#tag_12), "introduces terminology used [...] for describing the arguments processed by the utilities"
 
-## Commands
+### Commands
 
 These are a collection of commands that are worth knowing exist. There are lots more, and if you know what you want to do, usually a quick search of Stack Overflow can find you the name of a command you could use. 
 
@@ -81,7 +81,7 @@ These are a collection of commands that are worth knowing exist. There are lots 
 * `env`, set environment and execute command, or print environment
 * `which`, locate a program file in the user's path
 
-## Variables, conditionals, loops, and functions
+### Variables, conditionals, loops, and functions
 
 > The shell is actually a programming language: it has variables, loops, decision-making, and so on.
 
@@ -172,7 +172,7 @@ hello Sam
 
 What a world we live in. When we come across passing arguments to shell scripts later, you'll likely spot some similarities to how functions access arguments.
 
-## Unix pipes and redirection
+### Unix pipes and redirection
 
 Let's talk about plumbing! In the Unix sense.
 
@@ -221,7 +221,7 @@ Using a single <kbd>></kbd> means we will either create or overwrite the `unique
 * <https://en.wikipedia.org/wiki/Redirection_(computing)>
 * <https://en.wikipedia.org/wiki/Unix_philosophy>, this one is well worth a read
 
-## Writing a script
+### Writing a script
 
 ### Shebang
 
@@ -277,7 +277,7 @@ We should be able to pass the script a path as an argument, e.g. `./js-spec-rena
 
 > **Super super bonus activity**, try writing some test for your script! Check out <https://github.com/sstephenson/bats> for a testing framework written in Bash.
 
-## Useful resources
+### Useful resources
 
 * [Bash Guide for Beginners](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
 * [Introduction to if](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html), I _always_ have to look up how to do if statements in shell scripts
