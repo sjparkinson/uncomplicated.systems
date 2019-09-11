@@ -54,6 +54,8 @@ TTR stands for [Trusted Recursive Resolver](https://wiki.mozilla.org/Trusted_Rec
 
 In `about:config` again, set `network.trr.mode` to _2_. This will make Firefox use DNS over HTTPS by default, but will fallback to regular DNS if it doesn't work, helpful for open networks that require you to sign in to connect when otherwise the internal portal would not resolve.
 
+The default DoH provider is CloudFlare. If you would like to change this you can update the value of `network.trr.uri`. The curl project are maintaining a list of DoH providers at <https://github.com/curl/curl/wiki/DNS-over-HTTPS>.
+
 It's worth noting that this doesn't stop software running on the rest of your computer from making unencrypted DNS lookups, it only protects lookups in the browser.
 
 #### Install uBlock Origin
