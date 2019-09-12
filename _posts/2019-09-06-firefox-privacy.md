@@ -63,6 +63,8 @@ The default DoH provider is CloudFlare. If you would like to change this you can
 
 It's worth noting that this doesn't stop software running on the rest of your computer from making unencrypted DNS lookups, it only protects lookups in the browser.
 
+Firefox have also published a guide at <https://support.mozilla.org/en-US/kb/firefox-dns-over-https> which uses the GUI to configure everything.
+
 #### Install uBlock Origin
 
 > An efficient blocker: easy on memory and CPU footprint, and yet can load and enforce thousands more filters than other popular blockers out there.
