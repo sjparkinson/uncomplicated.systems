@@ -41,6 +41,7 @@ Then find and update the values for each of the following preferences.
 * Set `network.http.referer.trimmingPolicy` to `2`
 * Set `network.http.referer.XOriginPolicy` to `2`
 * Set `network.http.referer.XOriginTrimmingPolicy` to `2`
+* Set `network.security.esni.enabled` to `true`
 * Set `webgl.disabled` to `true`
 * Set `media.peerconnection.enabled` to `false`
 
