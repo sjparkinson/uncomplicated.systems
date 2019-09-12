@@ -10,6 +10,8 @@ I've been using this configuration on my work and personal laptops and haven't r
 
 > ⚠️ **Word of warning**, making these changes appears to clear your cookies, so expect to sign in to everything again.
 
+Once you've configured everything use [CloudFlare's Browser Experience Security Check tool](https://www.cloudflare.com/ssl/encrypted-sni/) to validate it's all configured correctly.
+
 #### Configuring Firefox Tracking Protection
 
 Open up `about:preferences#privacy`.
@@ -45,6 +47,8 @@ Then find and update the values for each of the following preferences.
 * Set `webgl.disabled` to `true`
 * Set `media.peerconnection.enabled` to `false`
 
+Restart your browser to get all of these settings to take effect. Then check it's all working at https://www.cloudflare.com/ssl/encrypted-sni/.
+
 The source for all these tweaks comes from <https://wiki.mozilla.org/Privacy/Privacy_Task_Force/firefox_about_config_privacy_tweeks>, which also contains more information about what each preference does.
 
 #### Configuring DNS over HTTPS
@@ -53,7 +57,7 @@ Firefox can be configured to use DNS over HTTPS (DoH). This will protect you fro
 
 TTR stands for [Trusted Recursive Resolver](https://wiki.mozilla.org/Trusted_Recursive_Resolver).
 
-In `about:config` again, set `network.trr.mode` to _2_. This will make Firefox use DNS over HTTPS by default, but will fallback to regular DNS if it doesn't work, helpful for open networks that require you to sign in to connect when otherwise the internal portal would not resolve.
+In `about:config` again, set `network.trr.mode` to _3_ and update `network.trr.bootstrapAddress` to `1.1.1.1` (used to do the initial lookup for the IP address of the host defined in `network.trr.uri`).
 
 The default DoH provider is CloudFlare. If you would like to change this you can update the value of `network.trr.uri`. The curl project are maintaining a list of DoH providers at <https://github.com/curl/curl/wiki/DNS-over-HTTPS>.
 
