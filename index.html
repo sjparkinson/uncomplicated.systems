@@ -7,7 +7,7 @@ layout: default
 <ul>
 {% for post in site.posts %}
   <li>
-    <a href="{% if post.layout = "redirect" %}{{ post.redirect }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a> &mdash; <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string: "ordinal" }}</time>
+    <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a> &mdash; <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string: "ordinal" }}</time>
   </li>
 {% endfor %}
 </ul>
