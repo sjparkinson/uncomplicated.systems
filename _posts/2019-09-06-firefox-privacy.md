@@ -2,6 +2,8 @@
 
 Here's how to setup Firefox on your desktop on or Android to better guard your privacy while browsing the web.
 
+**Update (1st October 2019)**, there was [an article by Ars Technica called "Why big ISPs aren’t happy about Google’s plans for encrypted DNS"](https://arstechnica.com/tech-policy/2019/09/isps-worry-a-new-chrome-feature-will-stop-them-from-spying-on-you/) that hit the front page of Hacker News. [As has been called out in the discussion](https://news.ycombinator.com/item?id=21124900), the idea that ISPs have a view on this demonstrates to me that protecting DNS queries is worthwhile.
+
 ### Firefox on the desktop
 
 To get Pretty Good Protection™️ using Firefox, you can use a combination of custom Tracking Protection settings and a number of `about:config` tweaks.
