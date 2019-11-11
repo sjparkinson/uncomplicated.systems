@@ -13,6 +13,7 @@ search: exclude
     </url>
 
     {% for post in site.posts %}
+    {% if post.redirect %}{% continue %}{% endif %}
     <url>
         <loc>{{ post.url | prepend: site.url }}</loc>
         <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>

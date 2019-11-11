@@ -19,33 +19,29 @@ layout: null
 
     {% assign posts = site.posts | sort: "date" | reverse %}
     {% for post in posts %}
-    <entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
+    <entry>
         <title type="html">{{ post.title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
         <published>{{ post.date | date_to_xmlschema }}</published>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
 
-        {% if post.redirect %}
-        <id>{{ post.redirect | xml_escape }}</id>
-        <link href="{{ post.redirect | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
-        <content
-            type="text/html"
-            xml:base="{{ post.url | absolute_url | xml_escape }}"
-            src="{{ post.redirect }}">
-        </content>
-        <summary>{{ post.summary | strip | xml_escape }}</summary>
-        {% else %}
-        <id>{{ post.id | absolute_url | xml_escape }}</id>
-        <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
-        <content
-            type="html"
-            xml:base="{{ post.url | absolute_url | xml_escape }}">
-            {{ post.content | markdownify | xml_escape }}
-        </content>
-        {% endif %}
-
         <author>
             <name>{{ site.author.name | xml_escape }}</name>
         </author>
+
+        {% if post.redirect %}
+        <id>{{ post.redirect | absolute_url | xml_escape }}</id>
+        <link href="{{ post.redirect | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}" />
+        <content type="text/html" src="{{ post.redirect }}"></content>
+        <summary>
+            {{ post.summary | strip | xml_escape }}
+        </summary>
+        {% else %}
+        <id>{{ post.redirect | absolute_url | xml_escape }}</id>
+        <link href="{{ post.redirect | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}" />
+        <content type="html">
+            {{ post.content | markdownify | xml_escape }}
+        </content>
+        {% endif %}
     </entry>
     {% endfor %}
 </feed>
