@@ -2,7 +2,9 @@
 
 I presented my talk at QCon London this week.
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRC3uHnSETf2Lokk785FPmSkPMRjtBIiGyb4tyU6Y2U1dtuoHFRAdlBUOtYsFaLuMNanQ3e8ynytIFa/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+You can [download a copy of the slides from QCon London's site](https://qconlondon.com/system/files/presentation-slides/samuel_parkinson_-_preparing_for_the_unexpected.pdf).
+
+I will include a video of the talk when it is public on InfoQ.
 
 There's also a few extra bits of content that I worked with the organisers to support the talk.
 
