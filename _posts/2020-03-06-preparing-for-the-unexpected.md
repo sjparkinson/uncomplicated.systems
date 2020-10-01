@@ -2,9 +2,7 @@
 
 I presented my talk at QCon London this week.
 
-You can [download a copy of the slides from QCon London's site](https://qconlondon.com/system/files/presentation-slides/samuel_parkinson_-_preparing_for_the_unexpected.pdf).
-
-I will include a video of the talk when it is public on InfoQ.
+[You can find a video of the talk on InfoQ, along with a full transcription and slides.](https://www.infoq.com/presentations/ft-managing-incidents/)
 
 There's also a few extra bits of content that I worked with the organisers to support the talk.
 
