@@ -37,8 +37,8 @@ layout: null
             {{ post.summary | strip | xml_escape }}
         </summary>
         {% else %}
-        <id>{{ post.redirect | absolute_url | xml_escape }}</id>
-        <link href="{{ post.redirect | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}" />
+        <id>{{ post.url | absolute_url | xml_escape }}</id>
+        <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}" />
         <content type="html">
             {{ post.content | markdownify | xml_escape }}
         </content>
