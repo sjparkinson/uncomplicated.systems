@@ -2,10 +2,27 @@
 layout: default
 ---
 
-<article>
-  <h2>{{ page.title }}</h2>
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
 
-  <p>Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string: "ordinal" }}</time></p>
+  <time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="post-date">{{ page.date | date_to_long_string: "ordinal" }}</time>
 
   {{ content }}
 </article>
+
+<div class="related">
+  <h2>Related Posts</h2>
+
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+    <li>
+      <h3>
+        <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | relative_url }}{% endif %}">
+          {{ post.title }}
+          <small>{{ post.date | date_to_string }}</small>
+        </a>
+      </h3>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
