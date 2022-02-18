@@ -12,11 +12,19 @@ search: exclude
         <priority>0.5</priority>
     </url>
 
+    {% for page in site.pages %}
+    <url>
+        <loc>{{ page.url | prepend: site.url }}</loc>
+        <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+        <priority>0.5</priority>
+    </url>
+    {% endfor %}
+
     {% for post in site.posts %}
     {% if post.redirect %}{% continue %}{% endif %}
     <url>
         <loc>{{ post.url | prepend: site.url }}</loc>
-        <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
+        <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
         <priority>0.5</priority>
     </url>
     {% endfor %}
