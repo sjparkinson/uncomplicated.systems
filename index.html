@@ -2,12 +2,36 @@
 layout: default
 ---
 
-<h2>Posts</h2>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | relative_url }}{% endif %}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<ul>
-{% for post in site.posts %}
-  <li>
-    <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a> &mdash; <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string: "ordinal" }}</time>
-  </li>
-{% endfor %}
-</ul>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post-date">{{ post.date | date_to_long_string: "ordinal" }}</time>
+
+    {% if post.redirect %}
+    <p>Published at <a href="{{ post.redirect }}">{{ post.redirect }}</a>.</p>
+    {% endif %}
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | relative_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

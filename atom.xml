@@ -4,7 +4,7 @@ layout: null
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ site.lang }}">
-    <id>{{ page.url | absolute_url | xml_escape }}</id>
+    <id>{{ site.url | xml_escape }}</id>
     <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
     <link href="{{ "/" | absolute_url }}" rel="alternate" type="text/html" hreflang="{{ site.lang }}" />
     <icon>{{ "/assets/icons/favicon.png" | absolute_url }}</icon>
