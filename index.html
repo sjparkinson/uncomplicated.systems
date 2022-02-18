@@ -6,18 +6,14 @@ layout: default
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{% if post.redirect %}{{ post.redirect }}{% else %}{{ post.url | relative_url }}{% endif %}">
+      <a href="{% if post.redirect_to %}{{ post.redirect_to }}{% else %}{{ post.url | relative_url }}{% endif %}">
         {{ post.title }}
       </a>
     </h1>
 
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post-date">{{ post.date | date_to_long_string: "ordinal" }}</time>
 
-    {% if post.redirect %}
-    <p>Published at <a href="{{ post.redirect }}">{{ post.redirect }}</a>.</p>
-    {% endif %}
-
-    {{ post.content }}
+    {{ post.excerpt }}
   </div>
   {% endfor %}
 </div>

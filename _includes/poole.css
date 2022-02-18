@@ -78,6 +78,8 @@
   a:focus {
     text-decoration: underline;
   }
+
+  
   
   /* Headings */
   h1, h2, h3, h4, h5, h6 {
@@ -332,6 +334,14 @@
   .post {
     margin-bottom: 4em;
   }
+
+  .page a:active,
+  .page a:focus,
+  .post a:active,
+  .post a:focus {
+    background: #ffd6ba;
+    outline: thick solid #ffd6ba;
+  }
   
   /* Blog post or page title */
   .page-title,
@@ -371,7 +381,6 @@
   }
   .related-posts li a:hover {
     color: #268bd2;
-    text-decoration: none;
   }
   .related-posts li a:hover small {
     color: inherit;
@@ -411,7 +420,7 @@
   
   @media (min-width: 30em) {
     .pagination {
-      margin: 3rem 0;
+      margin: 2rem 0;
     }
     .pagination-item {
       float: left;

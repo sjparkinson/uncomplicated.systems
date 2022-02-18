@@ -17,16 +17,33 @@ sass:
 
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
 
 titles_from_headings:
   enabled: true
   strip_title: true
   collections: true
 
-paginate: 5
+paginate: 10
 
 paginate_path: "/posts/:num/"
+
+feed:
+  path: atom.xml
+  posts_limit: 100
+
+redirect_from:
+  json: false
+
+safe: true
+
+plugins: &plugins
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+
+whitelist: *plugins

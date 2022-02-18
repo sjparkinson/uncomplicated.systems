@@ -1,6 +1,5 @@
 ---
 layout: null
-search: exclude
 ---
 
 User-agent: *
