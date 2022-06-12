@@ -340,7 +340,7 @@
   .post a:active,
   .post a:focus {
     background: #ffd6ba;
-    outline: thick solid #ffd6ba;
+    outline: 2px solid #ffd6ba;
   }
   
   /* Blog post or page title */
