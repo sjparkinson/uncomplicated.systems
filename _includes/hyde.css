@@ -52,8 +52,9 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #0f5499;
+  background-color: #1c2128;
 }
+
 @media (min-width: 64em) {
   .sidebar {
     position: fixed;
@@ -87,14 +88,17 @@ html {
 .sidebar-nav {
   margin-bottom: 1rem;
 }
+
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
 }
+
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: underline;
 }
+
 .sidebar-nav-item.active {
   font-weight: bold;
 }
@@ -127,7 +131,7 @@ a.sidebar-nav-item:focus {
 
 .content a,
 .related-posts li a:hover {
-  color: #0f5499;
+  color: #1c2128;
 }
 
 @media (min-width: 64em) {
@@ -149,6 +153,7 @@ a.sidebar-nav-item:focus {
     left: auto;
     right: 0;
   }
+
   .layout-reverse .content {
     margin-left: 2rem;
     margin-right: 22rem;
