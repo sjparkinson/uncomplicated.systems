@@ -69,6 +69,11 @@ html {
 /* Sidebar links */
 .sidebar a {
   color: #fff;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
 }
 
 /* About section */
@@ -131,7 +136,7 @@ a.sidebar-nav-item:focus {
 
 .content a,
 .related-posts li a:hover {
-  color: #1c2128;
+  color: #262a33;
 }
 
 @media (min-width: 64em) {
