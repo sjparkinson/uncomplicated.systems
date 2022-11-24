@@ -376,8 +376,6 @@ tbody tr:nth-child(odd) th {
   text-decoration: none;
 }
 
-.page-title:hover,
-.post-title:hover,
 .post-title a:hover {
   text-decoration: underline;
 }
