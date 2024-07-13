@@ -20,8 +20,7 @@
 
     <style>
     {%- capture styles -%}
-    {%- include poole.css -%}
-    {%- include hyde.css -%}
+    {%- include styles.css -%}
     {%- include syntax.css -%}
     {%- endcapture -%}
     {{- styles | scssify | rstrip -}}
@@ -32,12 +31,10 @@
     <link rel="alternate" type="application/atom+xml"  href="{{ "/atom.xml" | relative_url }}" title="{{ site.title }}">
   </head>
   <body>
-    <body>
-      {% include sidebar.html %}
-  
-      <main role="main" class="content container">
-        {{ content }}
-      </main>
-    </body>
+    {% include sidebar.html %}
+
+    <main role="main" class="content container">
+      {{ content }}
+    </main>
   </body>
 </html>
