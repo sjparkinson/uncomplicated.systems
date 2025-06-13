@@ -35,16 +35,11 @@ feed:
   path: atom.xml
   posts_limit: 100
 
-redirect_from:
-  json: false
-
 safe: true
 
 plugins: &plugins
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-sitemap
   - jekyll-titles-from-headings
 
 whitelist: *plugins
