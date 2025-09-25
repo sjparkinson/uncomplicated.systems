@@ -13,21 +13,26 @@
  * https://github.com/poole/poole.
  */
 
-
-/*
- * Contents
- *
- * Body resets
- * Custom type
- * Messages
- * Container
- * Masthead
- * Posts and pages
- * Pagination
- * Reverse layout
- * Themes
- */
-
+:root {
+  --color-bg-alt: #f9f9f9;
+  --color-bg: #ffffff;
+  --color-border-light: #eee;
+  --color-border: #e5e5e5;
+  --color-code: #aa1523;
+  --color-heading: #262a33;
+  --color-hover-bg: #f5f5f5;
+  --color-link: #1d70b8;
+  --color-link-hover: #003078;
+  --color-link-visited: #4c2c92;
+  --color-sidebar-bg: #1c2128;
+  --color-text: #262a33;
+  --color-text-invert: #ffffff;
+  --color-text-muted: #595959;
+  --color-text-secondary: #555555;
+  --font-family-base: system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  ;
+}
 
 /*
  * Body resets
@@ -48,27 +53,9 @@ body {
 }
 
 html {
-  font-family: system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: var(--font-family-base);
   font-size: 18px;
   line-height: 1.5;
-}
-
-:root {
-  --color-bg-alt: #f9f9f9;
-  --color-bg: #ffffff;
-  --color-border-light: #eee;
-  --color-border: #e5e5e5;
-  --color-code: #aa1523;
-  --color-heading: #262a33;
-  --color-hover-bg: #f5f5f5;
-  --color-link: #1d70b8;
-  --color-link-hover: #003078;
-  --color-link-visited: #4c2c92;
-  --color-sidebar-bg: #1c2128;
-  --color-text: #262a33;
-  --color-text-invert: #ffffff;
-  --color-text-muted: #595959;
-  --color-text-secondary: #555555;
 }
 
 @media (min-width: 38em) {
@@ -188,7 +175,7 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: var(--font-family-code);
 }
 
 code {
