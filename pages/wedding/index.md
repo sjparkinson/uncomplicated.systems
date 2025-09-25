@@ -10,7 +10,9 @@ We can’t wait to celebrate this next chapter of our lives with all the people 
 
 The RSVPs will get set out soon with more details about the day, once we've actually tried the food!
 
-**When?** 13th June 2026 at 1pm
+Arrive from 12pm. The ceremony will be at 1pm, followed by drinks, food, and (ceilidh) dancing into the night.
+
+**When?** 13th June 2026
 
 **Where?** [Lillibrooke Manor, Maidenhead](https://maps.app.goo.gl/hqyWf68TxPXnVKKi9)
 
