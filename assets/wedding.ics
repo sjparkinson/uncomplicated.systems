@@ -26,14 +26,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:wedding-20260613@uncomplicated.systems
-DTSTAMP:20250925T120000Z
+DTSTAMP:20250925T121500Z
 CREATED:20250925T120000Z
-LAST-MODIFIED:20250925T120000Z
-SEQUENCE:0
-DTSTART;TZID=Europe/London:20260613T130000
+LAST-MODIFIED:20250925T121500Z
+SEQUENCE:1
+DTSTART;TZID=Europe/London:20260613T120000
 DTEND;TZID=Europe/London:20260613T235000
 SUMMARY:Aoife & Sam's Wedding
-DESCRIPTION:Aoife & Sam's wedding celebration at Lillibrooke Manor & Barns, Ockwells Road, Cox Green, Maidenhead, SL6 3LP.
+DESCRIPTION:Aoife & Sam's wedding celebration at Lillibrooke Manor & Barns\, Ockwel
+ ls Road\, Cox Green\, Maidenhead\, SL6 3LP.
 URL:https://uncomplicated.systems/wedding/
 LOCATION:Lillibrooke Manor & Barns\, Ockwells Road\, Cox Green\, Maidenhead\, SL6 3LP
 CLASS:PUBLIC
