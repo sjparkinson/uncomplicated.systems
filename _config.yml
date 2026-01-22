@@ -31,8 +31,6 @@ paginate: 10
 
 paginate_path: "/posts/:num/"
 
-lsi: true
-
 feed:
   path: atom.xml
   posts_limit: 100

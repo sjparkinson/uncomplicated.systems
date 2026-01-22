@@ -10,7 +10,7 @@
  
 This workshop follows on from that, covering volumes and looking at Dockerfiles in more detail.
 
-![Majestic doggo's will feature](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://media.wired.com/photos/5a55457ef41e4c2cd9ee6cb5/master/w_512,c_limit/Doggo-TopArt-104685145.jpg" | url_encode }}?source=uncomplicated.systems&width=1024)
+![Majestic doggo's will feature]({{ '/assets/images/9ba222cd-c680-4d21-b8ca-fcac68558c34.jpg' | relative_url }})
 
 ### Quick Recap
 

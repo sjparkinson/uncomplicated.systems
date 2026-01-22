@@ -18,7 +18,7 @@ Harry's key performance metric to focus on was Start Render. Good to hear what p
 
 There was an interesting insight into a review of <https://www.apple.com>, where Harry demonstrated how to identify when different pages of a website are powered by different technologies by looking at the time to first byte (TTFB) performance metric. Pages that share the same stack will typically have a consistent TTFB value.
 
-![Business Insider Time to First Byte](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://user-images.githubusercontent.com/51677/68685952-c9df2600-0562-11ea-8cca-1ce2df9d843c.png" | url_encode }}?source=uncomplicated.systems)
+![Business Insider Time to First Byte]({{ '/assets/images/6c8ecde7-b2f9-4f71-a1d1-7b217d275e83.png' | relative_url }})
 
 _The TTFB of Business Insider's front page and article page, with a gap implying two different technology stacks are involved._
 

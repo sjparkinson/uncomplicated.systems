@@ -22,17 +22,17 @@ Open up `about:preferences#privacy`.
 
 Under the _content blocking_ section select the custom option and check _everything_. In the trackers drop-down select "In all windows", and in the cookies drop-down select "All third-party cookies".
 
-![Content blocking settings in Firefox](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://i.imgur.com/S00wFLT.png" | url_encode }}?source=uncomplicated.systems)
+![Content blocking settings in Firefox]({{ '/assets/images/f33d4bea-a47e-4248-92f3-608972d47096.png' | relative_url }})
 
 Then under _trackers_ you'll also want to click the _change block list_ link and select the "Level 2 block list".
 
-![Tracker block lists in Firefox](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://i.imgur.com/VTGxEOc.png" | url_encode }}?source=uncomplicated.systems)
+![Tracker block lists in Firefox]({{ '/assets/images/1143dd41-1459-40e1-9780-28cd4ed305fc.png' | relative_url }})
 
 #### Changes to `about:config`
 
 Open up the advanced preferences page in Firefox by visiting `about:config`, and promise to be careful!
 
-![The warning page on Firefox's advances preferences page](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://i.imgur.com/Phh1YQ2.png" | url_encode }}?source=uncomplicated.systems)
+![The warning page on Firefox's advances preferences page]({{ '/assets/images/8a87944a-0931-4750-9923-abeca4b28945.png' | relative_url }})
 
 Then find and update the values for each of the following preferences.
 

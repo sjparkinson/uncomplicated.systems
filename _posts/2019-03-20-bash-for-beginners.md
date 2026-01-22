@@ -2,7 +2,7 @@
 
 This is going to be really fun. It'll be like going back in time forty years. We'll be  using websites with _litterally no CSS_.
 
-![](https://www.ft.com/__origami/service/image/v2/images/raw/{{ "https://user-images.githubusercontent.com/51677/54682655-6e5db500-4b07-11e9-9a2c-efe367b5dcbd.png" | url_encode }}?source=uncomplicated.systems&width=1024)
+![]({{ '/assets/images/677493e6-5081-4167-944a-36f079b38b34.png' | relative_url }})
 
 This tutorial is intended to be an introduction to shell scripting. There are several scripting languages out in the wild, and in this tutorial we're going to focus on using [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) (`bash`).
 

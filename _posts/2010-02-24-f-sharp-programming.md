@@ -5,8 +5,6 @@ I’ve started to learn the functional programming language F#, something totall
 Here’s a simple example of what the code looks like, this program works out the roots of a quadratic equation.
 
 ```fsharp
-#light
-
 let quadratic r =
     let a = 2.0
     let b = 3.0
