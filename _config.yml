@@ -39,3 +39,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-titles-from-headings
+
+include:
+  - _redirects

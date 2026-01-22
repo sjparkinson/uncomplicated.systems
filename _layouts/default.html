@@ -31,7 +31,18 @@
     <link rel="alternate" type="application/atom+xml"  href="{{ "/atom.xml" | relative_url }}" title="{{ site.title }}">
   </head>
   <body>
-    {% include sidebar.html %}
+    <div class="sidebar">
+      <div class="container sidebar-sticky">
+        <header role="banner" class="sidebar-about">
+          <h1>
+            <a href="/">
+              {{ site.title }}
+            </a>
+          </h1>
+          <p class="lead">{{ site.description }}</p>
+        </header>
+      </div>
+    </div>
 
     <main role="main" class="content container">
       {{ content }}
