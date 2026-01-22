@@ -4,7 +4,7 @@ Today I built a bird box over in [Blackhorse Workshop](http://www.blackhorsework
 
 What else are you going to do at nine-ish on a Saturday morning… 🤦‍♂️
 
-We followed [a guide published by the Royal Society for the Protection of Birds](https://www.rspb.org.uk/fun-and-learning/for-families/family-wild-challenge/activities/build-a-birdbox/). Lee was particularly keen on building them to suit a [Blue Tit](https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/blue-tit).
+We followed [a guide published by the Royal Society for the Protection of Birds](https://www.rspb.org.uk/helping-nature/what-you-can-do/activities/build-a-birdbox). Lee was particularly keen on building them to suit a [Blue Tit](https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/blue-tit).
 
 Here’s a few photos from the morning.
 
