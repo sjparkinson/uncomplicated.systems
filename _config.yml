@@ -31,12 +31,7 @@ paginate: 10
 
 paginate_path: "/posts/:num/"
 
-feed:
-  path: atom.xml
-  posts_limit: 100
-
 plugins:
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-titles-from-headings
 
@@ -47,9 +42,8 @@ include:
 
 # Exclude Cloudflare Workers files from Jekyll build output
 exclude:
-  - wrangler.json
-  - build.config.json
-  - src
-  - node_modules
   - Gemfile
   - Gemfile.lock
+  - LICENSE
+  - README.md
+  - wrangler.jsonc

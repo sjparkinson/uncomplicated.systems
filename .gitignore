@@ -13,5 +13,3 @@ vendor/
 
 # Wrangler local state
 .wrangler/
-
-.node_modules/

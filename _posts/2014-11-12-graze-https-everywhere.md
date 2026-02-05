@@ -1,5 +1,5 @@
 ---
-redirect_to: https://web.archive.org/web/20160514074741/http://tech.graze.com:80/2014/11/12/https-everywhere/
+external_url: https://web.archive.org/web/20160514074741/http://tech.graze.com:80/2014/11/12/https-everywhere/
 ---
 
 # Secure Snacking

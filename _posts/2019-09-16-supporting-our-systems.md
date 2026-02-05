@@ -1,5 +1,5 @@
 ---
-redirect_to: https://medium.com/ft-product-technology/supporting-our-systems-through-incident-workshops-c0d22a4290b9
+external_url: https://medium.com/ft-product-technology/supporting-our-systems-through-incident-workshops-c0d22a4290b9
 ---
 
 # Supporting our systems through incident workshops

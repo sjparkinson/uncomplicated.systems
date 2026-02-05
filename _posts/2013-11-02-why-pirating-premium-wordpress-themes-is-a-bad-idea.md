@@ -1,5 +1,5 @@
 ---
-redirect_to: https://web.archive.org/web/20150217122504/https://samp.im/notes/1154/why-pirating-premium-wordpress-themes-is-a-bad-idea
+external_url: https://web.archive.org/web/20150217122504/https://samp.im/notes/1154/why-pirating-premium-wordpress-themes-is-a-bad-idea
 ---
 
 # Why Pirating Premium WordPress Themes is a Bad Idea

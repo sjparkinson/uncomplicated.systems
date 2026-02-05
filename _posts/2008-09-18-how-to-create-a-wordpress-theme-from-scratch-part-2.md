@@ -1,5 +1,5 @@
 ---
-redirect_to: http://web.archive.org/web/20090709015355/https://net.tutsplus.com/working-with-cmss/how-to-create-a-wordpress-theme-from-scratch-part-2/
+external_url: http://web.archive.org/web/20090709015355/https://net.tutsplus.com/working-with-cmss/how-to-create-a-wordpress-theme-from-scratch-part-2/
 ---
 
 # How to Create a Wordpress Theme from Scratch: Part 2

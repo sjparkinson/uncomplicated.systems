@@ -1,5 +1,5 @@
 ---
-redirect_to: https://code.tutsplus.com/articles/how-to-create-a-wordpress-theme-from-scratch--net-706
+external_url: https://code.tutsplus.com/articles/how-to-create-a-wordpress-theme-from-scratch--net-706
 ---
 
 # How to Create a Wordpress Theme from Scratch

@@ -1,5 +1,5 @@
 ---
-redirect_to: https://web.archive.org/web/20160514074213/http://tech.graze.com/2014/06/03/a-first-week-in-graze-tech/
+external_url: https://web.archive.org/web/20160514074213/http://tech.graze.com/2014/06/03/a-first-week-in-graze-tech/
 ---
 
 # My First Week in Graze Tech
