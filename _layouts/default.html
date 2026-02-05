@@ -16,33 +16,26 @@
   {%- if page.url == "/" %}
   <meta name="description" content="{{ site.description | escape }}">
   {% else %}
-  <meta name="description" content="{{ page.description | default: page.content | strip | newline_to_br | split: "
-    <br />" | first | default: site.description | markdownify | strip_html | escape_once | strip }}">
+  <meta name="description" content="{{ page.description | default: page.content | strip | newline_to_br | split: "<br />" | first | default: site.description | markdownify | strip_html | escape_once | strip }}">
   {% endif -%}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
   <link rel="icon" type="image/png" sizes="240x240" href="{{ "/assets/icons/favicon.png" | relative_url }}">
 
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-    }
-
-    img {
-      max-width: 100%;
-    }
-  </style>
-  <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 
 <body>
   <header role="banner">
-    <h1><a href="/">{{ site.title }}</a></h1>
-    <p>{{ site.description }}</p>
+    <hgroup>
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
+    </hgroup>
   </header>
 
-  <main role="main">
+  <main>
     {{ content }}
   </main>
 </body>
