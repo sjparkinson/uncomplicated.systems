@@ -34,7 +34,7 @@ body {
     /* Remove the margin in all browsers, center horizontally. */
     max-width: 90ch;
     padding: 1rem;
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 /*
@@ -68,7 +68,7 @@ pre {
         Menlo,
         monospace;
     /* 1 */
-    font-size: 1em;
+    font-size: 1rem;
     /* 2 */
 }
 
@@ -222,6 +222,16 @@ summary {
 img {
     max-width: 100%;
     height: auto;
+}
+
+header[role="banner"] hgroup h1,
+ main hgroup h2 {
+    margin-bottom: 0;
+}
+
+header[role="banner"] hgroup p,
+main hgroup p {
+    margin-top: 0;
 }
 
 .highlight .hll {
