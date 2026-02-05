@@ -7,8 +7,9 @@
 		}
 	},
 	"forwardPorts": [
+		35729,
 		4000,
-		35729
+		8787
 	],
 	"remoteUser": "vscode"
 }
