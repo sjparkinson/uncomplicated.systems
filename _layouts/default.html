@@ -16,15 +16,16 @@
   {%- if page.url == "/" %}
   <meta name="description" content="{{ site.description | escape }}">
   {% else %}
-  <meta name="description" content="{{ page.description | default: page.content | strip | newline_to_br | split: "<br />" | first | default: site.description | markdownify | strip_html | escape_once | strip }}">
+  <meta name="description" content="{{ page.description | default: page.content | strip | newline_to_br | split: "
+    <br />" | first | default: site.description | markdownify | strip_html | escape_once | strip }}">
   {% endif -%}
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
 
-  <link rel="icon" type="image/png" sizes="240x240" href="{{ "/assets/icons/favicon.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="240x240" href="{{ " /assets/icons/favicon.png" | relative_url }}">
 
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ " /assets/css/main.css" | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 
 <body>
