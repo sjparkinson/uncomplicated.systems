@@ -1,0 +1,19 @@
+{
+    "name": "blog",
+    "routes": [
+        {
+            "pattern": "uncomplicated.systems",
+            "custom_domain": true
+        }
+    ],
+    "assets": {
+        "directory": "_site",
+        "not_found_handling": "404-page"
+    },
+    "build": {
+        "command": "bundle exec jekyll build"
+    },
+    "workers_dev": false,
+    "preview_urls": false,
+    "compatibility_date": "2026-02-05"
+}

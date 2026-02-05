@@ -39,3 +39,17 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-titles-from-headings
+
+# Include _headers and _redirects files (normally ignored due to underscore prefix)
+include:
+  - _headers
+  - _redirects
+
+# Exclude Cloudflare Workers files from Jekyll build output
+exclude:
+  - wrangler.json
+  - build.config.json
+  - src
+  - node_modules
+  - Gemfile
+  - Gemfile.lock

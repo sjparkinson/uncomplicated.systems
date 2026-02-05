@@ -10,3 +10,8 @@ _site/
 # Additional Ruby/bundler ignore for when you run: bundle install
 .bundle/
 vendor/
+
+# Wrangler local state
+.wrangler/
+
+.node_modules/
