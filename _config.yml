@@ -27,12 +27,7 @@ titles_from_headings:
   strip_title: true
   collections: true
 
-paginate: 10
-
-paginate_path: "/posts/:num/"
-
 plugins:
-  - jekyll-paginate
   - jekyll-titles-from-headings
 
 # Include _headers and _redirects files (normally ignored due to underscore prefix)

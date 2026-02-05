@@ -2,30 +2,12 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | replace: '.html', '' | relative_url }}{% endif %}">{{ post.title }}</a>
-    </h1>
+<ol>
+{% for post in site.posts %}
+  <li>
+    <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | replace: '.html', '' | relative_url }}{% endif %}">{{ post.title }}</a>
 
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post-date">{{ post.date | date_to_long_string: "ordinal" }}</time>
-
-    {{ post.excerpt }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+  </li>
+{% endfor %}
+</ol>
