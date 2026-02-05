@@ -1,17 +1,12 @@
-# Default headers for all paths
 /*
+  Cache-Control: public, no-cache
+  Cross-Origin-Embedder-Policy: require-corp; report-to="default";
+  Cross-Origin-Opener-Policy: same-site; report-to="default";
+  Cross-Origin-Resource-Policy: same-site
+  Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
-  Referrer-Policy: strict-origin-when-cross-origin
+  X-XSS-Protection: 0
 
-# Cache static assets aggressively (images, icons)
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
-
-# Cache HTML pages with revalidation
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate
-
-# Cache the Atom feed
-/atom.xml
-  Cache-Control: public, max-age=0, must-revalidate
