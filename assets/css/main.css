@@ -239,6 +239,16 @@ blockquote {
     padding: 0 0 0 0.8em;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    header[role="banner"] hgroup h1 {
+        margin-top: 0;
+    }
+}
+
 header[role="banner"] hgroup h1,
 main hgroup h2 {
     margin-bottom: 0;
