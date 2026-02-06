@@ -1,5 +1,17 @@
-:root {
-    --font-family: serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@font-face {
+    font-family: "EB Garamond";
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/assets/fonts/EBGaramond-Italic-VariableFont_wght.ttf);
 }
 
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -31,9 +43,10 @@ Sections
 */
 
 body {
-    font-family: var(--font-family);
-    overflow-wrap: break-word;
-    text-rendering: optimizeLegibility;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0 auto;
     max-width: 75ch;
     padding: 1rem;
@@ -63,7 +76,7 @@ code,
 kbd,
 samp,
 pre {
-    font-family: monospace;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1rem;
 }
 
@@ -204,6 +217,11 @@ Add the correct display in Chrome and Safari.
 
 summary {
     display: list-item;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
 }
 
 li {
