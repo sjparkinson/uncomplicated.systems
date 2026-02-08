@@ -1,4 +1,4 @@
-## Running GeForce Now on macOS
+## Running GeForce NOW on macOS
 
 Lately, I stream my computer games using [GeForce NOW](https://www.nvidia.com/en-gb/geforce-now/), so I can play nearly all of my Steam library on macOS.
 

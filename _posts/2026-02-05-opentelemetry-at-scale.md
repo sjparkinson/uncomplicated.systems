@@ -1,4 +1,4 @@
-## Notes from how to Roll Out OpenTelemetry at Scale
+## Rolling Out OpenTelemetry at Scale
 
 From a talk by Ted Young at The Royal Lancaster on 4th February 2026 hosted by Grafana Labs.
 
