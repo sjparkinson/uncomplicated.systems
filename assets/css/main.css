@@ -84,7 +84,7 @@ body {
     font-weight: 400;
     margin: 0 auto;
     max-width: 75ch;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 /*
@@ -273,10 +273,8 @@ blockquote {
     padding: 0 0 0 0.8em;
 }
 
-@media (max-width: 768px) {
-    header[role="banner"] hgroup h1 {
-        margin-top: 0;
-    }
+header[role="banner"] hgroup h1 {
+    margin-top: 0;
 }
 
 header[role="banner"] hgroup h1,
