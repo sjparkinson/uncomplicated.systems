@@ -184,6 +184,10 @@ pre {
     font-size: 0.8em;
 }
 
+pre {
+    overflow-x: auto;
+}
+
 pre code {
     font-size: 1em;
 }
