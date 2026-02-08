@@ -1,8 +1,8 @@
-# Notes from how to Roll Out OpenTelemetry at Scale
+## Notes from how to Roll Out OpenTelemetry at Scale
 
 From a talk by Ted Young at The Royal Lancaster on 4th February 2026 hosted by Grafana Labs.
 
-## Insights from before the talk
+### Insights from before the talk
 
 * Don't apply sampling manually at the source (say sidecar collector) if you want to do span metrics centrally.
 
@@ -10,7 +10,7 @@ From a talk by Ted Young at The Royal Lancaster on 4th February 2026 hosted by G
 
 * You _really_ need to watch out for the maintenance burden of deploying SDKs and collectors. The OpenTelemetry project's intent is to achieve a zero-touch experience (via the new [OpenTelemetry Injector](https://github.com/open-telemetry/opentelemetry-injector) project). For example don't deploy sidecars that then require a code change and rollout to update configuration across hundreds of services.
 
-## OpenTelemetry at Scale
+### OpenTelemetry at Scale
 
 Below is the recomended aproach to adopting OpenTelemetry within an enterprise. It's almost the opposite order of what people might naturally jump to (e.g. app specific insighs first).
 
@@ -34,14 +34,14 @@ General notes from this section:
 * Alloy has some **non-upstreamed prometheus exporters** that are worth a look at, will be upstreamed eventually
 * **.NET has OpenTelemetry baked in!**
 
-## OpenTelemetry Injector
+### OpenTelemetry Injector
 
 - **OpenTelemetry Injector is worth exploring**
   - Not for **Go or Rust** (as they don't have a standard library that can be instrumented)
 - **Fargate**: bake into image
 - **eBPF** called out as a key mechanism (but language/platform coverage concerns remain)
 
-## Grafana Infrastructure Hub
+### Grafana Infrastructure Hub
 
 - **Alloy**
   - Configured centrally in **Grafana Cloud**
