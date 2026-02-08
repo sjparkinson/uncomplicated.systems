@@ -4,7 +4,8 @@
 	"features": {
 		"ghcr.io/devcontainers-extra/features/npm-packages:1": {
 			"packages": "wrangler@latest"
-		}
+		},
+		"ghcr.io/devcontainers/features/git-lfs:1": {}
 	},
 	"forwardPorts": [
 		35729,
