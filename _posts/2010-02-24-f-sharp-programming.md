@@ -1,4 +1,4 @@
-# F\# Programming
+## F\# Programming
 
 I’ve started to learn the functional programming language F#, something totally different to what I’m used to.
 

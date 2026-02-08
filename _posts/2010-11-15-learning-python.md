@@ -1,4 +1,4 @@
-# Learning Python
+## Learning Python
 
 As I’ve recently started my Computer Science course I’ve had to start learning a few new programming languages. One of these is Python, famously used by Google amongst others. It’s a great language, and very similar to PHP which I’ve already been using for a while.
 

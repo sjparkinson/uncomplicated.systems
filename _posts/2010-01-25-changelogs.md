@@ -1,4 +1,4 @@
-# Changelogs
+## Changelogs
 
 I kinda like changelogs, they keep a tidy record of what you’ve done to something. I have one running at isitup, a helpful reminder sometimes (though I think I should have added dates/times to it…).
 

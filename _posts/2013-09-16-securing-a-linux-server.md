@@ -1,4 +1,4 @@
-# Securing a Linux Server
+## Securing a Linux Server
 
 Some basic tasks to run through when logging into a new server. There is plenty more that can be done to harden a server but you need to start somewhere.
 
