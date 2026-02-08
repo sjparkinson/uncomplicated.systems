@@ -6,21 +6,12 @@
         {
             "label": "Serve",
             "type": "shell",
-            "command": "bundle exec jekyll serve --drafts --incremental",
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            },
-            "isBackground": true,
-        },
-        {
-            "label": "Build",
-            "type": "shell",
-            "command": "bundle exec jekyll build",
+            "command": "wrangler dev",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            "isBackground": true,
         }
     ]
 }
