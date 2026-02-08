@@ -255,6 +255,10 @@ main hgroup p {
     margin-top: 0;
 }
 
+main hgroup p time {
+    color: #767676;
+}
+
 .highlight .hll {
     background-color: #ffffcc
 }
