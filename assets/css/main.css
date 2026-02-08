@@ -35,6 +35,16 @@
     --h5-size: clamp(1.1em, 1.6vw, 1.2em);
     --h6-size: clamp(1em, 1.2vw, 1em);
     --heading-line-height: 1.1;
+
+    --text-color: #000000;
+    --text-muted: color-mix(in srgb, var(--text-color) 55%, #ffffff);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #ffffff;
+        --text-muted: color-mix(in srgb, var(--text-color) 70%, #000000);
+    }
 }
 
 /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -66,14 +76,15 @@ Sections
 */
 
 body {
+    color: var(--text-color);
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-size: var(--body-font-size);
     font-style: normal;
+    font-weight: 400;
     margin: 0 auto;
     max-width: 75ch;
     padding: 1rem;
-    font-size: var(--body-font-size);
 }
 
 /*
@@ -280,7 +291,7 @@ main hgroup p {
 }
 
 main hgroup p time {
-    color: #767676;
+    color: var(--text-muted);
 }
 
 /* Headings: responsive sizes and spacing */
