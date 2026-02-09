@@ -137,11 +137,12 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    margin-block: 0;
+}
+
+body>header,
+body>main {
+    max-inline-size: 75ch;
     margin-inline: auto;
-    max-width: 75ch;
-    padding-block: 2rem;
-    padding-inline: 1rem;
 }
 
 /*
