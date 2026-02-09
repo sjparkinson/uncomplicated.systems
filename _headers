@@ -4,6 +4,9 @@
 /
   Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style, </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2;
 
+/:year/:month/:day/:slug
+  Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style, </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2;
+
 /*
   Cache-Control: public, max-age=0
   Cross-Origin-Embedder-Policy: require-corp; report-to="default";
