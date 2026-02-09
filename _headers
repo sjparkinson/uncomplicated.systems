@@ -1,3 +1,6 @@
+/
+  Link: </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2;
+
 /*
   Cache-Control: public, max-age=0
   Cross-Origin-Embedder-Policy: require-corp; report-to="default";
@@ -10,4 +13,5 @@
 
 /assets/*
   ! Cache-Control
+  ! Link
   Cache-Control: public, max-age=31536000, immutable
