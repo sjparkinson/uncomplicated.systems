@@ -2,10 +2,12 @@
 ---
 {%- assign css = site.static_files | where: "path", "/assets/css/main.css" | first -%}
 /
-  Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style, </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
+  Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style
+  Link: </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
 
 /:year/:month/:day/:slug
-  Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style, </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
+  Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style
+  Link: </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
 
 /*
   Cache-Control: public, max-age=0
