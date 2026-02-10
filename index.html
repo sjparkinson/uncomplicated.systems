@@ -8,7 +8,7 @@ layout: default
 <ul>
   {% for post in year.items %}
   <li>
-    <time datetime="{{ post.date | date: " %Y-%m-%d" }}">{{ post.date | date: "%d %b" }}</time>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d %b" }}</time>
     <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | replace: '.html', '' | relative_url }}{% endif %}">{{ post.title }}</a>{% if post.external_url %}&nbsp;<small>&nearr;</small>{% endif %}
   </li>
   {% endfor %}
