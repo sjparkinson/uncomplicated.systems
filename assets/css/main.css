@@ -345,6 +345,8 @@ li {
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
+    font-style: italic;
 }
 
 blockquote {

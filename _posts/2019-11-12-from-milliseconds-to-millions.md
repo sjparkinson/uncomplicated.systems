@@ -21,7 +21,6 @@ There was an interesting insight into a review of <https://www.apple.com>, where
 <img
   width="720"
   height="266.05"
-  style="width: 100%; height: auto;"
   srcset="
     /cdn-cgi/image/format=auto,quality=medium-low,fit=scale-down,width=720/assets/images/6c8ecde7-b2f9-4f71-a1d1-7b217d275e83.png 720w,
     /cdn-cgi/image/format=auto,quality=medium-low,fit=scale-down,width=1440/assets/images/6c8ecde7-b2f9-4f71-a1d1-7b217d275e83.png 1440w
