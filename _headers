@@ -6,6 +6,7 @@
   Link: </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
 
 /:year/:month/:day/:slug
+  Accept-CH: rtt, save-data, ect, downlink
   Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style
   Link: </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
 
@@ -22,5 +23,4 @@
 /assets/*
   ! Cache-Control
   ! Link
-  Accept-CH: rtt, save-data, ect, downlink
   Cache-Control: public, max-age=31536000, immutable
