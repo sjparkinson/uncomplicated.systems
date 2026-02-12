@@ -12,5 +12,8 @@
 		4000,
 		8787
 	],
+	"remoteEnv": {
+		"WRANGLER_SEND_METRICS": "false"
+	},
 	"remoteUser": "vscode"
 }
