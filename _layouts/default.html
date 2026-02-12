@@ -32,13 +32,15 @@
   <header role="banner">
     <hgroup>
       <h1><a href="/">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
     </hgroup>
   </header>
 
   <main>
     {{ content }}
   </main>
-</body>
 
+  <footer>
+    <p>&copy; 2018&ndash;{{ site.time | date: "%Y" }} <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>.</p>
+  </footer>
+</body>
 </html>

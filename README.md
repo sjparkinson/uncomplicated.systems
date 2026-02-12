@@ -1,5 +1,5 @@
 # Uncomplicated Systems
 
-This is a minimal Jekyll based website I'm using to publish content on the internet.
+This is a minimal Jekyll based website I'm using to publish my thoughts online.
 
-It's based on the [Hyde theme](https://github.com/poole/hyde).
+No license is provided for this project. If you want to use any of the content, please contact me.

@@ -12,6 +12,7 @@ description: by Samuel Parkinson
 
 author:
   name: Samuel Parkinson
+  email: samuel.parkinson@hey.com
 
 sass:
   sass_dir: _includes

@@ -142,7 +142,8 @@ body {
 }
 
 body>header,
-body>main {
+body>main,
+body>footer {
     max-inline-size: 720px;
     margin-inline: auto;
 }
