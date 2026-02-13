@@ -1,6 +1,6 @@
 ## Heroku from Scratch
 
-> ℹ️ This post is for an internal workshop at the Financial Times.
+ℹ️ This post is for an internal workshop at the Financial Times.
 
 We're going to put togther a Heroku application, from scratch.
 
@@ -10,7 +10,7 @@ And we'll begin by building a basic hello world application using Express, we ca
 
 ### Making the application
 
-> If you don't have Yarn already, [check out their install page](https://yarnpkg.com/en/docs/install) (basically `brew install yarn`).
+_If you don't have Yarn already, [check out their install page](https://yarnpkg.com/en/docs/install) (basically `brew install yarn`)._
 
 First we'll make a folder and generate our `package.json` to kick start the project.
 
@@ -103,7 +103,7 @@ Then test it again with `yarn start` and opening <http://localhost:3000>.
 
 ### Preparing it for Heroku
 
-> If you haven't got it already, [please install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (again probabily `brew install heroku/brew/heroku`).
+_If you haven't got it already, [please install the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (again probabily `brew install heroku/brew/heroku`)._
 
 While we've got something working locally, there's a few things we'll need to change to make sure Heroku can run it too.
 

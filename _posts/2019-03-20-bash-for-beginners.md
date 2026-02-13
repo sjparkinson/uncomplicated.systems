@@ -57,7 +57,7 @@ We then have `directory_name ...`. Because `directory_name` it is not prefixed w
 
 These are a collection of commands that are worth knowing exist. There are lots more, and if you know what you want to do, usually a quick search of Stack Overflow can find you the name of a command you could use. 
 
-> 📝 The descriptions for all these commands come from running `man <command>`. Yeah I totally ran `man man`, don't think I've _ever_ done that before.
+📝 The descriptions for all these commands come from running `man <command>`. Yeah I totally ran `man man`, don't think I've _ever_ done that before.
 
 * `man`, format and display the on-line manual pages
 * `sed`, stream editor
@@ -271,11 +271,11 @@ For example a file called `foo-bar.js` should become `foo-bar.spec.js`.
 
 We should be able to pass the script a path as an argument, e.g. `./js-spec-rename.sh test/`.
 
-> **Bonus question**, what would we change about how we use the script to simplify it dramatically?
+**Bonus question**, what would we change about how we use the script to simplify it dramatically?
 
-> **Super  bonus activity**, use [shellcheck](https://github.com/koalaman/shellcheck) to lint your script.
+**Super  bonus activity**, use [shellcheck](https://github.com/koalaman/shellcheck) to lint your script.
 
-> **Super super bonus activity**, try writing some test for your script! Check out <https://github.com/sstephenson/bats> for a testing framework written in Bash.
+**Super super bonus activity**, try writing some test for your script! Check out <https://github.com/sstephenson/bats> for a testing framework written in Bash.
 
 ### Useful resources
 

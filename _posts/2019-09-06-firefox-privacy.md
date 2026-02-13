@@ -12,7 +12,7 @@ To get Pretty Good Protection™️ using Firefox, you can use a combination of 
 
 I've been using this configuration on my work and personal laptops and haven't really experienced any noteworthy issues with browsing the internet.
 
-> ⚠️ **Word of warning**, making these changes appears to clear your cookies, so expect to sign in to everything again.
+_⚠️ **Word of warning**, making these changes appears to clear your cookies, so expect to sign in to everything again._
 
 Once you've configured everything use [CloudFlare's Browser Experience Security Check tool](https://www.cloudflare.com/ssl/encrypted-sni/) to validate it's all configured correctly.
 

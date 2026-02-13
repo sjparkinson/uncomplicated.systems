@@ -8,4 +8,4 @@ Some basic tasks to run through when logging into a new server. There is plenty 
 4. Setup IPTables
 5. Install fail2ban
 
-> You should now have a server that is locked down and ready to use, however this is not the end of your security journey. Stay on top of updates (and always test them in a non-production environment first), always close ports that you don’t need, check your logs regularly, and know your servers inside-and-out.
+You should now have a server that is locked down and ready to use, however this is not the end of your security journey. Stay on top of updates (and always test them in a non-production environment first), always close ports that you don’t need, check your logs regularly, and know your servers inside-and-out.

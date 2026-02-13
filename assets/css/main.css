@@ -352,9 +352,21 @@ img {
 }
 
 blockquote {
-    border-inline-start: 4px solid;
     margin: 0;
-    padding-inline-start: 0.8em;
+    padding-inline: 0.8em;
+    font-style: italic;
+}
+
+blockquote {
+    quotes: auto;
+}
+
+blockquote>p::before {
+    content: open-quote;
+}
+
+blockquote>p::after {
+    content: close-quote;
 }
 
 header[role="banner"] hgroup h1 {

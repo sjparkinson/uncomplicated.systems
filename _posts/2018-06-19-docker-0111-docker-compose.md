@@ -1,10 +1,10 @@
 ## Docker 0111 – Docker Compose
 
-> ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
-> 
-> * [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101)
-> * [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes)
-> * [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose)
+ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
+
+* [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101)
+* [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes)
+* [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose)
 
 We've previously used the `docker` command line tool to build and run Docker images.
 
@@ -31,8 +31,8 @@ Following that advice, we'll need two images to define our system, one for the w
 Taking that database, let's write an application that lists them all in HTML.
 
 > the human is hosting a get together this evening. and i am told there will be snacks. so my goal. will be to convince every single guest. that i have not eaten. in several weeks
->
-> [Thoughts of Dog (@dog_feelings) June 16, 2018](https://twitter.com/dog_feelings/status/1008090737240571904)
+
+[Thoughts of Dog (@dog_feelings) June 16, 2018](https://twitter.com/dog_feelings/status/1008090737240571904)
 
 Pretending we're on Blue Peter for a moment, [there's a Go based application ready to build](https://github.com/sjparkinson/docker-0111).
 

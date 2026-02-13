@@ -1,10 +1,10 @@
 ## Docker 0110 – Dockerfiles & Volumes
 
-> ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
-> 
-> * [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101)
-> * [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes)
-> * [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose)
+ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
+
+* [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101)
+* [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes)
+* [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose)
 
 [We've already covered the basics in a 101](/2018/05/23/docker-101), looking at the Docker command line tool and the basics of making images and Dockerfiles.
  
@@ -102,8 +102,8 @@ In summary, we can use volumes for persisting part of a container's filesystem, 
 OK, that's quite a lot of information, time for a breather. Here's a doggo story to recover.
 
 >  i had a long talk. with my fren. about how to spot. a fake ball throw. the optimal strategy. is to follow the ball. with your eyes. instead of your heart
-> 
-> [Thoughts of Dog (@dog_feelings) January 27, 2018](https://twitter.com/dog_feelings/status/957385573571944455)
+
+[Thoughts of Dog (@dog_feelings) January 27, 2018](https://twitter.com/dog_feelings/status/957385573571944455)
 
 I'd also highly recommend searching [Google images for "dogs that have eaten a bee"](https://www.google.com/search?q=dogs+that+have+eaten+a+bee&hl=en&tbm=isch). Credit to Rhys for this search.
 
@@ -300,4 +300,4 @@ It's worth pointing out once again, you shouldn't have Rust installed on your ma
 
 Try using the `USER` directive to run this greetings program as a non-root user!
 
-> ➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](/2018/06/19/docker-0111-docker-compose).
+➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](/2018/06/19/docker-0111-docker-compose).
