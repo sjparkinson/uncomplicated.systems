@@ -1,5 +1,5 @@
 ---
-external_url: https://www.hackster.io/main-thread-technology/photon-powered-communal-door-b5d1d2
+archive_url: https://web.archive.org/web/20220701013604/https://www.hackster.io/main-thread-technology/photon-powered-communal-door-b5d1d2
 ---
 
 ## Photon Powered Flat Intercom

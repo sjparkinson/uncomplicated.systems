@@ -1,5 +1,5 @@
 ---
-external_url: https://medium.com/ft-product-technology/supporting-our-systems-through-incident-workshops-c0d22a4290b9
+archive_url: https://web.archive.org/web/20250721090135/https://medium.com/ft-product-technology/supporting-our-systems-through-incident-workshops-c0d22a4290b9
 ---
 
 ## Supporting our systems through incident workshops

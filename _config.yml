@@ -14,16 +14,13 @@ author:
   name: Samuel Parkinson
   email: samuel.parkinson@hey.com
 
-sass:
-  sass_dir: _includes
-  style: compressed
-
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+      permalink: /:year/:month/:day/:title
 
 titles_from_headings:
   enabled: true
@@ -38,7 +35,6 @@ include:
   - _headers
   - _redirects
 
-# Exclude Cloudflare Workers files from Jekyll build output
 exclude:
   - Gemfile
   - Gemfile.lock

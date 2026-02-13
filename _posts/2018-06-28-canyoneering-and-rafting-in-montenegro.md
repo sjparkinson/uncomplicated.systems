@@ -32,12 +32,12 @@ Early start, driving down to the [Nevidio canyon](https://www.openstreetmap.org/
 
 ### Photos
 
-![The Piva River]({{ '/assets/images/771a9d9c-8fda-4164-8623-59dc7ec6f611.jpg' | relative_url }})
+<img width="720" height="960" src="/assets/images/771a9d9c-8fda-4164-8623-59dc7ec6f611.jpg" alt="The Piva River" loading="lazy">
 
 [The Piva River](https://en.wikipedia.org/wiki/Piva_(river)), and one of the first times I've taken a vertical panorama.
 
 [Black Lake in Montenegro](https://en.wikipedia.org/wiki/Black_Lake_(Montenegro)), the reflections were surreal.
 
-![Canyon of the Piva River]({{ '/assets/images/fb22fd7b-4a95-444c-9b3c-9dc26696a604.jpg' | relative_url }})
+<img width="720" height="540" src="/assets/images/fb22fd7b-4a95-444c-9b3c-9dc26696a604.jpg" alt="Canyon of the Piva River" loading="lazy">
 
 Canyon of the Piva River, shot from a crossing on the E762. [It's even on Google street view](https://goo.gl/maps/cYbjiaD6i4H2)!

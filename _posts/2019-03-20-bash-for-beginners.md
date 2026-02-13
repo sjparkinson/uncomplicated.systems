@@ -2,7 +2,7 @@
 
 This is going to be really fun. It'll be like going back in time forty years. We'll be  using websites with _litterally no CSS_.
 
-![]({{ '/assets/images/677493e6-5081-4167-944a-36f079b38b34.png' | relative_url }})
+<img width="720" height="479" src="/assets/images/677493e6-5081-4167-944a-36f079b38b34.png" alt="" loading="eager" fetchpriority="high">
 
 This tutorial is intended to be an introduction to shell scripting. There are several scripting languages out in the wild, and in this tutorial we're going to focus on using [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) (`bash`).
 

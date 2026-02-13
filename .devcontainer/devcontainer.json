@@ -8,8 +8,6 @@
 		"ghcr.io/devcontainers/features/git-lfs:1": {}
 	},
 	"forwardPorts": [
-		35729,
-		4000,
 		8787
 	],
 	"remoteEnv": {

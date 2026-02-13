@@ -1,5 +1,5 @@
 ---
-external_url: https://code.tutsplus.com/articles/how-to-create-a-wordpress-theme-from-scratch--net-706
+archive_url: https://web.archive.org/web/20240624232520/https://code.tutsplus.com/how-to-create-a-wordpress-theme-from-scratch--net-706a
 ---
 
 ## How to Create a Wordpress Theme from Scratch

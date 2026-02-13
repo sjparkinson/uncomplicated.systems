@@ -4,14 +4,28 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Serve",
+            "label": "Wrangler Dev",
             "type": "shell",
-            "command": "wrangler dev --no-bundle",
+            "command": "wrangler dev --live-reload --port 8787",
+            "isBackground": true
+        },
+        {
+            "label": "Jekyll",
+            "type": "shell",
+            "command": "bundle exec jekyll build --watch --drafts",
+            "isBackground": true
+        },
+        {
+            "label": "Serve",
+            "dependsOn": [
+                "Jekyll",
+                "Wrangler Dev"
+            ],
+            "dependsOrder": "parallel",
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "isBackground": true,
+            }
         }
     ]
 }

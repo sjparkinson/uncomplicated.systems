@@ -2,15 +2,15 @@
 
 > ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
 > 
-> * [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101.html)
-> * [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
-> * [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose.html)
+> * [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101)
+> * [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes)
+> * [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose)
 
-[We've already covered the basics in a 101](/2018/05/23/docker-101.html), looking at the Docker command line tool and the basics of making images and Dockerfiles.
+[We've already covered the basics in a 101](/2018/05/23/docker-101), looking at the Docker command line tool and the basics of making images and Dockerfiles.
  
 This workshop follows on from that, covering volumes and looking at Dockerfiles in more detail.
 
-![Majestic doggo's will feature]({{ '/assets/images/9ba222cd-c680-4d21-b8ca-fcac68558c34.jpg' | relative_url }})
+<img width="720" height="540" src="/assets/images/9ba222cd-c680-4d21-b8ca-fcac68558c34.jpg" alt="Majestic doggo's will feature" loading="eager" fetchpriority="high">
 
 ### Quick Recap
 
@@ -300,4 +300,4 @@ It's worth pointing out once again, you shouldn't have Rust installed on your ma
 
 Try using the `USER` directive to run this greetings program as a non-root user!
 
-> ➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](/2018/06/19/docker-0111-docker-compose.html).
+> ➡️ Find the next post in this series at [Docker 111 – Docker Compose 🐳](/2018/06/19/docker-0111-docker-compose).

@@ -2,15 +2,15 @@
 
 > ℹ️ This is part of a series of internal Docker workshops for the Financial Times.
 > 
-> * [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101.html)
-> * [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes.html)
-> * [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose.html)
+> * [Docker 0101 – How do I use Docker?](/2018/05/23/docker-101)
+> * [Docker 0110 – Dockerfiles & Volumes](/2018/06/05/docker-0110-dockerfiles-and-volumes)
+> * [Docker 0111 – Docker Compose](/2018/06/19/docker-0111-docker-compose)
 
 We've previously used the `docker` command line tool to build and run Docker images.
 
 Today we'll cover using the  `docker-compose` command line tool, and discuss using a _multi-stage_ build to keep the size of our Docker images down.
 
-![]({{ '/assets/images/0401c95f-52f3-4db5-ad54-56d6040bf13d.png' | relative_url }})
+<img width="720" height="480" src="/assets/images/0401c95f-52f3-4db5-ad54-56d6040bf13d.png" alt="" loading="eager" fetchpriority="high">
 
 Using `docker` works fine when everything you need to run fits into a single `Dockerfile`, but what if your application needs a database, should that also be installed in the image?
 
@@ -26,7 +26,7 @@ In essence, we should try and run only one [_process_](https://en.wikipedia.org/
 
 Following that advice, we'll need two images to define our system, one for the web process, and one for the database.
 
-[In the previous workshop](https://uncomplicated.systems/2018/06/05/docker-0110-dockerfiles-and-volumes.html) we made a MySQL database of dogs.
+[In the previous workshop](/2018/06/05/docker-0110-dockerfiles-and-volumes) we made a MySQL database of dogs.
 
 Taking that database, let's write an application that lists them all in HTML.
 

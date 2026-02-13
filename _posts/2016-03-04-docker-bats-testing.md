@@ -1,5 +1,5 @@
 ---
-external_url: https://web.archive.org/web/20170913073045/http://tech.graze.com/2016/03/04/testing-docker-images-with-bats/
+archive_url: https://web.archive.org/web/20170913073045/http://tech.graze.com/2016/03/04/testing-docker-images-with-bats/
 ---
 
 ## Testing Docker Images with Bats

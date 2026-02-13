@@ -8,7 +8,7 @@ It's a ~250 mile cycle over three days, and I've just checked the weather, it's 
 
 [Feel free to support me on my JustGiving page](https://www.justgiving.com/fundraising/samuel-parkinson-paris-cycle).
 
-![Eating and cycling at the same time, it's possiable!]({{ '/assets/images/fd490796-25b2-4f44-b581-80d3142d419f.gif' | relative_url }})
+<img width="320" height="180" src="/assets/images/fd490796-25b2-4f44-b581-80d3142d419f.gif" alt="Eating and cycling at the same time, it's possiable!" loading="eager" fetchpriority="high">
 
 ### The End Result
 
@@ -20,7 +20,7 @@ Thanks also to Rob and Anneke for all the planning that went into the ride.
 
 It also wouldn't have been possible without the support from Anneke's parents and her old school PE teacher and his wife, who kept us fed and watered throughout the journey.
 
-![Le Tour Eiffel, thanks Google!]({{ '/assets/images/a30daadf-05d6-45b7-afa0-d354fc2ecf42.jpg' | relative_url }})
+<img width="720" height="540" src="/assets/images/a30daadf-05d6-45b7-afa0-d354fc2ecf42.jpg" alt="Le Tour Eiffel, thanks Google!" loading="lazy">
 
 ### The Live Updates
 
