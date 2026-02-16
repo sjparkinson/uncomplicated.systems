@@ -27,7 +27,7 @@ This is being called the ["hierarchy of observability needs"](https://grafana.co
 
 The talk is also available on YouTube:
 
-<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/OUE6ElVFjzk?si=LHTmvyuGtJPG21Jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/OUE6ElVFjzk?si=gnhI11-GWHrpVsXN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 General notes from this section:
 
