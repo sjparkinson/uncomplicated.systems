@@ -41,15 +41,15 @@ General notes from this section:
 - Not (yet) for **Go or Rust** (as they don't have a standard library that can be instrumented)
 - For Amazon ECS Fargate, you could include running the OpenTelemetry Injector in the Docker image build
 
-### Grafana Infrastructure Hub
+### Grafana Instrumentation Hub
 
-This was a new project offering in Grafana Cloud. Similar to the concept of [OpAMP in the OpenTelemetry Collector](https://opentelemetry.io/docs/collector/management/), but provided as a managed service with a cloud based user interface.
+This was a new product offering in Grafana Cloud. Similar to the concept of [OpAMP in the OpenTelemetry Collector](https://opentelemetry.io/docs/collector/management/), but provided as a managed service with a cloud based user interface.
 
-Currently, it requires Alloy collectors, as it uses their Fleet Management API which isn't a part of the OpenTelemetry Collector. But Ted did mention that they will add support for OpAMP, meaning existing collectors could eventually be managed using the Grafana Infrastructure Hub.
+Currently, it requires Alloy collectors, as it uses their Fleet Management API which isn't a part of the OpenTelemetry Collector. But Ted did mention that they will add support for OpAMP, meaning existing collectors could eventually be managed using the [Grafana Instrumentation Hub](https://grafana.com/whats-new/2025-12-17-instrumentation-hub-in-grafana-cloud/).
 
 The concept is that, in practice, and at scale, OpenTelemetry collector configuration is fairly dynamic and should be managed as such. So _not_ building and baking the configuration into the collector image. An example of this in action would be adjusting sample rates for all requests related to a specific product or user journey to help with incident response.
 
-Adaptive telemetery also came up, this is the Grafana Cloud cost saving tooling for sampling telemetry at the ingest. The suggestion was if collectors are managed with the Infrastructure Hub, sampling produced by adaptive telemetry could be configured within the collectors closer to the source, while taking into account configurations like span metric processors, so that they still produce accurate statistics.
+Adaptive telemetery also came up, this is the Grafana Cloud cost saving tooling for sampling telemetry at the ingest. The suggestion was if collectors are managed with the Instrumentation Hub, sampling produced by adaptive telemetry could be configured within the collectors closer to the source, while taking into account configurations like span metric processors, so that they still produce accurate statistics.
 
 ### Strategy ideas and principles
 
