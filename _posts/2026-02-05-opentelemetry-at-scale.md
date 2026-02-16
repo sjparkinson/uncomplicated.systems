@@ -23,13 +23,11 @@ There was also a strong emphasis on **not** jumping to installing the OpenTeleme
 3. **Transaction insights**, e.g. traces and derived/deep logs and metrics
 4. **Custom logic**, and maybe profiling
 
-<img width="720" height="322" src="/assets/images/grafana-instrumentation-hub-hierarchy.png" alt="" loading="lazy">
-
-<small>From <https://grafana.com/blog/instrumentation-hub-a-guided-scalable-way-to-roll-out-your-observability-coverage-without-losing-control/>.</small>
+This is being called the ["hierarchy of observability needs"](https://grafana.com/blog/instrumentation-hub-a-guided-scalable-way-to-roll-out-your-observability-coverage-without-losing-control/#observability-is-a-progression).
 
 The talk is also available on YouTube:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OUE6ElVFjzk?si=LHTmvyuGtJPG21Jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/OUE6ElVFjzk?si=LHTmvyuGtJPG21Jq" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 General notes from this section:
 
