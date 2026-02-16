@@ -31,7 +31,7 @@ The rough set of requirements I aimed for were:
 * Monitor for GeForce NOW running in full-screen mode (a good-enough proxy for a game being streamed)
 * Disable the `awdl0` interface while a game is being streamed, and keep it disabled
 
-Initially I started the project in Rust; as a neat bit of systems programming it seemed like a good fit. And by [sjparkinson/geforcenow-awdl0 @ `887b64`](https://github.com/sjparkinson/geforcenow-awdl0/tree/887b648b0d510a542c74c9e82cc94f73d8e034e5) I had something working!
+Initially I started the project in Rust; as a neat bit of systems programming it seemed like a good fit. And by [sjparkinson/geforcenow-awdl0@887b64](https://github.com/sjparkinson/geforcenow-awdl0/tree/887b648b0d510a542c74c9e82cc94f73d8e034e5) I had something working!
 
 Using Claude to build this out really impressed me; I was able to knock something out in a language I'm not that great at yet within an afternoon. In my favour, the requirements were simple, and I was able to run the build and tests on macOS within GitHub Actions for an OK-ish feedback loop. Rust's compiler errors were a real help, and simply copying them into the chat for Claude to resolve was enough to make meaningful progress.
 
