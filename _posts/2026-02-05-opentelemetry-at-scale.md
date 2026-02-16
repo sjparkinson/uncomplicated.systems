@@ -23,6 +23,10 @@ There was also a strong emphasis on **not** jumping to installing the OpenTeleme
 3. **Transaction insights**, e.g. traces and derived/deep logs and metrics
 4. **Custom logic**, and maybe profiling
 
+<img width="720" height="322" src="/assets/images/grafana-instrumentation-hub-hierarchy.png" alt="" loading="lazy">
+
+_From <https://grafana.com/blog/instrumentation-hub-a-guided-scalable-way-to-roll-out-your-observability-coverage-without-losing-control/>._
+
 General notes from this section:
 
 * **[OBI](https://opentelemetry.io/docs/zero-code/obi/)** can be used for RED metrics
