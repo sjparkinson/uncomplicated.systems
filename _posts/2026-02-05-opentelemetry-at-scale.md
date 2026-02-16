@@ -27,6 +27,10 @@ There was also a strong emphasis on **not** jumping to installing the OpenTeleme
 
 _From <https://grafana.com/blog/instrumentation-hub-a-guided-scalable-way-to-roll-out-your-observability-coverage-without-losing-control/>._
 
+The talk is also available on YouTube:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OUE6ElVFjzk?si=LHTmvyuGtJPG21Jq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 General notes from this section:
 
 * **[OBI](https://opentelemetry.io/docs/zero-code/obi/)** can be used for RED metrics
