@@ -185,6 +185,7 @@ kbd,
 samp,
 pre {
     font-family: "Google Sans Code", monospace;
+    line-height: 1.3;
 }
 
 pre {
