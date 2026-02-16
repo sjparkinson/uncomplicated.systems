@@ -25,7 +25,7 @@ There was also a strong emphasis on **not** jumping to installing the OpenTeleme
 
 <img width="720" height="322" src="/assets/images/grafana-instrumentation-hub-hierarchy.png" alt="" loading="lazy">
 
-_From <https://grafana.com/blog/instrumentation-hub-a-guided-scalable-way-to-roll-out-your-observability-coverage-without-losing-control/>._
+<small>From <https://grafana.com/blog/instrumentation-hub-a-guided-scalable-way-to-roll-out-your-observability-coverage-without-losing-control/>.</small>
 
 The talk is also available on YouTube:
 
