@@ -36,7 +36,7 @@ General notes from this section:
 
 ### OpenTelemetry Injector
 
-[OpenTelemetry Injector]](https://github.com/open-telemetry/opentelemetry-injector) sounds well worth exploring, as a general purpose tool for installing the OpenTelemetry SDKs in systems, without teams having to maintain a tightly coupled integration within the code.
+[OpenTelemetry Injector](https://github.com/open-telemetry/opentelemetry-injector) sounds well worth exploring, as a general purpose tool for installing the OpenTelemetry SDKs in systems, without teams having to maintain a tightly coupled integration within the code.
 
 - Not (yet) for **Go or Rust** (as they don't have a standard library that can be instrumented)
 - For Amazon ECS Fargate, you could include running the OpenTelemetry Injector in the Docker image build
