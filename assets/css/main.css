@@ -107,7 +107,7 @@ html {
 }
 
 body {
-    margin: clamp(0rem, 1vw, 1.5rem) 18px 0;
+    margin-block-start: clamp(0rem, 1vw, 1.5rem);
     color: var(--text-color);
     font: normal clamp(18px, 1.6vw, 20px)/1.5 "EB Garamond", serif;
     font-optical-sizing: auto;
