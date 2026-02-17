@@ -437,6 +437,7 @@ h6 {
 
 iframe[src*="youtube.com/embed/"],
 iframe[src*="youtube-nocookie.com/embed/"] {
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
