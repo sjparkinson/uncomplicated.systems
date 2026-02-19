@@ -244,10 +244,6 @@ div[role="doc-endnotes"] ol li p {
     font-weight: 700;
 }
 
-.highlight .ge {
-    font-style: italic;
-}
-
 .highlight :is(.err, .gd) {
     color: oklch(0.57 0.08 10);
 }
