@@ -124,6 +124,7 @@ h6 {
 
 p {
     margin-block: 18px;
+    text-align: justify;
     hyphens: auto;
 }
 
@@ -163,7 +164,7 @@ pre {
 }
 
 pre {
-    overflow-x: auto;
+    white-space: pre-wrap;
 }
 
 ol,
