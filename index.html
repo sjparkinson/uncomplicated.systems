@@ -5,15 +5,17 @@ layout: default
 {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 {% for year in years %}
 <h2>{{ year.name }}</h2>
-<ul>
+<ul class="posts">
   {% for post in year.items %}
   <li>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d %b" }}</time>
-    {% if post.archive_url -%}
-    <a href="{{ post.archive_url }}">{{ post.title }}</a>&nbsp;<small>(archive)</small>
-    {%- else -%}
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {%- endif %}
+    <span>
+      {% if post.archive_url -%}
+      <a href="{{ post.archive_url }}">{{ post.title }}</a>&nbsp;<small>(archive)</small>
+      {%- else -%}
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {%- endif %}
+    </span>
   </li>
   {% endfor %}
 </ul>

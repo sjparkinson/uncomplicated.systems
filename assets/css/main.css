@@ -174,7 +174,7 @@ pre {
 
 ol,
 ul {
-    padding-inline-start: 1.5em;
+    padding-inline-start: 3ch;
 }
 
 img {
@@ -186,7 +186,7 @@ img {
 
 blockquote {
     margin: 0;
-    padding-inline: 0.8em;
+    padding-inline: 3ch;
     font-style: italic;
     quotes: auto;
 }
@@ -213,6 +213,12 @@ hgroup p {
 
 hgroup p time {
     color: var(--text-color-muted);
+}
+
+main ul.posts li {
+    display: grid;
+    grid-template-columns: 6ch minmax(0, 1fr);
+    column-gap: 1ch;
 }
 
 iframe[src*="youtube.com/embed/"],
