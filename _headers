@@ -10,6 +10,9 @@
   Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style
   Link: </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
 
+/atom.xml
+  Content-Type: application/atom+xml; charset=utf-8
+
 /*
   Cache-Control: public, max-age=0
   Cross-Origin-Embedder-Policy: require-corp; report-to="default";
