@@ -1,6 +1,14 @@
 ---
 ---
 {%- assign css = site.static_files | where: "path", "/assets/css/main.css" | first -%}
+/*
+  Cache-Control: public, max-age=0
+  Content-Security-Policy: default-src 'self'; img-src data:; frame-src 'self' www.youtube-nocookie.com; script-src 'self' static.cloudflareinsights.com; connect-src 'self' static.cloudflareinsights.com
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 0
+
 /
   Link: </assets/css/main.css?v={{ css.modified_time | date: '%s' }}>; rel=preload; as=style
   Link: </assets/fonts/eb-garamond-normal-latin.woff2>; rel=preload; as=font; type=font/woff2; crossorigin
@@ -12,16 +20,6 @@
 
 /atom.xml
   Content-Type: application/atom+xml; charset=utf-8
-
-/*
-  Cache-Control: public, max-age=0
-  Cross-Origin-Embedder-Policy: require-corp; report-to="default";
-  Cross-Origin-Opener-Policy: same-site; report-to="default";
-  Cross-Origin-Resource-Policy: same-site
-  Referrer-Policy: strict-origin-when-cross-origin
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  X-XSS-Protection: 0
 
 /assets/*
   ! Cache-Control
