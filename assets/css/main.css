@@ -55,18 +55,12 @@
 :root {
     color-scheme: light dark;
 
-    --h1-size: clamp(2em, 5vw, 2.5em);
-    --h2-size: clamp(1.4em, 4vw, 1.5em);
-    --h3-size: clamp(1.3em, 2.5vw, 1.4em);
-    --h4-size: clamp(1.2em, 2vw, 1.3em);
-    --h5-size: clamp(1.1em, 1.6vw, 1.2em);
-    --h6-size: 1em;
-
     --color-neutral-ink: oklch(0 0 0);
     --color-neutral-paper: oklch(1 0 0);
 
     --text-color: light-dark(var(--color-neutral-ink), var(--color-neutral-paper));
     --text-color-muted: color-mix(in oklch, var(--text-color) 65%, light-dark(var(--color-neutral-paper), var(--color-neutral-ink)));
+
 }
 
 *,
@@ -82,7 +76,7 @@ html {
 body {
     margin: 18px;
     color: var(--text-color);
-    font: normal clamp(18px, 1.6vw, 20px)/1.5 "EB Garamond", serif;
+    font: normal clamp(18px, 1rem + 0.53vw, 20px)/1.5 "EB Garamond", serif;
     font-optical-sizing: auto;
     font-size-adjust: 0.4;
 }
@@ -105,27 +99,27 @@ h6 {
 }
 
 h1 {
-    font-size: var(--h1-size);
+    font-size: 2em;
 }
 
 h2 {
-    font-size: var(--h2-size);
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: var(--h3-size);
+    font-size: 1.35em;
 }
 
 h4 {
-    font-size: var(--h4-size);
+    font-size: 1.25em;
 }
 
 h5 {
-    font-size: var(--h5-size);
+    font-size: 1.15em;
 }
 
 h6 {
-    font-size: var(--h6-size);
+    font-size: 1em;
 }
 
 p {
@@ -215,10 +209,15 @@ hgroup p time {
     color: var(--text-color-muted);
 }
 
+main ul.posts {
+    padding-inline-start: 1ch;
+}
+
 main ul.posts li {
     display: grid;
     grid-template-columns: 6ch minmax(0, 1fr);
     column-gap: 1ch;
+    text-wrap: balance;
 }
 
 iframe[src*="youtube.com/embed/"],
