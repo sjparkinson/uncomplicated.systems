@@ -7,4 +7,11 @@ layout: default
   <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string: "ordinal" }}</time></p>
 </hgroup>
 
-{{ content }}
+<article>
+  {{ content }}
+
+  <section id="comments">
+    <script src="https://utteranc.es/client.js" repo="sjparkinson/uncomplicated.systems" issue-term="pathname"
+      theme="preferred-color-scheme" crossorigin="anonymous" async></script>
+  </section>
+</article>

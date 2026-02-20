@@ -238,6 +238,12 @@ div[role="doc-endnotes"] ol li p {
     margin-block: 5px;
 }
 
+.utterances-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .highlight :is(.c, .ch, .cd, .cm, .cpf, .c1, .gl, .go, .kt) {
     color: oklch(0.56 0.03 250);
 }
