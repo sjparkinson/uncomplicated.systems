@@ -28,9 +28,12 @@
 </head>
 
 <body>
-  <header role="banner">
+  <header>
     <hgroup>
       <h1><a href="/">{{ site.title }}</a></h1>
+      {%- if page.url == "/" %}
+      <p>{{ site.description }}</p>
+      {% endif -%}
     </hgroup>
   </header>
 
