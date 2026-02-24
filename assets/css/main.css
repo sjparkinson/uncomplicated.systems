@@ -59,8 +59,6 @@
     --color-neutral-paper: oklch(1 0 0);
 
     --text-color: light-dark(var(--color-neutral-ink), var(--color-neutral-paper));
-    --text-color-muted: color-mix(in oklch, var(--text-color) 65%, light-dark(var(--color-neutral-paper), var(--color-neutral-ink)));
-
 }
 
 *,
@@ -204,10 +202,6 @@ hgroup h2 {
 
 hgroup p {
     margin-block-start: 0;
-}
-
-hgroup p time {
-    color: var(--text-color-muted);
 }
 
 main ul.posts {
