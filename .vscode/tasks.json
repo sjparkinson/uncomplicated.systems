@@ -6,13 +6,13 @@
         {
             "label": "Wrangler Dev",
             "type": "shell",
-            "command": "wrangler dev --live-reload --port 8787",
+            "command": "wrangler dev --port 8787",
             "isBackground": true
         },
         {
             "label": "Jekyll",
             "type": "shell",
-            "command": "bundle exec jekyll build --watch --drafts",
+            "command": "bundle exec jekyll build --watch",
             "isBackground": true
         },
         {
