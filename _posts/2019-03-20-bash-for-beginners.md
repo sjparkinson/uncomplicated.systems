@@ -285,3 +285,4 @@ We should be able to pass the script a path as an argument, e.g. `./js-spec-rena
 * [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/html/), an in-depth exploration of the art of shell scripting
 * [Introduction to Linux](http://tldp.org/LDP/intro-linux/html/), a hands on guide
 * [Explain Shell](https://explainshell.com/), really good at unpicking convoluted shell commands
+* [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/), a great MIT Open Learning course
