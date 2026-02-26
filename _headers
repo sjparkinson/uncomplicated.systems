@@ -3,7 +3,7 @@
 {%- assign css = site.static_files | where: "path", "/assets/css/main.css" | first -%}
 /*
   Cache-Control: public, max-age=0
-  Content-Security-Policy: default-srec 'self'; img-src 'self' data:; frame-src 'self' www.youtube-nocookie.com; script-src 'self' 'inline-speculation-rules' static.cloudflareinsights.com; connect-src 'self' static.cloudflareinsights.com
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; frame-src 'self' www.youtube-nocookie.com; script-src 'self' 'inline-speculation-rules' static.cloudflareinsights.com; connect-src 'self' static.cloudflareinsights.com
   Referrer-Policy: strict-origin-when-cross-origin
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
