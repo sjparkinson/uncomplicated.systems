@@ -37,9 +37,10 @@ Using Claude to build this out really impressed me; I was able to knock somethin
 
 But I wasn't happy with the number of Cargo dependencies involved, mainly the bindings, which led me to consider swapping the project to Swift the next day. Again, Claude had no trouble with this refactor, and I was able to get a really clean set of project dependencies.
 
-There are a few other projects out there that do the same thing[^1][^2], but I'm always a bit hesitant to run random software like this. So it was great to use this as an excuse to learn some Swift and Rust and try out the vibe-coding thing properly in a low-risk project.
+There are a few other projects out there that do the same thing[^1][^2][^3], but I'm always a bit hesitant to run random software like this. So it was great to use this as an excuse to learn some Swift and Rust and try out the vibe-coding thing properly in a low-risk project.
 
 To help with trusting the binary, I tried out the [GitHub Attestation feature](https://github.blog/news-insights/product-news/introducing-artifact-attestations-now-in-public-beta/). You can download a binary from a build and run `gh attestation verify --owner sjparkinson ./geforcenow-awdl0` to know if it's the same one from the build. Trusting the source code written by Claude is a totally different matter though...
 
-[^1]: <https://github.com/james-howard/AWDLControl>
-[^2]: <https://github.com/oliverames/ping-warden>
+[^1]: <https://github.com/jamestut/awdlkiller>
+[^2]: <https://github.com/james-howard/AWDLControl>
+[^3]: <https://github.com/oliverames/ping-warden>
