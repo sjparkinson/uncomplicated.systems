@@ -12,7 +12,7 @@ layout: default
       <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d %b" }}</time>
       <span>
         {% if post.archive_url -%}
-        <a href="{{ post.archive_url }}">{{ post.title }}</a> <span class="tag">archive</span>
+        <a href="{{ post.archive_url }}">{{ post.title }}</a> <span class="tag">Wayback Machine</span>
         {%- else -%}
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         {%- endif %}
