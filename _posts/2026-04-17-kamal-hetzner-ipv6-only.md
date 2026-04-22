@@ -93,10 +93,12 @@ To connect Cloudflare to the VPS, I'm using `cloudflared`. It saves setting up L
 
 `cloudflared` itself is happy on IPv6, but it defaults to IPv4. The undocumented-ish flag you want is `--edge-ip-version 6`. Update the `ExecStart` in the systemd service to include the option:
 
+{% raw %}
 ```ini
 ExecStart=/usr/bin/cloudflared --no-autoupdate tunnel \
   --edge-ip-version 6 run --token {{ cloudflared_token }}
 ```
+{% endraw %}
 
 With the tunnel established, the origin doesn't need an inbound port open for HTTP. UFW can remain at "22/tcp only", use Hetzner's firewall rules to lock that down to your ISP's IP range or something.
 
@@ -166,6 +168,7 @@ A few gotchas that cost me more time than they should have:
 
 [Send me an email](mailto:samuel.parkinson@hey.com) if you find anything that could be improved!
 
+{% raw %}
 ```yaml
 ---
 - name: Configure Kamal server
@@ -462,3 +465,4 @@ A few gotchas that cost me more time than they should have:
         name: docker
         state: restarted
 ```
+{% endraw %}
