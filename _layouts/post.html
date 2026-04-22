@@ -2,9 +2,11 @@
 layout: default
 ---
 
-<hgroup>
-  <h2>{{ page.title }}</h2>
-  <p>Published <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string: "ordinal" }}</time> by Samuel Parkinson.</p>
-</hgroup>
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p>Published <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string: "ordinal" }}</time> by {{ site.author.name }}.</p>
+  </header>
 
-{{ content }}
+  {{ content }}
+</article>

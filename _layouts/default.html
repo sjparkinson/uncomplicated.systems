@@ -26,6 +26,29 @@
   {%- assign css = site.static_files | where: "path", "/assets/css/main.css" | first %}
   <link rel="stylesheet" href="{{ css.path }}?v={{ css.modified_time | date: '%s'}}">
 
+  {%- if page.layout == "post" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.title | jsonify }},
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+      "@type": "Person",
+      "name": {{ site.author.name | jsonify }},
+      "url": "{{ '/' | absolute_url }}"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": {{ site.author.name | jsonify }}
+    },
+    "url": "{{ page.url | absolute_url }}",
+    "mainEntityOfPage": "{{ page.url | absolute_url }}"
+  }
+  </script>
+  {% endif -%}
+
   <script type="speculationrules">
   {
     "prerender": [{
@@ -43,12 +66,14 @@
 
 <body>
   <header>
+    {%- if page.url == "/" %}
     <hgroup>
       <h1><a href="/">{{ site.title }}</a></h1>
-      {% if page.url == "/" -%}
       <p>{{ site.description }}</p>
-      {%- endif %}
     </hgroup>
+    {% else %}
+    <p class="site-title"><a href="/">{{ site.title }}</a></p>
+    {% endif -%}
   </header>
 
   <main>
