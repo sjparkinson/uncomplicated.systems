@@ -200,10 +200,6 @@ hgroup h2 {
     margin-block-end: 0;
 }
 
-hgroup p {
-    margin-block-start: 0;
-}
-
 main ul.posts {
     padding-inline-start: 1ch;
 }
