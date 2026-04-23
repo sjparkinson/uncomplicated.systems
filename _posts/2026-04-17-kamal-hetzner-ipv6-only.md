@@ -87,7 +87,7 @@ Docker is IPv4 by default, and on an IPv6-only host that bites you the first tim
 
 Don't ask me about the dead beef, I'm not sure either... Claude came up with it.
 
-### Cloudflare Tunnel, the IPv6-only way
+### Cloudflare Tunnel
 
 To connect Cloudflare to the VPS, I'm using `cloudflared`. It saves setting up Let's Encrypt, and will allow for some rudimentary load balancing and failover if needed.
 
@@ -142,7 +142,7 @@ ssh:
 
 It turns out that Honeycomb is IPv4-only.
 
-Thankfully, [NAT64](https://nat64.net/) is the glue. The public NAT64 resolvers synthesise IPv6 addresses for IPv4-only hosts, and your IPv6 network routes them through the NAT64 gateway.
+Thankfully, the [Public NAT64 service](https://nat64.net/) is the glue. It hosts resolvers that synthesise IPv6 addresses for IPv4-only hosts.
 
 I didn't want *all* DNS and traffic going through NAT64 though, that seems unkind to Kasper, who runs the service for free. Thankfully `systemd-resolved` supports per-domain DNS routing:
 
@@ -153,7 +153,7 @@ DNS=2a00:1098:2b::1 2a01:4f9:c010:3f02::1 2a01:4f8:c2c:123f::1
 Domains=~honeycomb.io
 ```
 
-Telemetry bound for Honeycomb then resolves to a synthetic IPv6 address, routes through the public NAT64 gateway (protected by TLS), and comes out the other side as IPv4.
+Telemetry bound for Honeycomb then resolves to a synthetic IPv6 address, routes the traffic through the public NAT64 gateway (protected by TLS), and comes out the other side as IPv4.
 
 ### Gotchas
 
@@ -162,7 +162,8 @@ A few gotchas that cost me more time than they should have:
 * **GitHub Container Registry is IPv4-only**.
 * **Docker and cloudflared need IPv6 set explicitly**, and to do so it's a bit clunky.
 * **Claude was not especially helpful with this**, it confidently suggested IPv4 fallbacks, NAT64 configurations for the wrong resolver, and invented a Kamal option that didn't exist. I guess the IPv6-only setup is still too niche.
-* **Honeycomb not supporting IPv6 was a surprise**, but NAT64 is a good workaround, and as a bonus that service also happens to run on Hetzner.
+* **Honeycomb not supporting IPv6 was a surprise**, but the public NAT64 service is a great workaround, and as a bonus that service also happens to run on Hetzner.
+* **GitHub-hosted runners don't support IPv6**, so don't bother trying to deploy from an GitHub Action workflow.
 
 ### The full Ansible playbook
 
