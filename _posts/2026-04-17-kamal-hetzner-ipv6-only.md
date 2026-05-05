@@ -324,25 +324,33 @@ A few gotchas that cost me more time than they should have:
             mode: "0644"
           notify: Restart systemd-resolved
 
+        - name: Flush pending nat64 handlers
+          ansible.builtin.meta: flush_handlers
+
     - name: Configure cloudflared
       tags: [cloudflared]
       block:
-        - name: Install cloudflared service
-          ansible.builtin.command: cloudflared service install --token {{ cloudflared_token }}
-          args:
-            creates: /etc/systemd/system/cloudflared.service
-          no_log: true
-
-        - name: Override cloudflared ExecStart
-          community.general.ini_file:
-            path: /etc/systemd/system/cloudflared.service
-            section: Service
-            option: ExecStart
-            value: "/usr/bin/cloudflared --no-autoupdate tunnel --edge-ip-version 6 run --token {{ cloudflared_token }}"
-            no_extra_spaces: true
+        - name: Write cloudflared systemd unit
+          ansible.builtin.copy:
+            dest: /etc/systemd/system/cloudflared.service
             owner: root
             group: root
             mode: "0644"
+            content: |
+              [Unit]
+              Description=cloudflared
+              After=network-online.target
+              Wants=network-online.target
+
+              [Service]
+              Type=notify
+              TimeoutStartSec=0
+              ExecStart=/usr/bin/cloudflared --no-autoupdate tunnel --edge-ip-version 6 run --token {{ cloudflared_token }}
+              Restart=on-failure
+              RestartSec=5s
+
+              [Install]
+              WantedBy=multi-user.target
           no_log: true
           notify: Restart cloudflared
 
