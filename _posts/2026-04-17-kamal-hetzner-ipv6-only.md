@@ -213,12 +213,14 @@ A few gotchas that cost me more time than they should have:
 
         - name: Write unattended-upgrades reboot config
           ansible.builtin.copy:
-            src: unattended-upgrades-reboot.conf
             dest: /etc/apt/apt.conf.d/52unattended-upgrades-reboot
             owner: root
             group: root
             mode: "0644"
-          tags: [apt]
+            content: |
+              Unattended-Upgrade::Automatic-Reboot "true";
+              Unattended-Upgrade::Automatic-Reboot-WithUsers "true";
+              Unattended-Upgrade::Automatic-Reboot-Time "04:00";
 
     - name: Configure swap
       tags: [swap]
@@ -268,11 +270,23 @@ A few gotchas that cost me more time than they should have:
       block:
         - name: Write fail2ban jail config
           ansible.builtin.copy:
-            src: fail2ban-jail.local
             dest: /etc/fail2ban/jail.local
             owner: root
             group: root
             mode: "0644"
+            content: |
+              [DEFAULT]
+              backend = systemd
+              banaction = ufw
+              findtime = 1h
+              maxretry = 3
+              bantime = 1d
+              bantime.increment = true
+              bantime.maxtime = 4w
+
+              [sshd]
+              enabled = true
+              mode = aggressive
           notify: Restart fail2ban
 
         - name: Start fail2ban
@@ -317,11 +331,14 @@ A few gotchas that cost me more time than they should have:
 
         - name: Write nat64 config
           ansible.builtin.copy:
-            src: nat64-resolved.conf
             dest: /etc/systemd/resolved.conf.d/nat64.conf
             owner: root
             group: root
             mode: "0644"
+            content: |
+              [Resolve]
+              DNS=2a00:1098:2b::1 2a01:4f9:c010:3f02::1 2a01:4f8:c2c:123f::1
+              Domains=~github.com ~githubusercontent.com
           notify: Restart systemd-resolved
 
         - name: Flush pending nat64 handlers
@@ -423,11 +440,20 @@ A few gotchas that cost me more time than they should have:
       block:
         - name: Write Docker daemon config
           ansible.builtin.copy:
-            src: docker-daemon.json
             dest: /etc/docker/daemon.json
             owner: root
             group: root
             mode: "0644"
+            content: |
+              {
+                "ipv6": true,
+                "ip6tables": true,
+                "default-address-pools": [
+                  {"base": "172.20.0.0/16", "size": 24},
+                  {"base": "fd00:dead:beef::/48", "size": 64}
+                ],
+                "dns": ["2606:4700:4700::1111", "2001:4860:4860::8888"]
+              }
           notify: Restart docker
 
         - name: Start Docker
