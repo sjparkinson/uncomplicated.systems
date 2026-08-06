@@ -24,4 +24,4 @@ After trialing btfs locally, they discovered that it was not a supported filesys
 
 The jist of it is that they are using btrfs for whole disk compression on their metrics data storage instances, achieving something like a 70–80% compression ratio. Meta have been using it in production for a long time, and while it got some flack over the years for data loss issues, it sounds like it is in a great shape now.
 
-Most of the talk is covered in Motiejus's blog post at https://m.jakstys.lt/2026/scaling-btrfs-in-an-enterprise/.
+Most of the talk is covered in Motiejus's blog post at <https://m.jakstys.lt/2026/scaling-btrfs-in-an-enterprise/>.
